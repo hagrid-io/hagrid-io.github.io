@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+html(lang="en", ng-app="hagrid")
+  head
+    meta(charset="UTF-8")
+    base(href="/")
+    title(ng-bind="$state.current.data.pageTitle")
+    meta(name="description",content="{{$state.current.data.pageDescription}}")
+    link(rel="stylesheet", href="css/vendor.css")
+    link(rel="stylesheet", href="css/app.css")
+  body
+    ui-view
+    script(src="js/vendor.js")
+    script(src="js/app.js")

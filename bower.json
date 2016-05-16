@@ -1,0 +1,23 @@
+{
+  "name": "hagrid-knowledge",
+  "homepage": "https://github.com/rokk3rlabs/hagrid-knowledge",
+  "authors": [
+    "Diego Santiesteban <gatodeveloper@gmail.com>"
+  ],
+  "description": "Hagrid Knowledge Components",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "hagrid": "https://github.com/rokk3rlabs/hagrid.git",
+    "angular-ui-router": "^0.2.18"
+  }
+}

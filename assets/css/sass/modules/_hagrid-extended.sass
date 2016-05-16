@@ -1,0 +1,120 @@
+// GRID
+[class*="grid-flex"]
+  text-align: left
+
+.fixed-area
+  position: fixed
+  width: inherit
+
+.full-height
+  height: 100%
+
+// typograpy
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  padding: 1em 0
+  margin: 0
+  line-height: 1em
+
+h1
+  font-size: 3em
+h2
+  font-size: 2em
+h3
+  font-size: 1.5em
+
+// navbar
+.navbar
+  color: #333
+  z-index: 1
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5)
+
+  &.navbar-fixed
+    position: fixed
+    width: 100%
+    left: 0
+    top: 0
+
+  a,
+  .navbar-text,
+  .navbar-link,
+  .navbar-button
+    +inline-block
+    text-decoration: none
+    padding: 1em
+    font-size: 1em
+
+  a,
+  .navbar-link
+    &:hover
+      background: rgba(0, 0, 0, .2)
+
+  .navbar-brand
+    font-size: 2em
+    line-height: 18px
+    padding: 15px
+    height: 100%
+
+    small
+      font-size: .5em
+      padding: .5em
+      line-height: 0
+
+    &:hover
+      background: inherit
+      color: inherit
+
+  &.navbar-primary
+    background: #2D6CC9
+    color: #fff
+
+
+
+// LISTS
+.list
+  padding: 0
+  margin: 0
+  li
+    display: block
+    position: relative
+
+    .icon-drop-down-list
+      position: absolute
+      right: .2em
+      top: .2em
+      font-size: 1.5em
+      +prefix(transition, all .2s)
+
+    &:hover,
+    &.current
+      background: rgba(255, 255, 255, .5)
+
+      .icon-drop-down-list
+        transform: rotate(180deg)
+
+      > ul
+        display: block
+
+    a
+      display: block
+      padding: .5em
+      text-decoration: none
+
+    ul
+      padding-left: .5em
+      display: none
+
+      li
+
+    &:last-child
+      a
+        border-bottom: none
+
+  &.default
+
+  &.border
+    border: 1px solid #F2F2F2

@@ -1,0 +1,149 @@
+h1.align-center Grid System
+
+.grid-wrap.grid-wrap-90
+  section.block-section-hash#fast-review
+    .grid-layout(hagrid-debug='')
+      .layout-50
+      .layout-20
+      .layout-30
+    .grid-layout(hagrid-debug='')
+      .layout-40
+      .layout-60
+    .grid-layout(hagrid-debug='')
+      .layout-70
+      .layout-30
+    .grid-layout(hagrid-debug='')
+      .layout-50
+      .layout-50
+
+  h2.align-center Grid Flex Examples
+  section.block-section-hash#order-cols
+    h3 Order columns
+    p Flex order
+    .grid-flex(hagrid-debug='', debug-empty='')
+      .flex-50.order-2 1
+      .flex-20.order-3 2
+      .flex-30.order-1 3
+  section.block-section-hash#margin-cols
+    h3 Margin columns
+    p Margins
+    .grid-flex.grid-spaces-top-bottom(grid-spaces='30px', hagrid-debug='')
+      .flex-30
+      .flex-70
+  section.block-section-hash#horizontal-alignment-of-items
+    h3 Horizontal alignment of items
+    p Flex align (left)
+    .grid-flex.justify-content-flex-start(hagrid-debug='')
+      .flex-30
+      .flex-20
+      .flex-30
+    p Flex align (center)
+    .grid-flex.justify-content-center(hagrid-debug='')
+      .flex-30
+      .flex-20
+      .flex-30
+    p Flex align (right)
+    .grid-flex.justify-content-flex-end(hagrid-debug='')
+      .flex-30
+      .flex-20
+      .flex-30
+    p Flex align (justify)
+    .grid-flex.justify-content-space-between(hagrid-debug='')
+      .flex-30
+      .flex-20
+      .flex-30
+    p Flex align (center justify)
+    .grid-flex.justify-content-space-around(hagrid-debug='')
+      .flex-30
+      .flex-20
+      .flex-30
+  section.block-section-hash#vertical-alignment-of-items
+    h3 Vertical alignment of items
+    p Flex Vertical align (top)
+    .grid-flex.align-items-flex-start(hagrid-debug='', style='height: 100px')
+      .flex-50
+      .flex-20
+      .flex-30
+    p Flex Vertical align (middle)
+    .grid-flex.align-items-center(hagrid-debug='', style='height: 100px')
+      .flex-50
+      .flex-20
+      .flex-30
+    p Flex Vertical align (bottom)
+    .grid-flex.align-items-flex-end(hagrid-debug='', style='height: 100px')
+      .flex-50
+      .flex-20
+      .flex-30
+    p Flex Vertical align (stretch)
+    .grid-flex.align-items-stretch(hagrid-debug='', style='height: 100px')
+      .flex-50
+      .flex-20
+      .flex-30
+    p Flex Vertical align top(center)
+    .grid-flex.align-items-stretch(hagrid-debug='', style='height: 100px')
+      .flex-50
+      .flex-20.align-self-flex-start
+      .flex-30
+    p Flex Vertical align self(center)
+    .grid-flex.align-items-stretch(hagrid-debug='', style='height: 100px')
+      .flex-50
+      .flex-20.align-self-center
+      .flex-30
+    p Flex Vertical align self(bottom)
+    .grid-flex.align-items-stretch(hagrid-debug='', style='height: 100px')
+      .flex-50
+      .flex-20.align-self-flex-end
+      .flex-30
+    p Flex Vertical align (baseline)
+    .grid-flex.align-items-baseline(hagrid-debug='', debug-empty='', style='height: 100px')
+      .flex-50
+        h2 text
+      .flex-30
+        p text
+      .flex-20
+        h4 text
+  section.block-section-hash#vertical-alignment-of-content
+    h3 Vertical alignment of content
+    p Flex Align Content (top)
+    .grid-flex.align-content-flex-start.flex-wrap-wrap(hagrid-debug='', style='height: 300px')
+      .flex-30
+      .flex-10
+      .flex-60
+      .flex-50
+      .flex-50
+      .flex-30
+      .flex-10
+    p Flex Align Content (center)
+    .grid-flex.align-content-center.flex-wrap-wrap(hagrid-debug='', style='height: 300px')
+      .flex-30
+      .flex-10
+      .flex-60
+      .flex-50
+      .flex-50
+      .flex-30
+      .flex-10
+    p Flex Align Content (bottom)
+    .grid-flex.align-content-flex-end.flex-wrap-wrap(hagrid-debug='', style='height: 300px')
+      .flex-30
+      .flex-10
+      .flex-60
+      .flex-50
+      .flex-50
+      .flex-30
+      .flex-10
+  section.block-section-hash#nested-grids
+    h3 Nested grids
+    p Nested Grid Example 1
+    .grid-flex.align-content-flex-end.flex-wrap-wrap(hagrid-debug='', debug-empty='', style='height: 200px')
+      .flex-50
+      .flex-50.grid-flex
+        .flex-50.grid-flex
+          .flex-50
+          .flex-50
+        .flex-50
+    p Nested Grid Example 2
+    .grid-flex.align-content-flex-end.flex-wrap-wrap(hagrid-debug='', debug-empty='', style='height: 200px')
+      .flex-30.grid-flex
+        .flex-50
+        .flex-50
+      .flex-70

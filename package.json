@@ -1,0 +1,45 @@
+{
+  "name": "hagrid-knowledge",
+  "version": "1.0.0",
+  "description": "Web Documentation.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rokk3rlabs/hagrid-knowledge.git"
+  },
+  "author": "Diego Santiesteban - @gato_developer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rokk3rlabs/hagrid-knowledge/issues"
+  },
+  "homepage": "https://github.com/rokk3rlabs/hagrid-knowledge#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "~2.3.4",
+    "gulp-connect": "~2.0.6",
+    "gulp-header": "~1.0.5",
+    "gulp-imagemin": "^2.2.0",
+    "gulp-jade": "~0.6.1",
+    "gulp-minify-css": "^0.3.10",
+    "gulp-notify": "~1.4.0",
+    "gulp-plumber": "~0.6.4",
+    "gulp-rename": "~1.2.0",
+    "gulp-ruby-sass": "~0.7.0",
+    "gulp-size": "~1.0.0",
+    "gulp-uglify": "~0.3.1",
+    "gulp-util": "~3.0.0",
+    "gulp-watch": "^0.6.10",
+    "node-bourbon": "~1.2.3",
+    "node-neat": "~1.3.0"
+  },
+  "dependencies": {
+    "gulp-if": "^2.0.0",
+    "gulp-sass": "^2.2.0",
+    "minimist": "^1.2.0",
+    "ng-file-upload": "^12.0.1",
+    "sass": "^0.5.0"
+  }
+}

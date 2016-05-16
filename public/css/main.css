@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+/* line 3, ../../../../../../../Users/gatodev/www/hagrid-knowledge/assets/css/_general.sass */
+body {
+  background: #f2f2f2;
+  height: 100%;
+  position: relative; }
+
+/* line 8, ../../../../../../../Users/gatodev/www/hagrid-knowledge/assets/css/_general.sass */
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Open Sans", sans-serif; }
+
+/* line 11, ../../../../../../../Users/gatodev/www/hagrid-knowledge/assets/css/_general.sass */
+p {
+  line-height: 3rem; }
+
+/* line 14, ../../../../../../../Users/gatodev/www/hagrid-knowledge/assets/css/_general.sass */
+header {
+  background: #7726F1;
+  color: #fff; }
+
+/*# sourceMappingURL=main.css.map */
