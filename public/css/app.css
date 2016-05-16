@@ -3495,6 +3495,9 @@ footer span {
 .main-content .block-section-hash {
   padding: 60px 0;
 }
+.main-content h1 {
+  text-align: center;
+}
 
 [class*="grid-flex"] {
   text-align: left;
