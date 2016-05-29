@@ -37,6 +37,10 @@
         .state('main.views.home', {
           url: "/",
           templateUrl: "partials/home.index.html",
+        })
+        .state('main.views.about', {
+          url: "/about",
+          templateUrl: "partials/about.index.html",
         });
 
       $locationProvider.html5Mode(true);
