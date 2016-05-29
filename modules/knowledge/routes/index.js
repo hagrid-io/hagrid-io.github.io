@@ -19,6 +19,10 @@ angular.module('hagrid.knowledge')
         url: "",
         templateUrl: "partials/knowledge.main.html",
       })
+      .state('main.views.knowledge.base', {
+        url: "/base",
+        templateUrl: "partials/knowledge.base.html",
+      })
       .state('main.views.knowledge.grid-system', {
         url: "/grid-system",
         templateUrl: "partials/knowledge.grid-system.html",
@@ -30,6 +34,14 @@ angular.module('hagrid.knowledge')
       .state('main.views.knowledge.buttons', {
         url: "/buttons",
         templateUrl: "partials/knowledge.buttons.html",
+      })
+      .state('main.views.knowledge.dropdows', {
+        url: "/dropdows",
+        templateUrl: "partials/knowledge.dropdows.html",
+      })
+      .state('main.views.knowledge.navbars', {
+        url: "/navbars",
+        templateUrl: "partials/knowledge.navbars.html",
       })
       .state('main.views.knowledge.input-forms', {
         url: "/input-forms",
@@ -67,6 +79,10 @@ angular.module('hagrid.knowledge')
         url: "/tooltips",
         templateUrl: "partials/knowledge.tooltips.html",
       })
+      .state('main.views.knowledge.scrolls', {
+        url: "/scrolls",
+        templateUrl: "partials/knowledge.scrolls.html",
+      })
       .state('main.views.knowledge.modals', {
         url: "/modals",
         templateUrl: "partials/knowledge.modals.html",
@@ -74,14 +90,6 @@ angular.module('hagrid.knowledge')
       .state('main.views.knowledge.sliders', {
         url: "/sliders",
         templateUrl: "partials/knowledge.sliders.html",
-      })
-      .state('main.views.knowledge.dropdows', {
-        url: "/dropdows",
-        templateUrl: "partials/knowledge.dropdows.html",
-      })
-      .state('main.views.knowledge.navbars', {
-        url: "/navbars",
-        templateUrl: "partials/knowledge.navbars.html",
       });
 
   };
