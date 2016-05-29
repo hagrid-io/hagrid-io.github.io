@@ -278,6 +278,10 @@ div {
   display: none;
 }
 
+.display-block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
   *display: inline;
@@ -1461,25 +1465,39 @@ div {
   overflow: hidden;
 }
 [hagrid-debug] [class*="cols-"]:before,
+[hagrid-debug] [class*="cols-"] .before,
 [hagrid-debug] [class*="grid-col-"]:before,
+[hagrid-debug] [class*="grid-col-"] .before,
 [hagrid-debug] [class*="layout-"]:before,
+[hagrid-debug] [class*="layout-"] .before,
 [hagrid-debug] [class*="flex-"]:before,
+[hagrid-debug] [class*="flex-"] .before,
 [hagrid-debug] [class*="grid-for"] .grid-box:before,
-[hagrid-debug] .grid-box:before {
+[hagrid-debug] [class*="grid-for"] .grid-box .before,
+[hagrid-debug] .grid-box:before,
+[hagrid-debug] .grid-box .before {
   display: block;
   text-align: center;
   line-height: 60px;
   font-family: arial;
   font-weight: bold;
   font-size: 18px;
+  padding: 0;
+  margin: 0;
 }
 @media screen and (max-width: 640px) {
   [hagrid-debug] [class*="cols-"]:before,
+  [hagrid-debug] [class*="cols-"] .before,
   [hagrid-debug] [class*="grid-col-"]:before,
+  [hagrid-debug] [class*="grid-col-"] .before,
   [hagrid-debug] [class*="layout-"]:before,
+  [hagrid-debug] [class*="layout-"] .before,
   [hagrid-debug] [class*="flex-"]:before,
+  [hagrid-debug] [class*="flex-"] .before,
   [hagrid-debug] [class*="grid-for"] .grid-box:before,
-  [hagrid-debug] .grid-box:before {
+  [hagrid-debug] [class*="grid-for"] .grid-box .before,
+  [hagrid-debug] .grid-box:before,
+  [hagrid-debug] .grid-box .before {
     font-size: 12px;
   }
 }

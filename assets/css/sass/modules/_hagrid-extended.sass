@@ -1,3 +1,53 @@
+// Base
+.display-block
+  display: block
+
+$yellow: #D39756
+$orange: #AF482C
+$purple: #5E2E46
+$dark-purple: #291413
+$dark-blue: #002223
+$brown: #322723
+$grey: #E6E6E6
+$red: #AE0001
+$pink: #DD2F74
+
+$colors: yellow $yellow, orange $orange, purple $purple, dark-purple $dark-purple, dark-blue $dark-blue, brown $brown, grey $grey, red $red, pink $pink
+
+$color-default: #d5d5d5
+$color-primary: #2D6CC9
+$color-secondary: #1FC757
+$color-info: #2682E4
+$color-warning: #E08D04
+$color-error: #C53030
+
+$base-colors: default $color-default, primary $color-primary, secondary $color-secondary, info $color-info, warning $color-warning, error $color-error
+
+// Colors
+.color
+  padding: .5em 2em
+  width: 25%
+  color: #fff
+  +inline-block
+
+@each $color in $colors
+  $key: nth($color, 1)
+  $value: nth($color, 2)
+  .#{$key}
+    background: #{$value}
+
+@each $base-color in $base-colors
+  $key: nth($base-color, 1)
+  $value: nth($base-color, 2)
+  .#{$key}-color
+    color: #{$value}
+  .#{$key}-bgc
+    @extend .color
+    background-color: #{$value}
+  .#{$key}-color-code
+    &:before
+      content: '#{$value}'
+
 // navbar
 .navbar
   color: #333
