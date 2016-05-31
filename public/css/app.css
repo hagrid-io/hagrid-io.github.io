@@ -3504,6 +3504,20 @@ footer span {
   display: block;
 }
 
+.btn-dropdown {
+  padding-right: 3em !important;
+}
+.btn-dropdown .icon-dropdown {
+  display: inline-block;
+  *display: inline;
+  width: 2.5em;
+  height: 100%;
+  position: absolute;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: 0.5em;
+  top: 0;
+}
+
 .color, .default-bgc, .inverse-bgc, .primary-bgc, .secondary-bgc, .info-bgc, .warning-bgc, .error-bgc {
   padding: 0.5em 0;
   text-align: center;
@@ -3586,15 +3600,15 @@ footer span {
 }
 
 .default-color {
-  color: #ECECEC;
+  color: #f8f8f8;
 }
 
 .default-bgc {
-  background-color: #ECECEC;
+  background-color: #f8f8f8;
 }
 
 .default-color-code:before {
-  content: "#ECECEC";
+  content: "#f8f8f8";
 }
 
 .inverse-color {
@@ -3634,15 +3648,15 @@ footer span {
 }
 
 .info-color {
-  color: #00AEB3;
+  color: #00BCD4;
 }
 
 .info-bgc {
-  background-color: #00AEB3;
+  background-color: #00BCD4;
 }
 
 .info-color-code:before {
-  content: "#00AEB3";
+  content: "#00BCD4";
 }
 
 .warning-color {

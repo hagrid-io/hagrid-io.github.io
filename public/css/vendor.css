@@ -5573,7 +5573,7 @@ h6,
   border-radius: 4px;
   position: relative;
   text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   -webkit-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
   -moz-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
   -ms-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
@@ -5658,6 +5658,11 @@ h6,
   border-radius: 0;
   border: 1px solid rgba(0, 0, 0, 0.01);
 }
+.btn.btn-shadow {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+}
 .btn.btn-upper {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -5665,6 +5670,9 @@ h6,
   -o-border-radius: 4px;
   border-radius: 4px;
   border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+}
+.btn.btn-block, .btn.btn-full-width {
+  display: block;
 }
 .btn.btn-outline {
   padding-right: 2em;
