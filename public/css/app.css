@@ -3504,60 +3504,109 @@ footer span {
   display: block;
 }
 
-.color, .default-bgc, .primary-bgc, .secondary-bgc, .info-bgc, .warning-bgc, .error-bgc {
-  padding: 0.5em 2em;
+.color, .default-bgc, .inverse-bgc, .primary-bgc, .secondary-bgc, .info-bgc, .warning-bgc, .error-bgc {
+  padding: 0.5em 0;
+  text-align: center;
   width: 25%;
   color: #fff;
   display: inline-block;
   *display: inline;
 }
 
-.yellow {
-  background: #D39756;
+.yellow-color {
+  color: #D39756;
 }
 
-.orange {
-  background: #AF482C;
+.yellow-bgc {
+  background-color: #D39756;
 }
 
-.purple {
-  background: #5E2E46;
+.orange-color {
+  color: #AF482C;
 }
 
-.dark-purple {
-  background: #291413;
+.orange-bgc {
+  background-color: #AF482C;
 }
 
-.dark-blue {
-  background: #002223;
+.purple-color {
+  color: #5E2E46;
 }
 
-.brown {
-  background: #322723;
+.purple-bgc {
+  background-color: #5E2E46;
 }
 
-.grey {
-  background: #E6E6E6;
+.dark-purple-color {
+  color: #291413;
 }
 
-.red {
-  background: #AE0001;
+.dark-purple-bgc {
+  background-color: #291413;
 }
 
-.pink {
-  background: #DD2F74;
+.dark-blue-color {
+  color: #002223;
+}
+
+.dark-blue-bgc {
+  background-color: #002223;
+}
+
+.brown-color {
+  color: #322723;
+}
+
+.brown-bgc {
+  background-color: #322723;
+}
+
+.grey-color {
+  color: #444;
+}
+
+.grey-bgc {
+  background-color: #444;
+}
+
+.red-color {
+  color: #AE0001;
+}
+
+.red-bgc {
+  background-color: #AE0001;
+}
+
+.pink-color {
+  color: #DD2F74;
+}
+
+.pink-bgc {
+  background-color: #DD2F74;
 }
 
 .default-color {
-  color: #d5d5d5;
+  color: #ECECEC;
 }
 
 .default-bgc {
-  background-color: #d5d5d5;
+  background-color: #ECECEC;
 }
 
 .default-color-code:before {
-  content: "#d5d5d5";
+  content: "#ECECEC";
+}
+
+.inverse-color {
+  color: #3C3C3C;
+}
+
+.inverse-bgc {
+  background-color: #3C3C3C;
+}
+
+.inverse-color-code:before {
+  content: "#3C3C3C";
 }
 
 .primary-color {
@@ -3573,39 +3622,39 @@ footer span {
 }
 
 .secondary-color {
-  color: #1FC757;
+  color: #31C290;
 }
 
 .secondary-bgc {
-  background-color: #1FC757;
+  background-color: #31C290;
 }
 
 .secondary-color-code:before {
-  content: "#1FC757";
+  content: "#31C290";
 }
 
 .info-color {
-  color: #2682E4;
+  color: #00AEB3;
 }
 
 .info-bgc {
-  background-color: #2682E4;
+  background-color: #00AEB3;
 }
 
 .info-color-code:before {
-  content: "#2682E4";
+  content: "#00AEB3";
 }
 
 .warning-color {
-  color: #E08D04;
+  color: #E68523;
 }
 
 .warning-bgc {
-  background-color: #E08D04;
+  background-color: #E68523;
 }
 
 .warning-color-code:before {
-  content: "#E08D04";
+  content: "#E68523";
 }
 
 .error-color {
