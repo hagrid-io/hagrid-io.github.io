@@ -73,6 +73,10 @@ angular.module('hagrid.knowledge')
         url: "/typography",
         templateUrl: "partials/knowledge.typography.html",
       })
+      .state('main.views.knowledge.glyphicons', {
+        url: "/glyphicons",
+        templateUrl: "partials/knowledge.glyphicons.html",
+      })
       .state('main.views.knowledge.buttons', {
         url: "/buttons",
         templateUrl: "partials/knowledge.buttons.html",

@@ -8,24 +8,26 @@ $purple: #5E2E46
 $dark-purple: #291413
 $dark-blue: #002223
 $brown: #322723
-$grey: #E6E6E6
+$grey: #444
 $red: #AE0001
 $pink: #DD2F74
 
 $colors: yellow $yellow, orange $orange, purple $purple, dark-purple $dark-purple, dark-blue $dark-blue, brown $brown, grey $grey, red $red, pink $pink
 
-$color-default: #d5d5d5
-$color-primary: #2D6CC9
-$color-secondary: #1FC757
-$color-info: #2682E4
-$color-warning: #E08D04
+$color-default: #ECECEC
+$color-inverse: #3C3C3C
+$color-primary: #2D6CC9//#0090E7
+$color-secondary: #31C290//#1FC757
+$color-info: #00AEB3//#00B5E7//#1F91BF//#6E2CDD
+$color-warning: #E68523
 $color-error: #C53030
 
-$base-colors: default $color-default, primary $color-primary, secondary $color-secondary, info $color-info, warning $color-warning, error $color-error
+$base-colors: default $color-default, inverse $color-inverse, primary $color-primary, secondary $color-secondary, info $color-info, warning $color-warning, error $color-error
 
 // Colors
 .color
-  padding: .5em 2em
+  padding: .5em 0
+  text-align: center
   width: 25%
   color: #fff
   +inline-block
@@ -33,8 +35,10 @@ $base-colors: default $color-default, primary $color-primary, secondary $color-s
 @each $color in $colors
   $key: nth($color, 1)
   $value: nth($color, 2)
-  .#{$key}
-    background: #{$value}
+  .#{$key}-color
+    color: #{$value}
+  .#{$key}-bgc
+    background-color: #{$value}
 
 @each $base-color in $base-colors
   $key: nth($base-color, 1)
