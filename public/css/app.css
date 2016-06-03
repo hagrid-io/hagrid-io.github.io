@@ -3504,6 +3504,45 @@ footer span {
   display: block;
 }
 
+.btn {
+  margin: 0;
+}
+
+.dropdown {
+  display: inline-block;
+  *display: inline;
+}
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 1;
+  background: #fff;
+  display: block;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  top: 100%;
+  padding: 0;
+  margin: 5px 0 0;
+  list-style: none;
+  min-width: 140px;
+  border-radius: 5px;
+}
+.dropdown-menu:before {
+  content: "";
+  border: 10ps;
+}
+.dropdown-menu li {
+  display: block;
+}
+.dropdown-menu li a {
+  padding: 0.5em 2em;
+  display: block;
+  text-decoration: none;
+}
+.dropdown-menu li a:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
 .btn-dropdown {
   padding-right: 3em !important;
 }

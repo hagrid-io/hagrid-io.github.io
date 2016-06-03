@@ -26,6 +26,41 @@ $base-colors: default $color-default, inverse $color-inverse, primary $color-pri
 
 // Dropdowns Base
 
+.btn
+  margin: 0
+
+.dropdown
+  +inline-block
+
+.dropdown-menu
+  position: absolute
+  z-index: 1
+  background: #fff
+  display: block
+  width: 100%
+  box-shadow: 0 2px 5px rgba(0,0,0, .2)
+  top: 100%
+  padding: 0
+  margin: 5px 0 0
+  list-style: none
+  min-width: 140px
+  border-radius: 5px
+
+  &:before
+    content: ''
+    border: 10ps
+
+  li
+    display: block
+
+    a
+      padding: .5em 2em
+      display: block
+      text-decoration: none
+
+      &:hover
+        background-color: rgba(0, 0, 0, .02)
+
 .btn-dropdown
   padding-right: 3em!important
 
