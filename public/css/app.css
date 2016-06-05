@@ -3524,10 +3524,6 @@ footer span {
   flex: 1;
 }
 
-.btn {
-  margin: 0;
-}
-
 .dropdown {
   display: inline-block;
   *display: inline;
