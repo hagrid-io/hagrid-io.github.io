@@ -8,6 +8,11 @@ html(lang="en", ng-app="hagrid")
     link(rel="stylesheet", href="css/vendor.css")
     link(rel="stylesheet", href="css/app.css")
   body
-    ui-view
+    ui-view(class="main-view grid-flex full-height flex-direction-column")
+    //-.grid-flex.full-height.flex-direction-column
+      //.header-test.full-width
+        h1 :)
+      //.content-test.full-width.full-height
+        h1 Hola
     script(src="js/vendor.js")
     script(src="js/app.js")

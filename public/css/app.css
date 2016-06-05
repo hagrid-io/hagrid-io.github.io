@@ -42,7 +42,6 @@ html {
 }
 
 body {
-  padding-top: 54px;
   background: #fff;
   height: 100%;
   position: relative;
@@ -3486,10 +3485,19 @@ footer span {
   top: 0;
 }
 
-.main-content {
-  padding-bottom: 3em;
-  min-height: 700px;
+.header-test {
+  background: red;
+  height: 50px;
 }
+
+.content-test {
+  background: blue;
+}
+
+.main-view {
+  padding-top: 55px;
+}
+
 .main-content .main-content-inner {
   padding: 1em;
 }
@@ -3502,6 +3510,14 @@ footer span {
 
 .display-block {
   display: block;
+}
+
+.block {
+  display: block;
+}
+
+.relative {
+  position: relative;
 }
 
 .btn {
