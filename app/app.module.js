@@ -12,12 +12,10 @@
 	angular.module('hagrid').run(['$rootScope', '$state', function ($rootScope, $state) {
     $rootScope.$state = $state;
     $rootScope.$on('$stateChangeSuccess', function() {
-      debugger;
-      document.body.scrollTop = document.documentElement.scrollTop = document.getElementById("main-content").scrollTop = 0;
-      $rootScope.sidebarHelpShow = false;
+      var mainContent = document.getElementById("main-content");
+      if(mainContent){
+        document.body.scrollTop = document.documentElement.scrollTop = mainContent.scrollTop = 0;
+      }
     });
   }]);
-
-
-
 })();
