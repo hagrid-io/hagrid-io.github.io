@@ -1,7 +1,7 @@
 div(ui-view="header", class="full-width")
 div.grid-flex.full-height
   div(ui-view="sidebar", class="flex-20 scroll-y", id="sidebar")
-  div(class="flex-80 scroll-y", class="main-content grid-flex full-height flex-direction-column", id="main-content")
-    div(ui-view="content", class="flex-1",)
-    div(ui-view="footer")
+  div(class="flex-80 scroll-y", class="main-content full-height align-items-stretch flex-direction-row", id="main-content")
+    div(ui-view="content", style="min-height:100%")
+    div(ui-view="footer", class="bottom")
 //div(ui-view="footer")

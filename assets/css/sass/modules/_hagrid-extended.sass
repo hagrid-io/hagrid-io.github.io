@@ -33,7 +33,8 @@ $base-colors: default $color-default, inverse $color-inverse, primary $color-pri
   position: relative
 
 .flex-1
-  flex: 1
+  +prefix(flex, 1 1 auto) // TODO Safari
+  //min-height: 100%
 
 .btn
   //margin: 0

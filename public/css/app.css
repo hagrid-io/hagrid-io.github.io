@@ -3508,6 +3508,10 @@ footer span {
   text-align: center;
 }
 
+.custom-row-separator {
+  padding: 0.5em 0;
+}
+
 .display-block {
   display: block;
 }
@@ -3521,7 +3525,11 @@ footer span {
 }
 
 .flex-1 {
-  flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  -o-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .dropdown {
