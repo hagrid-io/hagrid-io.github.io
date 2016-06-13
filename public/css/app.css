@@ -3459,6 +3459,18 @@ header {
   z-index: 1;
   position: relative;
 }
+header .navbar.navbar-fixed {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+header .navbar .navbar-brand {
+  font-size: 2em;
+  line-height: 18px;
+  padding: 15px;
+  height: 100%;
+}
 
 footer {
   background: #1E2128;
@@ -3744,51 +3756,6 @@ footer span {
 
 .error-color-code:before {
   content: "#C53030";
-}
-
-.navbar {
-  color: #333;
-  z-index: 1;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-.navbar.navbar-fixed {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-.navbar a,
-.navbar .navbar-text,
-.navbar .navbar-link,
-.navbar .navbar-button {
-  display: inline-block;
-  *display: inline;
-  text-decoration: none;
-  padding: 1em;
-  font-size: 1em;
-}
-.navbar a:hover,
-.navbar .navbar-link:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
-.navbar .navbar-brand {
-  font-size: 2em;
-  line-height: 18px;
-  padding: 15px;
-  height: 100%;
-}
-.navbar .navbar-brand small {
-  font-size: 0.5em;
-  padding: 0.5em;
-  line-height: 0;
-}
-.navbar .navbar-brand:hover {
-  background: inherit;
-  color: inherit;
-}
-.navbar.navbar-primary {
-  background: #2D6CC9;
-  color: #fff;
 }
 
 .list {

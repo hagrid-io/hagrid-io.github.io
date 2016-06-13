@@ -13,7 +13,7 @@ angular.module('hagrid.knowledge')
       .state('main.views.knowledge', {
         url: "/knowledge",
         abstract: true,
-        template: '<div ui-view=""></div>'
+        template: '<div ui-view="" style="padding-bottom: 3em"></div>'
       })
       .state('main.views.knowledge.main', {
         url: "",
