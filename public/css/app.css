@@ -3524,6 +3524,10 @@ footer span {
   padding: 0.5em 0;
 }
 
+.table-documentation .first-col {
+  width: 20%;
+}
+
 .display-block {
   display: block;
 }
@@ -3756,6 +3760,20 @@ footer span {
 
 .error-color-code:before {
   content: "#C53030";
+}
+
+table {
+  width: 100%;
+}
+table thead {
+  font-weight: 400;
+}
+table tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+table td,
+table th {
+  padding: 1em;
 }
 
 .list {
