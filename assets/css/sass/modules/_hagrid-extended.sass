@@ -117,16 +117,54 @@ $base-colors: default $color-default, inverse $color-inverse, primary $color-pri
 
 table
   width: 100%
+  border: 1px solid rgba(0,0,0,.1)
+  border-radius: 4px
+  border-collapse: separate
+  border-spacing: 0
   thead
     font-weight: 400
+    td,
+    th
+      //background-color: rgba(0, 0, 0, .1)
   tr
-    border-bottom: 1px solid rgba(0, 0, 0, .2)
+    border-collapse: separate
+
+    td,
+    th
+      border-bottom: 1px solid rgba(0, 0, 0, .1)
+      border-right: 1px solid rgba(0, 0, 0, .1)
+
+      &:last-child
+        border-right: 0
+
+
+    &:nth-child(2n)
+      //background-color: rgba(0, 0, 0, .05)
+
   td,
   th
     padding: 1em
 
 
+//labels
+
+.label
+  +inline-block
+  padding: 0.1em 0.5em
+  line-height: 1.1em
+  border-radius: 4px
+  border: 1px solid rgba(0,0,0,.1)
+  color: nth(nth($base-colors, 2), 2)
+  background-color: nth(nth($base-colors, 1), 2)
+  font-weight: inherit
+
+
 // LISTS
+
+.list-documentation
+  li
+    padding: .5em 0
+
 .list
   padding: 0
   margin: 0

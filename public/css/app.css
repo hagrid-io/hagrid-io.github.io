@@ -3524,8 +3524,13 @@ footer span {
   padding: 0.5em 0;
 }
 
+.table-documentation tr {
+  vertical-align: top;
+}
 .table-documentation .first-col {
+  background-color: rgba(0, 0, 0, 0.03);
   width: 20%;
+  vertical-align: middle;
 }
 
 .display-block {
@@ -3764,16 +3769,45 @@ footer span {
 
 table {
   width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border-collapse: separate;
+  border-spacing: 0;
 }
 table thead {
   font-weight: 400;
 }
 table tr {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-collapse: separate;
+}
+table tr td,
+table tr th {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 0;
 }
 table td,
 table th {
   padding: 1em;
+}
+
+.label {
+  display: inline-block;
+  *display: inline;
+  padding: 0.1em 0.5em;
+  line-height: 1.1em;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #3C3C3C;
+  background-color: #f8f8f8;
+  font-weight: inherit;
+}
+
+.list-documentation li {
+  padding: 0.5em 0;
 }
 
 .list {

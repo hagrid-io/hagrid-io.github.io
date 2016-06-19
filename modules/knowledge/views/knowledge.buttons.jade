@@ -1,20 +1,63 @@
 .grid-wrap.grid-wrap-90
   h1.title-section Buttons
-  h2 Buttons
-  div
-    a.btn.btn-default(href='#') Button default
-  div
-    a.btn.btn-inverse(href='#') Button inverse
-  div
-    a.btn.btn-primary(href='#') Button primary
-  div
-    a.btn.btn-secondary(href='#') Button secondary
-  div
-    a.btn.btn-info(href='#') Button info
-  div
-    a.btn.btn-warning(href='#') Button warning
-  div
-    a.btn.btn-error(href='#') Button error
+  p The Buttons is one of part most important of some
+
+  table.table-documentation
+    thead
+      tr.align-center
+        th(colspan="3") Table of properties
+      //tr
+        th.first-col Property
+        th Class
+        th Description
+    tr
+      th.first-col Main
+      td btn
+      td Main class to reference a button
+    tr
+      th.first-col Types, Colors
+      td btn-default
+      td Classes to extend type button, you can use 6 classes to extend it.
+    tr
+      th.first-col Sizes
+      td
+        p btn-xs
+        p btn-sm
+        p btn-md
+        p btn-lg
+      td Classes to change size buttons
+    tr
+      th.first-col Looks
+      td
+        p btn-defaul
+        p btn-plain
+        p btn-upper
+        p btn-outline
+      td Classes to change look buttons
+
+  h5 Started buttons
+  .grid-layout
+    .layout-50
+      ul.list-documentation
+        li Use <b class="label">btn</b> class to reference a button.
+        li To change style button you must do extend class <b class="label">btn</b> with button type <b class="label">btn-</b>, you can use 6 class to change apparence button. &nbsp;
+          b btn-default, btn-inverse, btn-primary, btn-secondary, btn-info, btn-warning, btn-error
+
+    .layout-50
+      div
+        a.btn.btn-default(href='#') Button default
+      div
+        a.btn.btn-inverse(href='#') Button inverse
+      div
+        a.btn.btn-primary(href='#') Button primary
+      div
+        a.btn.btn-secondary(href='#') Button secondary
+      div
+        a.btn.btn-info(href='#') Button info
+      div
+        a.btn.btn-warning(href='#') Button warning
+      div
+        a.btn.btn-error(href='#') Button error
   h2 Icon Buttons
   div
     a.btn.btn-default(href='#')
