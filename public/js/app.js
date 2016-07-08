@@ -200,8 +200,8 @@ angular.module('hagrid')
           abstract: true,
           templateUrl: "partials/main.html",
           data: {
-            pageTitle: 'Hagrid Default Title',
-            pageDescription: 'Front end angular stack - SEO friendly'
+            pageTitle: 'Hagrid Web Framework',
+            pageDescription: "Let’s build awesome web applications together."
           }
         })
         .state('main.views', {
