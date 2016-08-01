@@ -7,6 +7,7 @@
   KnowledgeMainCtrl.$inject = ['$scope'];
 
   function KnowledgeMainCtrl($scope){
+
   }
 
 })();

@@ -1,168 +1,109 @@
+include ../../../code-example/grid-system/gs.jade
 h1.align-center Grid System
 
 .grid-wrap.grid-wrap-90
-  p The Hagrid Grid System works mainly with percentages, Also the grid system supports flex box feature.
-  h5 Grid Layout
+  p Hagrid Grid System works mainly with percentages(layouts), Also the grid system supports flex box feature.
+  h5 Table properties grid layout
   table.table-documentation
     thead
       tr
-        th.first-col Class
+        th.first-col Property
+        th Type
         th Description
+        th Examples
     tr
-      th.first-col Grid layout
-      td Percent
+      th.first-col gs, grid-system
+      td class
+      td Class container to grid system
+      td
+        a(href="#layouts-example", class="btn btn-default btn-sm") example
     tr
-      th.first-col Grid layout
-      td Percent
+      th.first-col layout-
+      td class
+      td The main class to specify a layout, layout-40
+      td
+        a(href="#layouts-example", class="btn btn-default btn-sm") example
     tr
-      th.first-col Grid layout
-      td Percent
-  section.block-section-hash#fast-review
-    .grid-layout(hagrid-debug='')
-      .layout-50
-      .layout-20
-      .layout-30
-    .grid-layout(hagrid-debug='')
-      .layout-40
-      .layout-60
-    .grid-layout(hagrid-debug='')
-      .layout-70
-      .layout-30
-    .grid-layout(hagrid-debug='')
-      .layout-50
-      .layout-50
+    tr
+      th.first-col -xs-, -sm, -md-, -lg-
+      td class
+      td Device sizes, xs to small devices(smartphones), sm to medium screen(tablets), md to normal screens(laptop) and lg to large screens(Desktop or retina display), eg layout-xs-40, layout-lg-60
+      td
+        a(href="#sizes-example", class="btn btn-default btn-sm") example
+    tr
+      th.first-col gutters
+      td class
+      td class to separate layouts
+      td
+        a(href="#gutters-example", class="btn btn-default btn-sm") example
+    tr
+      th.first-col gutters=[1em]
+      td attr
+      td You can use tree option to separate layouts, it is in tree types of measure (px, em, and percent)
+      td
+        a(href="#gutters-attr-example", class="btn btn-default btn-sm") example
+    tr
+      th.first-col order-
+      td class
+      td You can re order layouts without move html layouts
+      td
+        a(href="#order-example", class="btn btn-default btn-sm") example
+    tr
+      th.first-col gs-items-aligns
+      td class
+      td Horizontal Aligns
+      td
+        a(href="#horizontal-aligns-example", class="btn btn-default btn-sm") example
 
-  h2.align-center Grid Flex Examples
-  section.block-section-hash#order-cols
-    h3 Order columns
-    p Flex order
-    .grid-flex(hagrid-debug='', debug-empty='')
-      .flex-50.order-2
-        span.before 1
-      .flex-20.order-3
-        span.before 2
-      .flex-30.order-1
-        span.before 3
-  section.block-section-hash#margin-cols
-    h3 Margin columns
-    p Margins
-    .grid-flex.grid-spaces-top-bottom(grid-spaces='30px', hagrid-debug='')
-      .flex-30
-      .flex-70
-  section.block-section-hash#horizontal-alignment-of-items
-    h3 Horizontal alignment of items
-    p Flex align (left)
-    .grid-flex.justify-content-flex-start(hagrid-debug='')
-      .flex-30
-      .flex-20
-      .flex-30
-    p Flex align (center)
-    .grid-flex.justify-content-center(hagrid-debug='')
-      .flex-30
-      .flex-20
-      .flex-30
-    p Flex align (right)
-    .grid-flex.justify-content-flex-end(hagrid-debug='')
-      .flex-30
-      .flex-20
-      .flex-30
-    p Flex align (justify)
-    .grid-flex.justify-content-space-between(hagrid-debug='')
-      .flex-30
-      .flex-20
-      .flex-30
-    p Flex align (center justify)
-    .grid-flex.justify-content-space-around(hagrid-debug='')
-      .flex-30
-      .flex-20
-      .flex-30
-  section.block-section-hash#vertical-alignment-of-items
-    h3 Vertical alignment of items
-    p Flex Vertical align (top)
-    .grid-flex.align-items-flex-start(hagrid-debug='', style='height: 100px')
-      .flex-50
-      .flex-20
-      .flex-30
-    p Flex Vertical align (middle)
-    .grid-flex.align-items-center(hagrid-debug='', style='height: 100px')
-      .flex-50
-      .flex-20
-      .flex-30
-    p Flex Vertical align (bottom)
-    .grid-flex.align-items-flex-end(hagrid-debug='', style='height: 100px')
-      .flex-50
-      .flex-20
-      .flex-30
-    p Flex Vertical align (stretch)
-    .grid-flex.align-items-stretch(hagrid-debug='', style='height: 100px')
-      .flex-50
-      .flex-20
-      .flex-30
-    p Flex Vertical align top(center)
-    .grid-flex.align-items-stretch(hagrid-debug='', style='height: 100px')
-      .flex-50
-      .flex-20.align-self-flex-start
-      .flex-30
-    p Flex Vertical align self(center)
-    .grid-flex.align-items-stretch(hagrid-debug='', style='height: 100px')
-      .flex-50
-      .flex-20.align-self-center
-      .flex-30
-    p Flex Vertical align self(bottom)
-    .grid-flex.align-items-stretch(hagrid-debug='', style='height: 100px')
-      .flex-50
-      .flex-20.align-self-flex-end
-      .flex-30
-    p Flex Vertical align (baseline)
-    .grid-flex.align-items-baseline(hagrid-debug='', debug-empty='', style='height: 100px')
-      .flex-50
-        h2 text
-      .flex-30
-        p text
-      .flex-20
-        h4 text
-  section.block-section-hash#vertical-alignment-of-content
-    h3 Vertical alignment of content
-    p Flex Align Content (top)
-    .grid-flex.align-content-flex-start.flex-wrap-wrap(hagrid-debug='', style='height: 300px')
-      .flex-30
-      .flex-10
-      .flex-60
-      .flex-50
-      .flex-50
-      .flex-30
-      .flex-10
-    p Flex Align Content (center)
-    .grid-flex.align-content-center.flex-wrap-wrap(hagrid-debug='', style='height: 300px')
-      .flex-30
-      .flex-10
-      .flex-60
-      .flex-50
-      .flex-50
-      .flex-30
-      .flex-10
-    p Flex Align Content (bottom)
-    .grid-flex.align-content-flex-end.flex-wrap-wrap(hagrid-debug='', style='height: 300px')
-      .flex-30
-      .flex-10
-      .flex-60
-      .flex-50
-      .flex-50
-      .flex-30
-      .flex-10
-  section.block-section-hash#nested-grids
-    h3 Nested grids
-    p Nested Grid Example 1
-    .grid-flex.align-content-flex-end.flex-wrap-wrap(hagrid-debug='', debug-empty='', style='height: 200px')
-      .flex-50
-      .flex-50.grid-flex
-        .flex-50.grid-flex
-          .flex-50
-          .flex-50
-        .flex-50
-    p Nested Grid Example 2
-    .grid-flex.align-content-flex-end.flex-wrap-wrap(hagrid-debug='', debug-empty='', style='height: 200px')
-      .flex-30.grid-flex
-        .flex-50
-        .flex-50
-      .flex-70
+    tr
+      th.first-col gs-items-aligns.gs-vertical-orientation
+      td class
+      td Vertical Aligns
+      td
+        a(href="#horizontal-aligns-example", class="btn btn-default btn-sm") example
+    tr
+      th.first-col hagrid-debug
+      td attr
+      td You can use hagrid-debug to see layout dimentions
+      td
+        a(href="#gs-debug-example", class="btn btn-default btn-sm") example
+
+
+  section.block-section-hash#layouts-example
+    h4 Grid system container and layouts
+    mixin gsLayouts
+
+  section.block-section-hash#sizes-example
+    h4 Sizes and Transform layouts
+    mixin gsSizes
+
+  section.block-section-hash#order-example
+    h4 Order columns
+    mixin gsOrder
+
+  section.block-section-hash#gutters-example
+    h4 Gutters
+    mixin gsGutters
+
+  section.block-section-hash#horizontal-aligns
+    h4 Horizontal alignment of items
+    mixin gsHorizontalAligns
+
+  section.block-section-hash#vertical-aligns
+    h4 Vertical alignment of items
+    mixin gsVerticalAligns
+
+  section.block-section-hash#vertical-aligns-content
+    h4 Vertical alignment of content
+    mixin gsVerticalAlignsContent
+
+  section.block-section-hash#nested-layouts
+    h4 Nested Layouts
+    mixin gsVerticalAlignsContent
+
+  section.block-section-hash#gs-debug
+    h4 Grid System Debug
+    mixin gsDebug
+
+
+

@@ -1,0 +1,20 @@
+div.code-example
+  h5 Use:
+  pre
+    code(class="language-html", prism)
+      :code
+        <div class="gs">
+          <div class="layout-50 order-2"><span class="before">1</span></div>
+          <div class="layout-20 order-3"><span class="before">2</span></div>
+          <div class="layout-30 order-1"><span class="before">3</span></div>
+        </div>
+
+div.code-result
+  h5 Result:
+  .gs(hagrid-debug='', debug-empty='')
+    .layout-50.order-2
+      span.before 1
+    .layout-20.order-3
+      span.before 2
+    .layout-30.order-1
+      span.before 3

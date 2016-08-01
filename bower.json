@@ -18,6 +18,9 @@
   "dependencies": {
     "angular": "^1.5.5",
     "hagrid": "https://github.com/rokk3rlabs/hagrid.git",
-    "angular-ui-router": "^0.2.18"
+    "angular-ui-router": "^0.2.18",
+    "highlightjs": "^9.5.0",
+    "angular-sanitize": "^1.5.8",
+    "prism": "Prism#^1.5.1"
   }
 }

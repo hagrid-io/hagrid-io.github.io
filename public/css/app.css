@@ -3514,7 +3514,7 @@ footer span {
   padding: 1em;
 }
 .main-content .block-section-hash {
-  padding: 60px 0;
+  padding: 60px 0 0;
 }
 .main-content .title-section {
   text-align: center;
@@ -3531,6 +3531,10 @@ footer span {
   background-color: rgba(0, 0, 0, 0.03);
   width: 20%;
   vertical-align: middle;
+}
+
+.code-result {
+  padding: 1em 0;
 }
 
 .display-block {

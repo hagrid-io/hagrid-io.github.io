@@ -12,7 +12,8 @@ var gulp = require('gulp')
 ,	size = require('gulp-size')
 ,	connect = require('gulp-connect')
 ,	watch = require('gulp-watch')
-,	jade = require('gulp-jade')
+,	jade = require('jade')
+, jadeGulp = require('gulp-jade')
 ,	concat = require('gulp-concat')
 ,	uglify = require('gulp-uglify')
 ,	sass = require('gulp-ruby-sass')
@@ -71,6 +72,15 @@ var paths = {
 };
 
 
+jade.filters.code = function( block ) {
+  return block
+      .replace( /&/g, '&amp;' )
+      .replace( /</g, '&lt;' )
+      .replace( />/g, '&gt;' )
+      .replace( /"/g, '&quot;' );
+}
+
+
 /**
  * Tasks
  */
@@ -93,7 +103,7 @@ gulp.task('index', function () {
 	gulp.src(paths.jadeIndex)
 	.pipe(connect.reload())
 	.pipe(plumber({ errorHandler: onError }))
-	.pipe(jade({pretty: false}))
+	.pipe(jadeGulp({pretty: false, jade: jade}))
 	.pipe(gulp.dest('./public/'));
 });
 
@@ -102,7 +112,7 @@ gulp.task('jade', function () {
 	gulp.src(paths.jade)
 	.pipe(connect.reload())
 	.pipe(plumber({ errorHandler: onError }))
-	.pipe(jade({pretty: false}))
+	.pipe(jadeGulp({pretty: false, jade: jade}))
 	.pipe(rename({dirname: 'partials'}))
 	.pipe(gulp.dest('./public/'));
 });

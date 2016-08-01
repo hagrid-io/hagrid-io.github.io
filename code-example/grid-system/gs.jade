@@ -1,0 +1,441 @@
+// Grid System container
+mixin gsLayouts
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <!-- Short class .gs -->
+          <section class="gs">
+            <!-- layouts statement-->
+          </section>
+          <!-- Short class .grid-system -->
+          <section class="grid-system">
+            <!-- layouts statement-->
+          </section>
+
+
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <!-- First Layout 30% and Second layout 70% -->
+          <section class="gs">
+            <div class="layout-30"></div>
+            <div class="layout-70"></div>
+          </section>
+          <!-- First Layout 20%, Second layout 50% and third layout 20% -->
+          <section class="gs">
+            <div class="layout-20"></div>
+            <div class="layout-50"></div>
+            <div class="layout-30"></div>
+          </section>
+
+  div.code-result
+    h6 Result:
+    section.gs(hagrid-debug)
+      .layout-30
+      .layout-70
+    section.gs(hagrid-debug)
+      .layout-20
+      .layout-50
+      .layout-30
+
+// Sizes
+
+mixin gsSizes
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <section class="gs">
+            <div class="layout-lg-80"></div>
+            <div class="layout-lg-20"></div>
+          </section>
+
+  div.code-result
+    h6 Result:
+    section.gs(hagrid-debug)
+      .layout-lg-80
+      .layout-lg-20
+
+  h5 Transform layouts for specific device size (width screen)
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <section class="gs">
+            <!-- For smartphones(xs) First layout width 100% and second layout width 100% -->
+            <!-- For Tablets(sm), First layout width 50% and second layout width 50% -->
+            <!-- For normal screens(md) first layout width 60% and second layout width 40% -->
+            <!-- For large screens(lg) first layout width 80% and second layout width 20% -->
+            <div class="layout-xs-100 layout-sm-50 layout-md-60 layout-lg-80"></div>
+            <div class="layout-xs-100 layout-sm-50 layout-md-40 layout-lg-20"></div>
+          </section>
+
+  div.code-result
+    h6 Result:
+    section.gs(hagrid-debug)
+      .layout-xs-100.layout-sm-50.layout-md-60.layout-lg-80
+      .layout-xs-100.layout-sm-50.layout-md-40.layout-lg-20
+
+
+// Order
+
+mixin gsOrder
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <section class="gs">
+            <div class="layout-50 order-2"></div>
+            <div class="layout-20 order-3"></div>
+            <div class="layout-30 order-1"></div>
+          </section>
+
+  div.code-result
+    h6 Result:
+    section.gs(hagrid-debug, debug-empty='')
+      .layout-50.order-2
+        span.before 1
+      .layout-20.order-3
+        span.before 2
+      .layout-30.order-1
+        span.before 3
+
+
+// Gutters
+
+mixin gsGutters
+  p gutters class adds a margin of 1em to each layout column
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <section class="gs gutters">
+            <div class="layout-10"></div>
+            <div class="layout-20"></div>
+            <div class="layout-70"></div>
+          </section>
+
+  div.code-result
+    h6 Result:
+    section.gs.gutters(hagrid-debug, debug-empty='')
+      .layout-10
+      .layout-20
+      .layout-70
+
+
+// HorizoltalAlign
+mixin gsHorizontalAligns
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <p>Flex align (left)</p>
+          <section hagrid-debug class="gs justify-content-flex-start">
+            <div class="layout-30"></div>
+            <div class="layout-20"></div>
+            <div class="layout-30"></div>
+          </section>
+          <p>Flex align (center)</p>
+          <section hagrid-debug class="gs justify-content-center">
+            <div class="layout-30"></div>
+            <div class="layout-20"></div>
+            <div class="layout-30"></div>
+          </section>
+          <p>Flex align (right)</p>
+          <section hagrid-debug class="gs justify-content-flex-end">
+            <div class="layout-30"></div>
+            <div class="layout-20"></div>
+            <div class="layout-30"></div>
+          </section>
+          <p>Flex align (justify)</p>
+          <section hagrid-debug class="gs justify-content-space-between">
+            <div class="layout-30"></div>
+            <div class="layout-20"></div>
+            <div class="layout-30"></div>
+          </section>
+          <p>Flex align (center justify)</p>
+          <section hagrid-debug class="gs justify-content-space-around">
+            <div class="layout-30"></div>
+            <div class="layout-20"></div>
+            <div class="layout-30"></div>
+          </section>
+
+
+  div.code-result
+    h6 Result:
+    p Flex align (left)
+    section.gs.justify-content-flex-start(hagrid-debug)
+      .layout-30
+      .layout-20
+      .layout-30
+    p Flex align (center)
+    section.gs.justify-content-center(hagrid-debug)
+      .layout-30
+      .layout-20
+      .layout-30
+    p Flex align (right)
+    section.gs.justify-content-flex-end(hagrid-debug)
+      .layout-30
+      .layout-20
+      .layout-30
+    p Flex align (justify)
+    section.gs.justify-content-space-between(hagrid-debug)
+      .layout-30
+      .layout-20
+      .layout-30
+    p Flex align (center justify)
+    section.gs.justify-content-space-around(hagrid-debug)
+      .layout-30
+      .layout-20
+      .layout-30
+
+
+// Vertical Aligns
+
+mixin gsVerticalAligns
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <p>Flex Vertical align (top)</p>
+          <section hagrid-debug style="height: 100px" class="gs align-items-flex-start">
+            <div class="layout-50"></div>
+            <div class="layout-20"></div>
+            <div class="layout-30"></div>
+          </section>
+          <p>Flex Vertical align (middle)</p>
+          <section hagrid-debug style="height: 100px" class="gs align-items-center">
+            <div class="layout-50"></div>
+            <div class="layout-20"></div>
+            <div class="layout-30"></div>
+          </section>
+          <p>Flex Vertical align (bottom)</p>
+          <section hagrid-debug style="height: 100px" class="gs align-items-flex-end">
+            <div class="layout-50"></div>
+            <div class="layout-20"></div>
+            <div class="layout-30"></div>
+          </section>
+          <p>Flex Vertical align (stretch)</p>
+          <section hagrid-debug style="height: 100px" class="gs align-items-stretch">
+            <div class="layout-50"></div>
+            <div class="layout-20"></div>
+            <div class="layout-30"></div>
+          </section>
+          <p>Flex Vertical align top(center)</p>
+          <section hagrid-debug style="height: 100px" class="gs align-items-stretch">
+            <div class="layout-50"></div>
+            <div class="layout-20 align-self-flex-start"></div>
+            <div class="layout-30"></div>
+          </section>
+          <p>Flex Vertical align self(center)</p>
+          <section hagrid-debug style="height: 100px" class="gs align-items-stretch">
+            <div class="layout-50"></div>
+            <div class="layout-20 align-self-center"></div>
+            <div class="layout-30"></div>
+          </section>
+          <p>Flex Vertical align self(bottom)</p>
+          <section hagrid-debug style="height: 100px" class="gs align-items-stretch">
+            <div class="layout-50"></div>
+            <div class="layout-20 align-self-flex-end"></div>
+            <div class="layout-30"></div>
+          </section>
+          <p>Flex Vertical align (baseline)</p>
+          <section hagrid-debug debug-empty style="height: 100px" class="gs align-items-baseline">
+            <div class="layout-50">
+              <h2>text</h2>
+            </div>
+            <div class="layout-30">
+              <p>text</p>
+            </div>
+            <div class="layout-20">
+              <h4>text</h4>
+            </div>
+          </section>
+
+
+  div.code-result
+    h6 Result:
+    p Flex Vertical align (top)
+    section.gs.align-items-flex-start(hagrid-debug, style='height: 100px')
+      .layout-50
+      .layout-20
+      .layout-30
+    p Flex Vertical align (middle)
+    section.gs.align-items-center(hagrid-debug, style='height: 100px')
+      .layout-50
+      .layout-20
+      .layout-30
+    p Flex Vertical align (bottom)
+    section.gs.align-items-flex-end(hagrid-debug, style='height: 100px')
+      .layout-50
+      .layout-20
+      .layout-30
+    p Flex Vertical align (stretch)
+    section.gs.align-items-stretch(hagrid-debug, style='height: 100px')
+      .layout-50
+      .layout-20
+      .layout-30
+    p Flex Vertical align top(center)
+    section.gs.align-items-stretch(hagrid-debug, style='height: 100px')
+      .layout-50
+      .layout-20.align-self-flex-start
+      .layout-30
+    p Flex Vertical align self(center)
+    section.gs.align-items-stretch(hagrid-debug, style='height: 100px')
+      .layout-50
+      .layout-20.align-self-center
+      .layout-30
+    p Flex Vertical align self(bottom)
+    section.gs.align-items-stretch(hagrid-debug, style='height: 100px')
+      .layout-50
+      .layout-20.align-self-flex-end
+      .layout-30
+    p Flex Vertical align (baseline)
+    section.gs.align-items-baseline(hagrid-debug, debug-empty='', style='height: 100px')
+      .layout-50
+        h2 text
+      .layout-30
+        p text
+      .layout-20
+        h4 text
+
+mixin gsVerticalAlignsContent
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <p>Flex Align Content (top)</p>
+          <section hagrid-debug style="height: 300px" class="gs align-content-flex-start flex-wrap-wrap">
+            <div class="layout-30"></div>
+            <div class="layout-10"></div>
+            <div class="layout-60"></div>
+            <div class="layout-50"></div>
+            <div class="layout-50"></div>
+            <div class="layout-30"></div>
+            <div class="layout-10"></div>
+          </section>
+          <p>Flex Align Content (center)</p>
+          <section hagrid-debug style="height: 300px" class="gs align-content-center flex-wrap-wrap">
+            <div class="layout-30"></div>
+            <div class="layout-10"></div>
+            <div class="layout-60"></div>
+            <div class="layout-50"></div>
+            <div class="layout-50"></div>
+            <div class="layout-30"></div>
+            <div class="layout-10"></div>
+          </section>
+          <p>Flex Align Content (bottom)</p>
+          <section hagrid-debug style="height: 300px" class="gs align-content-flex-end flex-wrap-wrap">
+            <div class="layout-30"></div>
+            <div class="layout-10"></div>
+            <div class="layout-60"></div>
+            <div class="layout-50"></div>
+            <div class="layout-50"></div>
+            <div class="layout-30"></div>
+            <div class="layout-10"></div>
+          </section>
+
+
+  div.code-result
+    h6 Result:
+    p Flex Align Content (top)
+    section.gs.align-content-flex-start.layout-wrap-wrap(hagrid-debug, style='height: 300px')
+      .layout-30
+      .layout-10
+      .layout-60
+      .layout-50
+      .layout-50
+      .layout-30
+      .layout-10
+    p Flex Align Content (center)
+    section.gs.align-content-center.layout-wrap-wrap(hagrid-debug, style='height: 300px')
+      .layout-30
+      .layout-10
+      .layout-60
+      .layout-50
+      .layout-50
+      .layout-30
+      .layout-10
+    p Flex Align Content (bottom)
+    section.gs.align-content-flex-end.layout-wrap-wrap(hagrid-debug, style='height: 300px')
+      .layout-30
+      .layout-10
+      .layout-60
+      .layout-50
+      .layout-50
+      .layout-30
+      .layout-10
+
+
+mixin gsDebug
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <section class="gs" hagrid-debug>
+            <div class="layout-30"></div>
+            <div class="layout-70"></div>
+          </section>
+
+  div.code-result
+    h6 Result:
+    section.gs(hagrid-debug)
+      .layout-30
+      .layout-70
+
+
+mixin gsNestedLayouts
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <p>Nested Grid Example 1</p>
+          <section hagrid-debug debug-empty style="height: 200px" class="gs align-content-flex-end flex-wrap-wrap">
+            <div class="layout-50"></div>
+            <div class="layout-50 gs">
+              <div class="layout-50 gs">
+                <div class="layout-50"></div>
+                <div class="layout-50"></div>
+              </div>
+              <div class="layout-50"></div>
+            </div>
+          </section>
+          <p>Nested Grid Example 2</p>
+          <section hagrid-debug debug-empty style="height: 200px" class="gs align-content-flex-end flex-wrap-wrap">
+            <div class="layout-30 gs">
+              <div class="layout-50"></div>
+              <div class="layout-50"></div>
+            </div>
+            <div class="layout-70"></div>
+          </section>
+
+
+  div.code-result
+    h6 result:
+    p Nested Grid Example 1
+    section.gs.align-content-flex-end.layout-wrap-wrap(hagrid-debug, debug-empty='', style='height: 200px')
+      .layout-50
+      .layout-50.gs
+        .layout-50.gs
+          .layout-50
+          .layout-50
+        .layout-50
+    p Nested Grid Example 2
+    section.gs.align-content-flex-end.layout-wrap-wrap(hagrid-debug, debug-empty='', style='height: 200px')
+      .layout-30.gs
+        .layout-50
+        .layout-50
+      .layout-70
+

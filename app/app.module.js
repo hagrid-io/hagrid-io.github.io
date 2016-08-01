@@ -2,7 +2,9 @@
 	'use strict';
 
 	angular.module('hagrid', [
-		'ui.router',
+    'ui.router',
+		'ngSanitize',
+    'ngPrism',
 		//'ngMessages',
     'hagrid.knowledge'
 		//'hagrid.tracking'

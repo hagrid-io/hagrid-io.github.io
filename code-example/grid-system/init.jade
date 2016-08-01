@@ -1,0 +1,26 @@
+div.code-example
+  h5 Use:
+  pre
+    code(class="language-html", prism)
+      :code
+        <!-- First Layout 30% and Second layout 70% -->
+        <section class="gs">
+          <div class="layout-30"></div>
+          <div class="layout-70"></div>
+        </section>
+        <!-- First Layout 20%, Second layout 50% and third layout 20% -->
+        <section class="gs">
+          <div class="layout-20"></div>
+          <div class="layout-50"></div>
+          <div class="layout-30"></div>
+        </section>
+
+div.code-result
+  h5 Result:
+  .gs(hagrid-debug)
+    .layout-30
+    .layout-70
+  .gs(hagrid-debug)
+    .layout-20
+    .layout-50
+    .layout-30

@@ -1,0 +1,16 @@
+div.code-example
+  h5 Use:
+  pre
+    code(class="language-html", prism)
+      :code
+        <!-- First Layout 30% and Second layout 70% -->
+        <div class="gs">
+          <div class="layout-xs-100 layout-sm-50 layout-md-60 layout-lg-80"></div>
+          <div class="layout-xs-100 layout-sm-50 layout-md-40 layout-lg-20"></div>
+        </div>
+
+div.code-result
+  h5 Result:
+  .gs(hagrid-debug)
+    .layout-xs-100.layout-sm-50.layout-md-60.layout-lg-80
+    .layout-xs-100.layout-sm-50.layout-md-40.layout-lg-20

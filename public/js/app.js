@@ -55,6 +55,7 @@ angular.module('hagrid.knowledge')
       .state('main.views.knowledge', {
         url: "/knowledge",
         abstract: true,
+        controller: 'KnowledgeMainCtrl',
         template: '<div ui-view="" style="padding-bottom: 3em"></div>'
       })
       .state('main.views.knowledge.main', {
@@ -67,6 +68,7 @@ angular.module('hagrid.knowledge')
       })
       .state('main.views.knowledge.grid-system', {
         url: "/grid-system",
+        controller: 'KnowledgeGridSystemCtrl',
         templateUrl: "partials/knowledge.grid-system.html",
       })
       .state('main.views.knowledge.typography', {
@@ -161,7 +163,9 @@ angular.module('hagrid.knowledge')
 	'use strict';
 
 	angular.module('hagrid', [
-		'ui.router',
+    'ui.router',
+		'ngSanitize',
+    'ngPrism',
 		//'ngMessages',
     'hagrid.knowledge'
 		//'hagrid.tracking'
@@ -186,6 +190,29 @@ angular.module('hagrid')
     return (!!input) ? input.replace(reg, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}) : '';
   }
 });
+
+/*
+*
+* ng-prism v0.0.1
+*
+* (c) 2013-2014 Sercan Eraslan http://sercaneraslan.com
+* License: MIT
+*
+*/
+angular.module('ngPrism', []).
+    directive('prism', [function() {
+        return {
+            restrict: 'A',
+            link: function ($scope, element, attrs) {
+
+                element.ready(function() {
+                    Prism.highlightElement(element[0]);
+                });
+            }
+        }
+    }]
+);
+
 (function(){
   'use strict';
 
@@ -241,11 +268,34 @@ angular.module('hagrid')
   'use strict';
 
   angular.module('hagrid.knowledge')
+    .controller('KnowledgeGridSystemCtrl', KnowledgeGridSystemCtrl);
+
+  KnowledgeGridSystemCtrl.$inject = ['$scope'];
+
+  function KnowledgeGridSystemCtrl($scope){
+
+    $scope.myHTML = '<!DOCTYPE html>'+
+    '<title>Title</title>'+
+    '<style>body {width: 500px;}</style>'+
+    '<script type="application/javascript">'+
+      'function $init() {return true;}'+
+    '</script>';
+
+    $scope.myJS = "console.log('Hello World');"
+  }
+
+})();
+
+(function(){
+  'use strict';
+
+  angular.module('hagrid.knowledge')
     .controller('KnowledgeMainCtrl', KnowledgeMainCtrl);
 
   KnowledgeMainCtrl.$inject = ['$scope'];
 
   function KnowledgeMainCtrl($scope){
+
   }
 
 })();

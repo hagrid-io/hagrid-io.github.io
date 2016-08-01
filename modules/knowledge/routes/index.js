@@ -13,6 +13,7 @@ angular.module('hagrid.knowledge')
       .state('main.views.knowledge', {
         url: "/knowledge",
         abstract: true,
+        controller: 'KnowledgeMainCtrl',
         template: '<div ui-view="" style="padding-bottom: 3em"></div>'
       })
       .state('main.views.knowledge.main', {
@@ -25,6 +26,7 @@ angular.module('hagrid.knowledge')
       })
       .state('main.views.knowledge.grid-system', {
         url: "/grid-system",
+        controller: 'KnowledgeGridSystemCtrl',
         templateUrl: "partials/knowledge.grid-system.html",
       })
       .state('main.views.knowledge.typography', {
