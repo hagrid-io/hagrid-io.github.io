@@ -3541,6 +3541,11 @@ footer span {
   display: block;
 }
 
+[hagrid-debug].gs,
+[hagrid-debug].grid-system {
+  background: #E6E6E6;
+}
+
 .block {
   display: block;
 }
