@@ -57,6 +57,10 @@ angular.module('hagrid.knowledge')
         url: "/labels",
         templateUrl: "partials/knowledge.labels.html",
       })
+      .state('main.views.knowledge.badges', {
+        url: "/badges",
+        templateUrl: "partials/knowledge.badges.html",
+      })
       .state('main.views.knowledge.tables', {
         url: "/tables",
         templateUrl: "partials/knowledge.tables.html",
@@ -64,6 +68,10 @@ angular.module('hagrid.knowledge')
       .state('main.views.knowledge.lists', {
         url: "/lists",
         templateUrl: "partials/knowledge.lists.html",
+      })
+      .state('main.views.knowledge.images', {
+        url: "/images",
+        templateUrl: "partials/knowledge.images.html",
       })
       .state('main.views.knowledge.breadcrumbs', {
         url: "/breadcrumbs",

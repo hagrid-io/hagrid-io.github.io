@@ -1,2 +1,45 @@
+h1.title-section Labels
 .grid-wrap.grid-wrap-90
-  h1.title-section Labels
+  p Normally the labels are using to stand out a word, small paragraph or any text.
+
+  h5 Table properties Labels
+  table.table-documentation
+    thead
+      tr
+        th.first-col Property Details
+        th Variations
+        th Description
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Labels
+          li Type: class
+          li Main Class: .label
+          li Supports:&nbsp;
+            b [sizes, colors]
+
+          li.list__cta
+            a(href="#labels-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Sizes: .label-{xs, sm, md, lg}
+            span e.g: .label-sm, .label-lg
+            pre
+              code(class="language-html", prism)
+                :code
+                  <p> Lorem ipsum dolor sit amet
+                    <span class="label label-sm">label<span>
+                  </p>
+          li
+            b look: .label-{primary, secondary, info, warning, error, inverse, default}
+            span e.g: .label-primary, .label-error
+            pre
+              code(class="language-html", prism)
+                :code
+                  <p> Lorem ipsum dolor sit amet
+                    <span class="label label-warning">Warning<span>
+                  </p>
+      td You can use label clases to stand out some word or text.
