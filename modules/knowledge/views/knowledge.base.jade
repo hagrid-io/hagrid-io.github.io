@@ -1,5 +1,259 @@
+h1.title-section Commons and helper classes
 .grid-wrap.grid-wrap-90
-  h1.title-section Bases and helpers class
+  p When we building web project, normally you need some generic classes with specific properties, Hagrid has some that help us not specify in our css files
+
+
+  h5 Table properties Helper Classes
+  table.table-documentation
+    thead
+      tr
+        th.first-col Property Details
+        th Variations
+        th Description
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Margins
+          li Type: class
+          li Supports:&nbsp;
+            b [axis, sizes, sides and measurements]
+
+          li.list__cta
+            a(href="#margins-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Sizes: m-[10-100]
+            span e.g: m-10, m-20, m-30...
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="m-10">...</div>
+          li
+            b Axis: m-{x, y}
+            span e.g: m-10-x, m-20-y
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="m-10-x">...</div>
+          li
+            b Sides: m-{top, right, bottom, left}
+            span e.g: m-10-top, m-20-right, m-30-bottom
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="m-10-top">...</div>
+          li
+            b Measurements: m-{px, percent, em, rem}
+            span e.g: m-percent, m-em, m-rem
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="m-10 m-em">...</div>
+          li
+            b Combined: sizes, axes, measurements
+            span e.g: class="m-10-x m-10-top m-percent"
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="m-10-x m-10-top m-percent">...</div>
+
+
+      td Hagrid supports margin classes to separate elements, <b>.m-[sizes]</b> to specify a size, <b>.m-{measurements}</b> to specify the measurement, by default measurements is px, <b>.m-{axis}</b> to specify a axes and <b>.m-[side]</b> to specify a side.
+
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Paddings
+          li Type: class
+          li Supports:&nbsp;
+            b [axis, sizes, sides and measurements]
+
+          li.list__cta
+            a(href="#paddings-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Sizes: p-[10-100]
+            span e.g: p-10, p-20, p-30...
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="p-10">...</div>
+          li
+            b Axis: p-{x, y}
+            span e.g: p-10-x, p-20-y
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="p-10-x">...</div>
+          li
+            b Sides: p-{top, right, bottom, left}
+            span e.g: p-10-top, p-20-right, p-30-bottom
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="p-10-top">...</div>
+          li
+            b Measurements: p-{px, percent, em, rem}
+            span e.g: p-percent, p-em, p-rem
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="p-10 p-em">...</div>
+          li
+            b Combined: sizes, axes, measurements
+            span e.g: class="p-10-x p-10-top p-percent"
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="p-10-x p-10-top p-percent">...</div>
+
+      td Hagrid supports paddings classes to add space inside of element, <b>.p-[sizes]</b> to specify a size, <b>.p-{measurements}</b> to specify the measurement, by default measurements is px, <b>.p-{axis}</b> to specify a axes and <b>.p-[side]</b> to specify a side.
+
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Widths
+          li Type: class
+          li Supports:&nbsp;
+            b [sizes, devices]
+
+          li.list__cta
+            a(href="#widths-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Sizes: w-[10-100], percentages
+            span e.g: w-10, w-20, w-30...
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="w-50">...</div>
+          li
+            b Devices: w-[sizes]-{devices}
+            span e.g: w-10-xs, w-20-sm, w-30-md, w-40-lg
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="w-100-xs w-50-lg">...</div>
+      td You can use <b>.w-[size]</b> classes to specify a width of one web element, it´s in percents, <b>[10-100] </b>, from 10 to 100, also you can specify a size to a device <b>.w-[size]-{device}</b> and transform this to multiples devices
+
+
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Colors
+          li Type: class
+          li Supports:&nbsp;
+            b [colors]
+
+          li.list__cta
+            a(href="#colors-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Color: {colors}-color
+            span e.g: primary-color, secondary-color, inverse-color...
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="primary-color">...</div>
+      td You can use <b>.{colors}-color</b> class to specify one base color  <b>colors {default, inverse, primary, secondary, info, warning and error}</b>
+
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Backgrounds
+          li Type: class
+          li Supports:&nbsp;
+            b [background-colors]
+
+          li.list__cta
+            a(href="#bgc-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Background Color: {colors}-bgc
+            span e.g: primary-bgc, secondary-bgc, inverse-bgc...
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="primary-bgc">...</div>
+      td You can use <b>.{background-colors}-bgc</b> class to specify one base background color  <b>background colors {default, inverse, primary, secondary, info, warning and error}</b>
+
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Displays
+          li Type: class
+          li Supports:&nbsp;
+            b [axis, sizes, sides and measurements]
+
+          li.list__cta
+            a(href="#display-example", class="btn btn-info btn-block btn-sm") example
+      td class
+      td You can use <b>.d-{display-type}</b> display classes to modify display element <b>display types {none, block, inline-block, flex}</b>
+        ul
+          li
+            .label class="d-none"
+          li
+            .label class="d-block"
+          li
+            .label class="d-inline-block"
+          li
+            .label class="d-flex"
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Aligns
+          li Type: class
+          li Supports:&nbsp;
+            b [axis, sizes, sides and measurements]
+
+          li.list__cta
+            a(href="#text-aligns-example", class="btn btn-info btn-block btn-sm") Examples
+      td class
+      td You can use text alings classes to aligns elements in block parent<b>aligns {align-left, align-center, align-right, align-justfy}</b>
+        ul
+          li
+            .label class="align-left"
+          li
+            .label class="align-center"
+          li
+            .label class="align-right"
+          li
+            .label class="align-justify"
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Text Transform
+          li Type: class
+          li Supports:&nbsp;
+            b [axis, sizes, sides and measurements]
+
+          li.list__cta
+            a(href="#text-transform-example", class="btn btn-info btn-block btn-sm") example
+      td class
+      td You can use text transform classes to transform text <b>Text Transform types {uppercase, lowercase, capitalize, normal-text}</b>
+        ul
+          li
+            .label class="uppercase"
+          li
+            .label class="lowercase"
+          li
+            .label class="capitalize"
+          li
+            .label class="normal-text"
 
   h2 Base Colors
   .grid-for-8
@@ -24,7 +278,7 @@
     .grid-box.error-bgc
       span.display-block Error
       small.error-color-code
-  .grid-for-8
+  .grid-for-8.hide
     .grid-box.default-bgc.grey-color
       span.display-block Default
       small.default-color-code

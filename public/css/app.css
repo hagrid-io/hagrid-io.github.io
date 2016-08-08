@@ -3530,7 +3530,30 @@ footer span {
 .table-documentation .first-col {
   background-color: rgba(0, 0, 0, 0.03);
   width: 20%;
-  vertical-align: middle;
+}
+.table-documentation .variations-col,
+.table-documentation .description-col {
+  width: 50%;
+}
+.table-documentation ul.list-documentation {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-weight: normal;
+}
+.table-documentation ul.list-documentation li {
+  padding: 0 0 0.3em 0;
+}
+.table-documentation ul.list-documentation.list-documentation-details .list__cta {
+  padding: 2em 0;
+  text-align: center;
+}
+.table-documentation ul.list-documentation.list-documentation-variations b {
+  display: block;
+}
+.table-documentation pre {
+  padding: 0.1em !important;
+  font-size: 12px;
 }
 
 .code-result {
@@ -3801,6 +3824,7 @@ table tr th:last-child {
 table td,
 table th {
   padding: 1em;
+  vertical-align: top;
 }
 
 .label {
@@ -3813,10 +3837,6 @@ table th {
   color: #3C3C3C;
   background-color: #f8f8f8;
   font-weight: inherit;
-}
-
-.list-documentation li {
-  padding: 0.5em 0;
 }
 
 .list {
