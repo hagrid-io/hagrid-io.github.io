@@ -1,3 +1,4 @@
+include ../../../code-example/labels/labels.jade
 h1.title-section Labels
 .grid-wrap.grid-wrap-90
   p Normally the labels are using to stand out a word, small paragraph or any text.
@@ -17,10 +18,57 @@ h1.title-section Labels
           li Type: class
           li Main Class: .label
           li Supports:&nbsp;
-            b [sizes, colors]
+            b [styles, sizes]
 
           li.list__cta
             a(href="#labels-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Label
+            span e.g: .label
+            pre
+              code(class="language-html", prism)
+                :code
+                  <p> Lorem ipsum dolor sit amet
+                    <span class="label">label<span>
+                  </p>
+
+      td You can use label classes to stand out some word or text.
+
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Label Styles
+          li Type: class
+
+          li.list__cta
+            a(href="#label-styles-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b look: .label-{primary, secondary, info, warning, error, inverse, default}
+            span e.g: .label-primary, .label-error
+            pre
+              code(class="language-html", prism)
+                :code
+                  <p> Lorem ipsum dolor sit amet
+                    <span class="label label-warning">Warning<span>
+                  </p>
+      td You can use <b>.label-{styles}</b> classes to change label style
+
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Label Sizes
+          li Type: class
+
+          li.list__cta
+            a(href="#label-sizes-example", class="btn btn-info btn-sm btn-block") Examples
 
       td
         ul.list-documentation.list-documentation-variations
@@ -33,13 +81,18 @@ h1.title-section Labels
                   <p> Lorem ipsum dolor sit amet
                     <span class="label label-sm">label<span>
                   </p>
-          li
-            b look: .label-{primary, secondary, info, warning, error, inverse, default}
-            span e.g: .label-primary, .label-error
-            pre
-              code(class="language-html", prism)
-                :code
-                  <p> Lorem ipsum dolor sit amet
-                    <span class="label label-warning">Warning<span>
-                  </p>
-      td You can use label clases to stand out some word or text.
+
+      td You can use <b>.label-{sizes}</b> classes to change size label
+
+
+  section.block-section-hash#labels-example
+    h4 Labels
+    mixin labels
+
+  section.block-section-hash#label-styles-example
+    h4 Label Styles
+    mixin labelStyles
+
+  section.block-section-hash#label-sizes-example
+    h4 Label Sizes
+    mixin labelSizes

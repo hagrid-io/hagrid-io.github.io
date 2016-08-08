@@ -184,10 +184,6 @@ table
       font-size: 1.5em
       +prefix(transition, all .2s)
 
-    &:hover,
-    &.current
-      background: rgba(255, 255, 255, .5)
-
       .icon-drop-down-list
         transform: rotate(180deg)
 
@@ -198,6 +194,10 @@ table
       display: block
       padding: .5em
       text-decoration: none
+
+      &:hover,
+      &.current
+        background: rgba(255, 255, 255, .5)
 
     ul
       padding-left: .5em

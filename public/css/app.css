@@ -3490,7 +3490,13 @@ footer span {
 
 #sidebar {
   background: #F8F8F8;
-  padding: 0.5em;
+  padding: 0.5em 0;
+}
+#sidebar .title-sidebar {
+  padding: 0 0.5em;
+}
+#sidebar .list-api-refetence-area ul.list {
+  margin-left: 1em;
 }
 
 .top-0 {
@@ -3858,19 +3864,19 @@ table th {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-.list li:hover, .list li.current {
-  background: rgba(255, 255, 255, 0.5);
-}
-.list li:hover .icon-drop-down-list, .list li.current .icon-drop-down-list {
+.list li .icon-drop-down-list .icon-drop-down-list {
   transform: rotate(180deg);
 }
-.list li:hover > ul, .list li.current > ul {
+.list li .icon-drop-down-list > ul {
   display: block;
 }
 .list li a {
   display: block;
   padding: 0.5em;
   text-decoration: none;
+}
+.list li a:hover, .list li a.current {
+  background: rgba(255, 255, 255, 0.5);
 }
 .list li ul {
   padding-left: 0.5em;
