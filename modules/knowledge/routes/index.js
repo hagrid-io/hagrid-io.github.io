@@ -20,9 +20,9 @@ angular.module('hagrid.knowledge')
         url: "",
         templateUrl: "partials/knowledge.main.html",
       })
-      .state('main.views.knowledge.base', {
-        url: "/base",
-        templateUrl: "partials/knowledge.base.html",
+      .state('main.views.knowledge.helpers', {
+        url: "/helpers",
+        templateUrl: "partials/knowledge.helpers.html",
       })
       .state('main.views.knowledge.grid-system', {
         url: "/grid-system",
