@@ -1,0 +1,15 @@
+mixin badges
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <a href="#" class="btn btn-primary">Notifications <span class="badge">9</span></a>
+          <a href="#" class="btn btn-warning"><span class="badge">3</span> Alerts </a>
+          <a href="#" class="btn btn-error">Errorss <span class="badge">1</span></a>
+  div.code-result
+    h6 Result:
+    a.btn.btn-info Notifications <span class="badge">9</span>
+    a.btn.btn-warning <span class="badge">3</span> Alerts
+    a.btn.btn-error Errors <span class="badge">1</span>
+

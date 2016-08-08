@@ -1,0 +1,42 @@
+mixin images
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <figure class="img img-circle">
+            <img src="http://dummyimage.com/200x200" alt="Image"/>
+          </figure>
+  div.code-result
+    h6 Result:
+    figure.img.img-circle
+      img(src="http://dummyimage.com/200x200" alt="Image")
+
+
+mixin imageStyles
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <!-- Image Circle-->
+          <!--- divs is not required -->
+          <div>
+            <figure class="img img-circle">
+              <img src="http://dummyimage.com/200x200" alt="Image"/>
+            </figure>
+          </div>
+          <!-- Image Radius-->
+          <div class="div-is-not-required">
+            <figure class="img img-radius">
+              <img src="http://dummyimage.com/200x200" alt="Image"/>
+            </figure>
+          </div>
+  div.code-result
+    h6 Result:
+    div
+      figure.img.img-circle
+        img(src="http://dummyimage.com/200x200" alt="Image")
+    div
+      figure.img.img-radius
+        img(src="http://dummyimage.com/200x200" alt="Image")

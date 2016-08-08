@@ -1,0 +1,67 @@
+mixin labels
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <p>Lorem ipsum dolor sit amet <span class="label">default label</span></p>
+  div.code-result
+    h6 Result:
+    p Lorem ipsum dolor sit amet <span class="label">default label</span>
+
+  h5 Inherit size
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <h1>Lorem ipsum dolor sit amet <span class="label">default label</span></h1>
+  div.code-result
+    h6 Result:
+    h1 Lorem ipsum dolor sit amet <span class="label">default label</span>
+
+
+mixin labelStyles
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <p>Lorem ipsum dolor sit amet
+            <span class="label label-primary">primary label</span>,
+            <span class="label label-secondary">secondaty label</span>,
+            <span class="label label-info">info label</span>,
+            <span class="label label-warning">warning label</span>,
+            <span class="label label-error">error label</span>,
+            <span class="label label-inverse">inverse label</span>,
+            <span class="label label-default">default label</span>
+          </p>
+  div.code-result
+    h6 Result:
+    p Lorem ipsum dolor sit amet <span class="label label-primary">primary label</span>, <span class="label label-secondary">secondary label</span>, <span class="label label-info">info label</span>, <span class="label label-warning">warning label</span>, <span class="label label-error">error label</span>, <span class="label label-inverse">inverse label</span>, <span class="label label-default">default label</span>
+
+
+
+mixin labelSizes
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <p>Lorem ipsum dolor sit amet
+            <span class="label label-primary label-lg">large label</span>,
+            <span class="label label-secondary label-md">medium label</span>,
+            <span class="label label-info label-sm">small label</span>,
+            <span class="label label-warning label-xs">smaller label</span>
+          </p>
+  div.code-result
+    h6 Result:
+    p
+      | Lorem ipsum dolor sit amet
+      span.label.label-primary.label-lg large label
+      | ,
+      span.label.label-secondary.label-md medium label
+      | ,
+      span.label.label-info.label-sm small label
+      | ,
+      span.label.label-warning.label-xs smaller label

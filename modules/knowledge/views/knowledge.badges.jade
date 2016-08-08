@@ -1,0 +1,44 @@
+include ../../../code-example/badges/badges.jade
+h1.title-section Badges
+.grid-wrap.grid-wrap-90
+  p Normally badges are using with buttons to show numerical values.
+
+  h5 Table properties Badges
+  table.table-documentation
+    thead
+      tr
+        th.first-col Property Details
+        th Variations
+        th Description
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Dadges
+          li Type: class
+          li Supports:&nbsp;
+            b [looks(inherit parent)]
+          li Dependencies:&nbsp;
+            b [buttons]
+
+          li.list__cta
+            a(href="#badges-example", class="btn btn-info btn-sm btn-block") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Buttons badge:
+            span e.g: .badge
+            pre
+              code(class="language-html", prism)
+                :code
+                  <a href="#" class="btn btn-primary">
+                    button primary <span class="badge">9<span>
+                  </a>
+      td You can use a button width a badge element to show numerical values, <b>.badge</b>.
+
+  section.block-section-hash#badges-example
+    h4 Badges
+    mixin badges
+
+
+
