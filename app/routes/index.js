@@ -16,6 +16,14 @@
             pageDescription: "Let’s build awesome web applications together."
           }
         })
+        .state('home', {
+          url: '/',
+          templateUrl: "partials/home.index.html",
+          data: {
+            pageTitle: 'Hagrid Web Framework',
+            pageDescription: "Let’s build awesome web applications together."
+          }
+        })
         .state('main.views', {
           views: {
             content: {
@@ -33,10 +41,6 @@
               templateUrl:'partials/shared.footer.html'
             }
           }
-        })
-        .state('main.views.home', {
-          url: "/",
-          templateUrl: "partials/home.index.html",
         })
         .state('main.views.about', {
           url: "/about",

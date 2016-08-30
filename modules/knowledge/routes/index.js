@@ -44,6 +44,11 @@ angular.module('hagrid.knowledge')
       .state('main.views.knowledge.dropdows', {
         url: "/dropdows",
         templateUrl: "partials/knowledge.dropdows.html",
+        controller: function(){
+          hagrid;
+          debugger;
+          hagrid.components.init();
+        }
       })
       .state('main.views.knowledge.navbars', {
         url: "/navbars",

@@ -53,6 +53,11 @@ a {
   color: inherit;
 }
 
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
 @font-face {
   font-family: 'material-design';
   src: url("../icon-fonts/material-design/material-design.eot?nfcfrs");
@@ -3472,6 +3477,10 @@ header .navbar .navbar-brand {
   height: 100%;
 }
 
+.header-transparent .navbar.navbar-primary {
+  background: transparent;
+}
+
 footer {
   background: #1E2128;
   color: #fff;
@@ -3512,8 +3521,13 @@ footer span {
   background: blue;
 }
 
-.main-view {
-  padding-top: 55px;
+.main-view-ui {
+  padding-top: 54px;
+}
+
+.main-wrap {
+  max-width: 960px;
+  margin: auto;
 }
 
 .main-content .main-content-inner {
@@ -3889,13 +3903,34 @@ table th {
   border: 1px solid #F2F2F2;
 }
 
-.banner-home {
-  height: 700px;
-  background: url(http://heygrid.com/img/header-ilustration.png?1396576915) center 80% no-repeat;
+.brand-hero h1 {
+  background: #5E2E46;
+  color: #D39756;
+  font-size: 8em;
+}
+
+.main-hero {
+  height: 425px;
+  background: #D39756;
+  background-size: cover;
+  padding: 7em;
+  color: #291413;
+}
+.main-hero.more {
+  background: url(../img/main-hero3.jpg) center top no-repeat;
+  color: #fff;
+}
+.main-hero .btn-more {
+  font-size: 10em;
+  padding: 0;
+  background: transparent !important;
+  border: none !important;
 }
 
 .welcome-title {
   margin: auto;
-  max-width: 500px;
-  color: #2D6CC9;
+  max-width: 600px;
+}
+.welcome-title span {
+  background: #fff;
 }

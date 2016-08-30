@@ -86,6 +86,11 @@ angular.module('hagrid.knowledge')
       .state('main.views.knowledge.dropdows', {
         url: "/dropdows",
         templateUrl: "partials/knowledge.dropdows.html",
+        controller: function(){
+          hagrid;
+          debugger;
+          hagrid.components.init();
+        }
       })
       .state('main.views.knowledge.navbars', {
         url: "/navbars",
@@ -239,6 +244,14 @@ angular.module('ngPrism', []).
             pageDescription: "Let’s build awesome web applications together."
           }
         })
+        .state('home', {
+          url: '/',
+          templateUrl: "partials/home.index.html",
+          data: {
+            pageTitle: 'Hagrid Web Framework',
+            pageDescription: "Let’s build awesome web applications together."
+          }
+        })
         .state('main.views', {
           views: {
             content: {
@@ -256,10 +269,6 @@ angular.module('ngPrism', []).
               templateUrl:'partials/shared.footer.html'
             }
           }
-        })
-        .state('main.views.home', {
-          url: "/",
-          templateUrl: "partials/home.index.html",
         })
         .state('main.views.about', {
           url: "/about",
