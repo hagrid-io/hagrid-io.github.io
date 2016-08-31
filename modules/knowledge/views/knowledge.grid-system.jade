@@ -3,8 +3,238 @@ h1.align-center Grid System
 
 .grid-wrap.grid-wrap-90
   p Hagrid Grid System works mainly with percentages(layouts), Also the grid system supports flex box feature.
-  h5 Table properties grid layout
+  h5 Table properties grid system
   table.table-documentation
+    thead
+      tr
+        th.first-col Property Details
+        th Variations
+        th Description
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Grid Container
+          li Type: class
+          li.list__cta
+            a(href="#gs-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Container: gs
+            span e.g: gs or grid-system
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="gs">...</div>
+          
+
+
+      td The main class to specify a grid system container
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Layouts
+          li Type: class
+          li Supports:&nbsp;
+            b [sizes and devices]
+          li.list__cta
+            a(href="#layouts-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b layouts: layout-{sizes}
+            span e.g: layout-20, layout-40 
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="gs">
+                    <div class="layout-60">...</div>
+                    <div class="layout-40">...</div>
+                  </div>
+          li
+            b Devices: layout-{devices}-{sizes}
+            span e.g: layout-sm-20, layout-lg-40 
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="gs">
+                    <div class="layout-60 layout-sm-50">...</div>
+                    <div class="layout-40 layout-sm-50">...</div>
+                  </div>
+
+      td You must use .layout-{sizes} inside <b>.gs</b> container to distribute the area of the container to your need, also you can use <b>.layout-{devices}-{sizes}</b> class to modify layout size to specific devices, Device sizes, xs to small devices(smartphones), sm to medium screen(tablets), md to normal screens(laptop) and lg to large screens(Desktop or retina display).
+
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Gutters
+          li Type: class, attribute
+          li Dependecies: .gs
+          li Supports:&nbsp;
+            b [sizes and measurements]
+          li.list__cta
+            a(href="#gutters-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Gutters Class: .gutters
+            span e.g: .gs.gutters
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="gs gutters">
+                    <div class="layout-60">...</div>
+                    <div class="layout-40">...</div>
+                  </div>
+          li
+            b Gutters Attr: [gutters="{sizes}"]
+            span e.g: .gs[gutters="20px"], .gs[gutters="10%"] 
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="gs" gutters="20px">
+                    <div class="layout-60">...</div>
+                    <div class="layout-40">...</div>
+                  </div>
+
+      td Gutters class and gutters attribute, affect directly to layout-{sizes} class children, gutters class for default is 1em of margin to each layout-{sizes} children, you can use gutter attribute to specify other sizes and measure, types of measure (px(10px, 20px and 30px), em(1em, 2em and 3em), and percent(10%, 20% and 30%))
+
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Order
+          li Type: class
+          li Supports:&nbsp;
+            b [order]
+          li.list__cta
+            a(href="#order-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Order: .order
+            span e.g: .layout-50.order-2
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="gs">
+                    <div class="layout-60 order-2">...</div>
+                    <div class="layout-40 order-1">...</div>
+                  </div>
+          
+
+      td You can re order layouts without move html layouts
+
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Horizontal Items Align
+          li Type: class
+          li Supports:&nbsp;
+            b [aligns]
+          li.list__cta
+            a(href="#horizontal-aligns-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Horizontal Aligns: justify-content-{horizontal-aligns}
+            span e.g: gs justify-content-flex-start
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="gs justify-content-flex-start">
+                    <div class="layout-40">...</div>
+                    <div class="layout-40">...</div>
+                  </div>
+          
+      td Hagrid supports horizonal aligns content, you can use <b>.justify-content-{flex-start, flex-end, center, space-between, space-around}</b>
+
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Vertical Items Align
+          li Type: class
+          li Supports:&nbsp;
+            b [aligns]
+          li.list__cta
+            a(href="#vertical-aligns-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Vertical Aligns: align-items-{horizontal-aligns}
+            span e.g: .gs.align-items-flex-start
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="gs align-items-center">
+                    <div class="layout-40">...</div>
+                    <div class="layout-40">...</div>
+                  </div>
+
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Nested Layouts
+          li Type: class
+          li.list__cta
+            a(href="#nested-layouts-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Nested: align-items-{horizontal-aligns}
+            span e.g: .gs.align-items-flex-start
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="gs align-items-center">
+                    <div class="layout-40">...</div>
+                    <div class="layout-40">...</div>
+                  </div>
+          
+
+      td Hagrid supports horizonal aligns content, you can use <b>.justify-content-{flex-start, flex-end, center, baseline, stretch}</b>
+
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Grid Debug
+          li Type: Attribute
+          li Supports:&nbsp;
+            b [aligns]
+          li.list__cta
+            a(href="#gs-debug-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Debug: [hagrid-debug]
+            span e.g: .gs.[hagrid-debug]
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="gs" hagrid-debug>
+                    <div class="layout-30">...</div>
+                    <div class="layout-70">...</div>
+                  </div>
+          
+      td You can use hagrid-debug to see layout dimentions
+
+
+  //-table.table-documentation
     thead
       tr
         th.first-col Property
@@ -23,7 +253,6 @@ h1.align-center Grid System
       td The main class to specify a layout, layout-40
       td
         a(href="#layouts-example", class="btn btn-default btn-sm") example
-    tr
     tr
       th.first-col -xs-, -sm, -md-, -lg-
       td class
@@ -69,8 +298,12 @@ h1.align-center Grid System
         a(href="#gs-debug-example", class="btn btn-default btn-sm") example
 
 
+  section.block-section-hash#gs-example
+    h4 Grid system container
+    mixin gsContainer
+
   section.block-section-hash#layouts-example
-    h4 Grid system container and layouts
+    h4 Grid system layouts
     mixin gsLayouts
 
   section.block-section-hash#sizes-example
@@ -82,26 +315,26 @@ h1.align-center Grid System
     mixin gsOrder
 
   section.block-section-hash#gutters-example
-    h4 Gutters
+    h4 Gutters class
     mixin gsGutters
 
-  section.block-section-hash#horizontal-aligns
+  section.block-section-hash#horizontal-aligns-example
     h4 Horizontal alignment of items
     mixin gsHorizontalAligns
 
-  section.block-section-hash#vertical-aligns
+  section.block-section-hash#vertical-aligns-example
     h4 Vertical alignment of items
     mixin gsVerticalAligns
 
-  section.block-section-hash#vertical-aligns-content
+  section.block-section-hash#vertical-aligns-example
     h4 Vertical alignment of content
     mixin gsVerticalAlignsContent
 
-  section.block-section-hash#nested-layouts
+  section.block-section-hash#nested-layouts-example
     h4 Nested Layouts
-    mixin gsVerticalAlignsContent
+    mixin gsNestedLayouts
 
-  section.block-section-hash#gs-debug
+  section.block-section-hash#gs-debug-example
     h4 Grid System Debug
     mixin gsDebug
 

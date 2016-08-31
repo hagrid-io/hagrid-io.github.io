@@ -1,5 +1,5 @@
 // Grid System container
-mixin gsLayouts
+mixin gsContainer
   div.code-example
     h6 Code:
     pre
@@ -15,6 +15,8 @@ mixin gsLayouts
           </section>
 
 
+mixin gsLayouts
+  div.code-example
     h6 Code:
     pre
       code(class="language-html", prism)
@@ -110,13 +112,32 @@ mixin gsOrder
 // Gutters
 
 mixin gsGutters
-  p gutters class adds a margin of 1em to each layout column
+  p gutters class for default adds a margin of 1em to each layout column
   div.code-example
     h6 Code:
     pre
       code(class="language-html", prism)
         :code
           <section class="gs gutters">
+            <div class="layout-10"></div>
+            <div class="layout-20"></div>
+            <div class="layout-70"></div>
+          </section>
+  
+  h4 Gutter Attribute
+  div.code-result
+    h6 Result:
+    section.gs.gutters(hagrid-debug, debug-empty='', gutters="2em")
+      .layout-10
+      .layout-20
+      .layout-70
+
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <section class="gs" gutters="2em">
             <div class="layout-10"></div>
             <div class="layout-20"></div>
             <div class="layout-70"></div>
