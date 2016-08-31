@@ -1,0 +1,171 @@
+mixin mainButtons
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <a href="" class="btn"></a>
+
+  div.code-result
+    h6 Result:
+    a.btn(href='') Main Class button
+
+mixin typeButtons
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <a href="#" class="btn btn-default">Button default</a>
+          <a href="#" class="btn btn-inverse">Button inverse</a>
+          <a href="#" class="btn btn-primary">Button primary</a>
+          <a href="#" class="btn btn-secondary">Button secondary</a>
+          <a href="#" class="btn btn-info">Button info</a>
+          <a href="#" class="btn btn-warning">Button warning</a>
+          <a href="#" class="btn btn-error">Button error</a>
+
+          
+  div.code-result
+    h6 Result:
+    a.btn.btn-default(href='#') Button default
+    a.btn.btn-inverse(href='#') Button inverse
+    a.btn.btn-primary(href='#') Button primary
+    a.btn.btn-secondary(href='#') Button secondary
+    a.btn.btn-info(href='#') Button info
+    a.btn.btn-warning(href='#') Button warning
+    a.btn.btn-error(href='#') Button error
+
+mixin sizeButtons
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <a href="#" class="btn btn-secondary btn-xs">Button smaller</a>
+          <a href="#" class="btn btn-secondary btn-sm">Button small</a>
+          <a href="#" class="btn btn-secondary btn-md">Button medium</a>
+          <a href="#" class="btn btn-secondary btn-lg">Button large</a>
+          <a href="#" class="btn btn-error btn-xs">Button smaller</a>
+          <a href="#" class="btn btn-error btn-sm">Button small</a>
+          <a href="#" class="btn btn-error btn-md">Button medium</a>
+          <a href="#" class="btn btn-error btn-lg">Button large</a>
+
+
+  div.code-result
+    h6 Result:
+    a.btn.btn-secondary.btn-xs(href='#') Button smaller
+    a.btn.btn-secondary.btn-sm(href='#') Button small
+    a.btn.btn-secondary.btn-md(href='#') Button medium
+    a.btn.btn-secondary.btn-lg(href='#') Button large
+    a.btn.btn-error.btn-xs(href='#') Button smaller
+    a.btn.btn-error.btn-sm(href='#') Button small
+    a.btn.btn-error.btn-md(href='#') Button medium
+    a.btn.btn-error.btn-lg(href='#') Button large
+
+
+mixin lookButtons
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <a href="#" class="btn btn-primary">Button normal</a>
+          <a href="#" class="btn btn-secondary btn-flat">Button flat</a>
+          <a href="#" class="btn btn-default btn-shadow">Button shadow</a>
+          <a href="#" class="btn btn-warning btn-upper">Button upper</a>
+          <a href="#" class="btn btn-error btn-outline">Button outline</a>
+
+          
+  div.code-result
+    h6 Result:
+    a.btn.btn-primary(href='#') Button normal
+    a.btn.btn-secondary.btn-flat(href='#') Button flat
+    a.btn.btn-default.btn-shadow(href='#') Button shadow
+    a.btn.btn-warning.btn-upper(href='#') Button upper
+    a.btn.btn-error.btn-outline(href='#') Button outline
+
+mixin displayButtons
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <a href="#" class="btn btn-default btn-lg btn-block">Button default</a>
+          <a href="#" class="btn btn-inverse btn-flat btn-lg btn-block">Button inverse</a>
+          <a href="#" class="btn btn-primary btn-upper btn-lg btn-block">Button primary</a>
+          <a href="#" class="btn btn-secondary btn-shadow btn-lg btn-block">Button secondary</a>
+          <a href="#" class="btn btn-info btn-outline btn-lg btn-block">Button info</a>
+          <a href="#" class="btn btn-warning btn-lg btn-block">Button warning</a>
+          <a href="#" class="btn btn-error btn-flat btn-lg btn-block">Button error</a>
+
+          
+  div.code-result
+    h6 Result:
+    a.btn.btn-default.btn-lg.btn-block(href='#') Button default
+    a.btn.btn-inverse.btn-flat.btn-lg.btn-block(href='#') Button inverse
+    a.btn.btn-primary.btn-upper.btn-lg.btn-block(href='#') Button primary
+    a.btn.btn-secondary.btn-shadow.btn-lg.btn-block(href='#') Button secondary
+    a.btn.btn-info.btn-outline.btn-lg.btn-block(href='#') Button info
+    a.btn.btn-warning.btn-lg.btn-block(href='#') Button warning
+    a.btn.btn-error.btn-flat.btn-lg.btn-block(href='#') Button error
+
+mixin iconButtons
+  p With Text
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <a href="#" class="btn btn-primary">Button normal</a>
+          <a href="#" class="btn btn-secondary btn-flat">Button flat</a>
+          <a href="#" class="btn btn-default btn-shadow">Button shadow</a>
+          <a href="#" class="btn btn-warning btn-upper">Button upper</a>
+          <a href="#" class="btn btn-error btn-outline">Button outline</a>
+          
+          
+  div.code-result
+    h6 Result:
+    a.btn.btn-default(href='#') Button default&nbsp;
+      i.icon-get_app
+    a.btn.btn-inverse(href='#') Button inverse&nbsp;
+      i.icon-file_upload
+    a.btn.btn-primary(href='#') Button primary&nbsp;
+      i.icon-favorite
+    a.btn.btn-secondary(href='#') Button secondary&nbsp;
+      i.icon-dehaze
+    a.btn.btn-info(href='#') Button info&nbsp;
+      i.icon-event_available
+    a.btn.btn-warning(href='#') Button warning&nbsp;
+      i.icon-delete
+    a.btn.btn-error(href='#') Button error&nbsp;
+      i.icon-error
+    
+  p Only Icon
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <a href="#" class="btn btn-primary">Button normal</a>
+          <a href="#" class="btn btn-secondary btn-flat">Button flat</a>
+          <a href="#" class="btn btn-default btn-shadow">Button shadow</a>
+          <a href="#" class="btn btn-warning btn-upper">Button upper</a>
+          <a href="#" class="btn btn-error btn-outline">Button outline</a>
+          
+          
+  div.code-result
+    h6 Result:
+    a.btn.btn-default(href='#')
+      i.icon-get_app
+    a.btn.btn-inverse(href='#')
+      i.icon-file_upload
+    a.btn.btn-primary(href='#')
+      i.icon-favorite
+    a.btn.btn-secondary(href='#')
+      i.icon-dehaze
+    a.btn.btn-info(href='#')
+      i.icon-event_available
+    a.btn.btn-warning(href='#')
+      i.icon-delete
+    a.btn.btn-error(href='#')
+      i.icon-error
