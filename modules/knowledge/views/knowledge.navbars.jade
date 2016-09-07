@@ -1,3 +1,67 @@
+include ../../../code-example/navbars/navbars.jade
+.grid-wrap.grid-wrap-90
+  h1.title-section Navbars
+  p Hagrid Navbars
+
+  h5 Table properties Navbars
+  table.table-documentation
+    thead
+      tr
+        th.first-col Property Details
+        th Variations
+        th Description
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Dropdown
+          li Type: class
+          li Supports:&nbsp;
+            b [types, sizes, looks, events]
+
+          li.list__cta
+            a(href="#dropdowns-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Sizes: m-[10-100]
+            span e.g: m-10, m-20, m-30...
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="m-10">...</div>
+          li
+            b Axis: m-{x, y}
+            span e.g: m-10-x, m-20-y
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="m-10-x">...</div>
+          li
+            b Sides: m-{top, right, bottom, left}
+            span e.g: m-10-top, m-20-right, m-30-bottom
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="m-10-top">...</div>
+          li
+            b Measurements: m-{px, percent, em, rem}
+            span e.g: m-percent, m-em, m-rem
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="m-10 m-em">...</div>
+          li
+            b Combined: sizes, axes, measurements
+            span e.g: class="m-10-x m-10-top m-percent"
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="m-10-x m-10-top m-percent">...</div>
+
+
+      td Hagrid supports margin classes to separate elements, <b>.m-[sizes]</b> to specify a size, <b>.m-{measurements}</b> to specify the measurement, by default measurements is px, <b>.m-{axis}</b> to specify a axes and <b>.m-[side]</b> to specify a side.
 .grid-wrap.grid-wrap-90
   h1.title-section Navbars
 

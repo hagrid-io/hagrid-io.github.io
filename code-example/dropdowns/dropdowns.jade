@@ -1,0 +1,28 @@
+mixin mainDropdrowns
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <section class="gs">
+            <div class="layout-lg-80"></div>
+            <div class="layout-lg-20"></div>
+          </section>
+
+  div.code-result
+    h6 Result:
+    .dropdown.dropdown-primary.dropdown-outline(style='width: 245px')
+      a.btn.btn-primary.btn-outline.btn-dropdown(href='#', hagrid-trigger='')
+        | Dropdown A
+        span.icon-dropdown.icon-3d_rotation
+      ul.dropdown-menu
+        li
+          a(href='#') Dropdown Menu 1
+        li
+          a(href='#') Dropdown Menu 2
+        li
+          a(href='#') Dropdown Menu 3
+        li
+          a(href='#') Dropdown Menu 4
+        li
+          a(href='#') Dropdown Menu 5

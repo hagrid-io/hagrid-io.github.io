@@ -87,9 +87,7 @@ angular.module('hagrid.knowledge')
         url: "/dropdows",
         templateUrl: "partials/knowledge.dropdows.html",
         controller: function(){
-          hagrid;
-          debugger;
-          hagrid.components.init();
+          //hagrid.components.init();
         }
       })
       .state('main.views.knowledge.navbars', {
@@ -203,29 +201,6 @@ angular.module('hagrid')
     return (!!input) ? input.replace(reg, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}) : '';
   }
 });
-
-/*
-*
-* ng-prism v0.0.1
-*
-* (c) 2013-2014 Sercan Eraslan http://sercaneraslan.com
-* License: MIT
-*
-*/
-angular.module('ngPrism', []).
-    directive('prism', [function() {
-        return {
-            restrict: 'A',
-            link: function ($scope, element, attrs) {
-
-                element.ready(function() {
-                    Prism.highlightElement(element[0]);
-                });
-            }
-        }
-    }]
-);
-
 (function(){
   'use strict';
 
@@ -280,6 +255,29 @@ angular.module('ngPrism', []).
     })
 
 })();
+
+
+/*
+*
+* ng-prism v0.0.1
+*
+* (c) 2013-2014 Sercan Eraslan http://sercaneraslan.com
+* License: MIT
+*
+*/
+angular.module('ngPrism', []).
+    directive('prism', [function() {
+        return {
+            restrict: 'A',
+            link: function ($scope, element, attrs) {
+
+                element.ready(function() {
+                    Prism.highlightElement(element[0]);
+                });
+            }
+        }
+    }]
+);
 
 (function(){
   'use strict';
