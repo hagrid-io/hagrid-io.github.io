@@ -18,7 +18,7 @@ h1.title-section Tables
           li Type: class
           li Main Class: .table
           li Supports:&nbsp;
-            b [styles, types]
+            b [styles, types, looks]
 
           li.list__cta
             a(href="#basic-table-example", class="btn btn-info btn-sm btn-block") Examples
@@ -50,7 +50,7 @@ h1.title-section Tables
       td
         ul.list-documentation.list-documentation-variations
           li
-            b types: .table-{borderless, first-column, table-row-odd, table-row-even, table-col-odd, table-col-even}
+            b Types: .table-{borderless, first-column, table-row-odd, table-row-even, table-col-odd, table-col-even}
             span e.g: .table-borderless, .table-first-column
             pre
               code(class="language-html", prism)
@@ -69,6 +69,7 @@ h1.title-section Tables
                   </table>
 
       td You can use <b>.table-{types}</b> classes to change table type style
+
 
     tr
       th.first-col
@@ -93,6 +94,30 @@ h1.title-section Tables
                   </table>
 
       td You can use <b>.table-{sizes}</b> classes to change size table
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Table looks
+          li Type: class
+          li Sub type: Inherited class
+
+          li.list__cta
+            a(href="#table-looks-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b looks: {primary, secondary, indo, warning, error, inverse, default}-look
+            span e.g: .table.primary-look, .table-first-column.secondary-look
+            pre
+              code(class="language-html", prism)
+                :code
+                  <table class="table primary-look">
+                    ...
+                  </table>
+
+      td You can use <b>.{looks}-look</b> classes
 
 
   section.block-section-hash#basic-table-example
@@ -102,5 +127,12 @@ h1.title-section Tables
   section.block-section-hash#table-types-example
     h4 Table types
     mixin tableTypes
+  section.block-section-hash#table-sizes-example
+    h4 Table sizes
+    mixin tableSizes
+  section.block-section-hash#table-looks-example
+    h4 Table inherited looks
+    mixin tableLooks
+
 
 

@@ -121,7 +121,7 @@ mixin tableTypes
 
   div.code-result
     h6 Result:
-    p Borderless
+    p Table Borderless
     table.table.table-borderless
       thead
         tr
@@ -137,7 +137,7 @@ mixin tableTypes
           td Data 4
           td Data 5
           td Data 6
-    p Title
+    p Table Title
     table.table.table-title
       thead
         tr
@@ -153,7 +153,7 @@ mixin tableTypes
           td Data 4
           td Data 5
           td Data 6
-    p First column
+    p Table First column
     table.table.table-first-column
       thead
         tr
@@ -177,7 +177,74 @@ mixin tableSizes
     pre
       code(class="language-html", prism)
         :code
+          <p>Table Smaller</p>
+          <table class="table table-xs">
+            <thead>
+              <tr>
+                <td>Title A</td>
+                <td>Title B</td>
+                <td>Title C</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+              </tr>
+              <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Table Small</p>
           <table class="table table-sm">
+            <thead>
+              <tr>
+                <td>Title A</td>
+                <td>Title B</td>
+                <td>Title C</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+              </tr>
+              <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Table Medium, default</p>
+          <table class="table table-md">
+            <thead>
+              <tr>
+                <td>Title A</td>
+                <td>Title B</td>
+                <td>Title C</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+              </tr>
+              <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Table Large</p>
+          <table class="table table-lg">
             <thead>
               <tr>
                 <td>Title A</td>
@@ -201,6 +268,23 @@ mixin tableSizes
 
   div.code-result
     h6 Result:
+    p Table Smaller
+    table.table.table-xs
+      thead
+        tr
+          td Title A
+          td Title B
+          td Title C
+      tbody
+        tr
+          td Data 1
+          td Data 2
+          td Data 3
+        tr
+          td Data 4
+          td Data 5
+          td Data 6
+    p Table Small
     table.table.table-sm
       thead
         tr
@@ -216,4 +300,153 @@ mixin tableSizes
           td Data 4
           td Data 5
           td Data 6
+    p Table Medium, default
+    table.table.table-md
+      thead
+        tr
+          td Title A
+          td Title B
+          td Title C
+      tbody
+        tr
+          td Data 1
+          td Data 2
+          td Data 3
+        tr
+          td Data 4
+          td Data 5
+          td Data 6
+    p Table large
+    table.table.table-lg
+      thead
+        tr
+          td Title A
+          td Title B
+          td Title C
+      tbody
+        tr
+          td Data 1
+          td Data 2
+          td Data 3
+        tr
+          td Data 4
+          td Data 5
+          td Data 6
+
+mixin tableLooks
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <p>Table primary look</p>
+          <table class="table primary-look">
+            <tbody>
+              <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+              </tr>
+              <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+              </tr>
+              <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Table row(2) primary look</p>
+          <table class="table table-title">
+            <tbody>
+              <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+              </tr>
+              <tr class="primary-look">
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+              </tr>
+              <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Table column(2) primary look</p>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Data 1</td>
+                <td class="primary-look">Data 2</td>
+                <td>Data 3</td>
+              </tr>
+              <tr>
+                <td>Data 4</td>
+                <td class="primary-look">Data 5</td>
+                <td>Data 6</td>
+              </tr>
+              <tr>
+                <td>Data 4</td>
+                <td class="primary-look">Data 5</td>
+                <td>Data 6</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+  div.code-result
+    h6 Result:
+    p Table primary look
+    table.table.primary-look
+      tbody
+        tr
+          td Data 1
+          td Data 2
+          td Data 3
+        tr
+          td Data 4
+          td Data 5
+          td Data 6
+        tr
+          td Data 4
+          td Data 5
+          td Data 6
+    p Table row(2) primary look
+    table.table.table-title
+      tbody
+        tr
+          td Data 1
+          td Data 2
+          td Data 3
+        tr.primary-look
+          td Data 4
+          td Data 5
+          td Data 6
+        tr
+          td Data 4
+          td Data 5
+          td Data 6
+    p Table column(2) primary look
+    table.table
+      tbody
+        tr
+          td Data 1
+          td.primary-look Data 2
+          td Data 3
+        tr
+          td Data 4
+          td.primary-look Data 5
+          td Data 6
+        tr
+          td Data 4
+          td.primary-look Data 5
+          td Data 6
+
 
