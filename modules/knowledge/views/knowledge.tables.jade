@@ -1,2 +1,106 @@
+include ../../../code-example/tables/tables.jade
+h1.title-section Tables
 .grid-wrap.grid-wrap-90
-  h1.title-section Tables
+  p Use tables when you need show data table
+
+  h5 Properties table for Tables
+  table.table-documentation
+    thead
+      tr
+        th.first-col Property Details
+        th Variations
+        th Description
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Tables
+          li Type: class
+          li Main Class: .table
+          li Supports:&nbsp;
+            b [styles, types]
+
+          li.list__cta
+            a(href="#basic-table-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Basic Table
+            span e.g: .table
+            pre
+              code(class="language-html", prism)
+                :code
+                  <table class="table">
+                    ...
+                  </table>
+
+      td You can use table class to format a table element to hagrid table style
+
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Table types
+          li Type: class
+
+          li.list__cta
+            a(href="#table-types-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b types: .table-{borderless, first-column, table-row-odd, table-row-even, table-col-odd, table-col-even}
+            span e.g: .table-borderless, .table-first-column
+            pre
+              code(class="language-html", prism)
+                :code
+                  <table class="table table-borderless">
+                    ...
+                  </table>
+                  <!-- Other type -->
+                  <table class="table table-row-odd">
+                    <tr>
+                        <td>Info</td>
+                        <td>Info</td>
+                        <td>Info</td>
+                    </tr>
+                    ...
+                  </table>
+
+      td You can use <b>.table-{types}</b> classes to change table type style
+
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Label Sizes
+          li Type: class
+
+          li.list__cta
+            a(href="#table-sizes-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Sizes: .table-{xs, sm, md, lg}
+            span e.g: .table-sm, .label-lg
+            pre
+              code(class="language-html", prism)
+                :code
+                  <table class="table table-sm">
+                    ...
+                  </table>
+
+      td You can use <b>.table-{sizes}</b> classes to change size table
+
+
+  section.block-section-hash#basic-table-example
+    h4 Basic Table
+    mixin mainTable
+
+  section.block-section-hash#table-types-example
+    h4 Table types
+    mixin tableTypes
+
+

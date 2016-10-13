@@ -1,0 +1,219 @@
+mixin mainTable
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <table class="table">
+            <thead>
+              <tr>
+                <td>Title A</td>
+                <td>Title B</td>
+                <td>Title C</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+              </tr>
+              <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+              </tr>
+            </tbody>
+          </table>
+
+  div.code-result
+    h6 Result:
+    table.table
+      thead
+        tr
+          td Title A
+          td Title B
+          td Title C
+      tbody
+        tr
+          td Data 1
+          td Data 2
+          td Data 3
+        tr
+          td Data 4
+          td Data 5
+          td Data 6
+
+
+mixin tableTypes
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <p>Borderless</p>
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                <td>Title A</td>
+                <td>Title B</td>
+                <td>Title C</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+              </tr>
+              <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Title</p>
+          <table class="table table-title">
+            <thead>
+              <tr>
+                <td>Title A</td>
+                <td>Title B</td>
+                <td>Title C</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+              </tr>
+              <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>First column</p>
+          <table class="table table-first-column">
+            <thead>
+              <tr>
+                <td>Title A</td>
+                <td>Title B</td>
+                <td>Title C</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+              </tr>
+              <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+  div.code-result
+    h6 Result:
+    p Borderless
+    table.table.table-borderless
+      thead
+        tr
+          td Title A
+          td Title B
+          td Title C
+      tbody
+        tr
+          td Data 1
+          td Data 2
+          td Data 3
+        tr
+          td Data 4
+          td Data 5
+          td Data 6
+    p Title
+    table.table.table-title
+      thead
+        tr
+          td Title A
+          td Title B
+          td Title C
+      tbody
+        tr
+          td Data 1
+          td Data 2
+          td Data 3
+        tr
+          td Data 4
+          td Data 5
+          td Data 6
+    p First column
+    table.table.table-first-column
+      thead
+        tr
+          td Title A
+          td Title B
+          td Title C
+      tbody
+        tr
+          td Data 1
+          td Data 2
+          td Data 3
+        tr
+          td Data 4
+          td Data 5
+          td Data 6
+
+
+mixin tableSizes
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <td>Title A</td>
+                <td>Title B</td>
+                <td>Title C</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+              </tr>
+              <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+              </tr>
+            </tbody>
+          </table>
+
+  div.code-result
+    h6 Result:
+    table.table.table-sm
+      thead
+        tr
+          td Title A
+          td Title B
+          td Title C
+      tbody
+        tr
+          td Data 1
+          td Data 2
+          td Data 3
+        tr
+          td Data 4
+          td Data 5
+          td Data 6
+
