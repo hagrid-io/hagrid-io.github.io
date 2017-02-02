@@ -10,5 +10,6 @@ exports.vendorJs = [
 
 exports.vendorCss = [
   './components/hagrid/dist/css/main.css',
+  './components/hagrid/dist/css/debug/debug.css',
   './components/prism/themes/prism.css',
 ];
