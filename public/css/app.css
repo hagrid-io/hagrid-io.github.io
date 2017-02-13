@@ -3863,15 +3863,16 @@ table th {
   font-weight: inherit;
 }
 
-.list {
+._list {
   padding: 0;
   margin: 0;
+  display: block;
 }
-.list li {
+._list li {
   display: block;
   position: relative;
 }
-.list li .icon-drop-down-list {
+._list li .icon-drop-down-list {
   position: absolute;
   right: 0.2em;
   top: 0.2em;
@@ -3882,28 +3883,28 @@ table th {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-.list li .icon-drop-down-list .icon-drop-down-list {
+._list li .icon-drop-down-list .icon-drop-down-list {
   transform: rotate(180deg);
 }
-.list li .icon-drop-down-list > ul {
+._list li .icon-drop-down-list > ul {
   display: block;
 }
-.list li a {
+._list li a {
   display: block;
   padding: 0.5em;
   text-decoration: none;
 }
-.list li a:hover, .list li a.current {
+._list li a:hover, ._list li a.current {
   background: rgba(255, 255, 255, 0.5);
 }
-.list li ul {
+._list li ul {
   padding-left: 0.5em;
   display: none;
 }
-.list li:last-child a {
+._list li:last-child a {
   border-bottom: none;
 }
-.list.border {
+._list.border {
   border: 1px solid #F2F2F2;
 }
 

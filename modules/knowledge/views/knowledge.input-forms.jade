@@ -1,26 +1,53 @@
-h1.title-section Input Forms
+include ../../../code-example/inputs/inputs.jade
+h1.title-section Inputs and Forms
 .gs-wrap
-  //-.old
-    p Input Text
-    .input
-      input(type="text", placeholder="Enter your value")
-    p Input Number
-    .input
-      input(type="number", placeholder="Enter a number")
-    p Input Radio
-    .input
-      input(type="radio", placeholder="Enter your value")
-    p Input checkbox
-    .input
-      input(type="checkbox", placeholder="Enter your value")
-    p Input Submit
-    .input
-      input(type="submit", value="Input Submit")
-    p Icon Button
-    .input
-      button Button
-        i.icon-cancel
-    .input
-      button Button
-        i.icon-check
+  p The Inputs
+
+  table.table-documentation
+    thead
+      tr
+        th.first-col Property Details
+        th Variations
+        th Description
+    tr
+        th.first-col
+          ul.list-documentation.list-documentation-details
+            li.list__title
+              b Button Class
+            li Type: class
+            li Supports:&nbsp;
+              b [sizes, types, looks, displays]
+
+            li.list__cta
+              a(href="#inputs-example", class="btn btn-info btn-block btn-sm") Examples
+        td
+          ul.list-documentation.list-documentation-variations
+            li
+              b Button: .btn
+              span e.g: .btn
+              pre
+                code(class="language-html", prism)
+                  :code
+                    <a href="#" class="btn">...</a>
+
+        td Use <b>.btn</b> class to reference a button.
+  section.block-section-hash#inputs-example
+    h4 Main Class Input
+    mixin mainInputs
+  section.block-section-hash#type-inputs-example
+    h4 Type Inputs
+    mixin typeInputs
+
+  section.block-section-hash#size-inputs-example
+    h4 Size Inputs
+    mixin sizeInputs
+
+  section.block-section-hash#look-inputs-example
+    h4 Look Inputs
+    mixin lookInputs
+
+  section.block-section-hash#display-inputs-example
+    h4 Display Inputs
+    mixin displayInputs
+  
 
