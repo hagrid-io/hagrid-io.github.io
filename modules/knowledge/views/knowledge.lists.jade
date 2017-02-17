@@ -1,3 +1,137 @@
-h1.title-section lists
+include ../../../code-example/lists/lists.jade
+h1.title-section Lists
 .gs-wrap
-  p Hagrid Lists
+  p The lists
+
+  table.table-documentation
+    thead
+      tr
+        th.first-col Property Details
+        th Variations
+        th Description
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b list Main Class
+          li Type: class
+          li Supports:&nbsp;
+            b [sizes, types, looks, displays]
+
+          li.list__cta
+            a(href="#list-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b List: .input
+            span e.g: .input
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="input">
+                    <input type="text" placeholder="Normal">
+                  </div>
+
+      td Use <b>.input</b> class to reference a input element, the input class is a wappert to html list
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b List types
+          li Type: class
+          li Dependencies: .input
+          li.list__cta
+            a(href="#list-types-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b List: .list-{types}
+            span e.g: .input.btn-primary, .input.btn-error 
+            pre
+              code(class="language-html", prism)
+                :code
+                  <!-- primary input -->
+                  <div class="input list-primary">
+                    <input type="text" placeholder="Primary Input">
+                  </div>
+                  <!-- error input -->
+                  <div class="input list-error">
+                    <input type="text" placeholder="Error input">
+                  </div>
+
+
+      td Use <b>.input.list-{types}</b> classes to modify the apparence of a input
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b List Sizes
+          li Type: class
+          li Dependencies: .input
+          li.list__cta
+            a(href="#list-sizes-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b List: .list-{sizes}
+            span e.g: .input.list-sm, .input.list-lg
+            pre
+              code(class="language-html", prism)
+                :code
+                  <!-- a small input -->
+                  <div class="input list-sm">
+                    <input type="text" placeholder="Small input">
+                  </div>
+                  <!-- a info type and large input -->
+                  <div class="input list-info list-lg">
+                    <input type="text" placeholder="Info type and large input">
+                  </div>
+
+      td You can use <b>.input.list-{sizes}</b> to change size input, available Sizes <b>{xs, sm, lg, xl}</b>
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b List Looks
+          li Type: class
+          li Dependencies: .input
+          li.list__cta
+            a(href="#list-looks-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b List: .list-{looks}
+            span e.g: .input.list-upper, .input.list-outline
+            pre
+              code(class="language-html", prism)
+                :code
+                  <!-- Outline and primary Input -->
+                  <div class="input list-outline list-primary">
+                    <input type="text" placeholder="Normal">
+                  </div>
+                  <!-- Filled and info Input -->
+                  <div class="input list-filled list-info">
+                    <input type="text" placeholder="Normal">
+                  </div>
+
+      td You can use <b>.list-{looks}</b> to change the look input, available Looks <b>{outline, filled}</b>
+
+
+  section.block-section-hash#list-example
+    h4 Main Class of Lists
+    mixin mainLists
+  section.block-section-hash#list-types-example
+    h4 List Types
+    mixin listTypes
+  section.block-section-hash#list-sizes-example
+    h4 List Sizes
+    mixin listSizes
+  section.block-section-hash#list-looks-example
+    h4 List Looks
+    mixin listLooks
+  section.block-section-hash#list-display-example
+    h4 List Display
+    mixin listDisplay
+
+  
+
