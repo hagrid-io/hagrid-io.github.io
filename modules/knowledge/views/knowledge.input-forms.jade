@@ -10,44 +10,128 @@ h1.title-section Inputs and Forms
         th Variations
         th Description
     tr
-        th.first-col
-          ul.list-documentation.list-documentation-details
-            li.list__title
-              b Button Class
-            li Type: class
-            li Supports:&nbsp;
-              b [sizes, types, looks, displays]
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Inputs Main Class
+          li Type: class
+          li Supports:&nbsp;
+            b [sizes, types, looks, displays]
 
-            li.list__cta
-              a(href="#inputs-example", class="btn btn-info btn-block btn-sm") Examples
-        td
-          ul.list-documentation.list-documentation-variations
-            li
-              b Button: .btn
-              span e.g: .btn
-              pre
-                code(class="language-html", prism)
-                  :code
-                    <a href="#" class="btn">...</a>
+          li.list__cta
+            a(href="#inputs-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Input: .input
+            span e.g: .input
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="input">
+                    <input type="text" placeholder="Normal">
+                  </div>
 
-        td Use <b>.btn</b> class to reference a button.
+      td Use <b>.input</b> class to reference a input element, the input class is a wappert to html inputs
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Input types
+          li Type: class
+          li Dependencies: .input
+          li.list__cta
+            a(href="#input-types-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Input: .input-{types}
+            span e.g: .input.btn-primary, .input.btn-error 
+            pre
+              code(class="language-html", prism)
+                :code
+                  <!-- primary input -->
+                  <div class="input input-primary">
+                    <input type="text" placeholder="Primary Input">
+                  </div>
+                  <!-- error input -->
+                  <div class="input input-error">
+                    <input type="text" placeholder="Error input">
+                  </div>
+
+
+      td Use <b>.input.input-{types}</b> classes to modify the apparence of a input
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Input Sizes
+          li Type: class
+          li Dependencies: .input
+          li.list__cta
+            a(href="#input-sizes-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Input: .input-{sizes}
+            span e.g: .input.input-sm, .input.input-lg
+            pre
+              code(class="language-html", prism)
+                :code
+                  <!-- a small input -->
+                  <div class="input input-sm">
+                    <input type="text" placeholder="Small input">
+                  </div>
+                  <!-- a info type and large input -->
+                  <div class="input input-info input-lg">
+                    <input type="text" placeholder="Info type and large input">
+                  </div>
+
+      td You can use <b>.input.input-{sizes}</b> to change size input, available Sizes <b>{xs, sm, lg, xl}</b>
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Input Looks
+          li Type: class
+          li Dependencies: .input
+          li.list__cta
+            a(href="#input-looks-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Input: .input-{looks}
+            span e.g: .input.input-upper, .input.input-outline
+            pre
+              code(class="language-html", prism)
+                :code
+                  <!-- Outline and primary Input -->
+                  <div class="input input-outline input-primary">
+                    <input type="text" placeholder="Normal">
+                  </div>
+                  <!-- Filled and info Input -->
+                  <div class="input input-filled input-info">
+                    <input type="text" placeholder="Normal">
+                  </div>
+
+      td You can use <b>.input-{looks}</b> to change the look input, available Looks <b>{outline, filled}</b>
+
+
   section.block-section-hash#inputs-example
-    h4 Main Class Input
+    h4 Main Class of Inputs
     mixin mainInputs
-  section.block-section-hash#type-inputs-example
-    h4 Type Inputs
+  section.block-section-hash#input-types-example
+    h4 Input Types
     mixin typeInputs
-
-  section.block-section-hash#size-inputs-example
-    h4 Size Inputs
+  section.block-section-hash#input-sizes-example
+    h4 Input Sizes
     mixin sizeInputs
-
-  section.block-section-hash#look-inputs-example
-    h4 Look Inputs
+  section.block-section-hash#input-looks-example
+    h4 Input Looks
     mixin lookInputs
-
-  section.block-section-hash#display-inputs-example
-    h4 Display Inputs
+  section.block-section-hash#input-display-example
+    h4 Input Display
     mixin displayInputs
+
   
 

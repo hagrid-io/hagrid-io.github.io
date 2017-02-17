@@ -3564,6 +3564,7 @@ footer span {
   margin: 0;
   list-style: none;
   font-weight: normal;
+  display: block;
 }
 .table-documentation ul.list-documentation li {
   padding: 0 0 0.3em 0;
