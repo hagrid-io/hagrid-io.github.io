@@ -13,108 +13,98 @@ h1.title-section Lists
       th.first-col
         ul.list-documentation.list-documentation-details
           li.list__title
-            b list Main Class
+            b List Main Class
           li Type: class
           li Supports:&nbsp;
-            b [sizes, types, looks, displays]
+            b [types, looks, displays]
 
           li.list__cta
             a(href="#list-example", class="btn btn-info btn-block btn-sm") Examples
       td
         ul.list-documentation.list-documentation-variations
           li
-            b List: .input
-            span e.g: .input
+            b List: .list
+            span e.g: .list
             pre
               code(class="language-html", prism)
                 :code
-                  <div class="input">
-                    <input type="text" placeholder="Normal">
-                  </div>
+                  <ul class="list">
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
 
-      td Use <b>.input</b> class to reference a input element, the input class is a wappert to html list
+      td Use <b>.list</b> class to reference a list element.
     tr
       th.first-col
         ul.list-documentation.list-documentation-details
           li.list__title
             b List types
           li Type: class
-          li Dependencies: .input
+          li Dependencies: .list
           li.list__cta
             a(href="#list-types-example", class="btn btn-info btn-block btn-sm") Examples
       td
         ul.list-documentation.list-documentation-variations
           li
             b List: .list-{types}
-            span e.g: .input.btn-primary, .input.btn-error 
+            span e.g: .list.list-primary, .list.list-error 
             pre
               code(class="language-html", prism)
                 :code
-                  <!-- primary input -->
-                  <div class="input list-primary">
-                    <input type="text" placeholder="Primary Input">
-                  </div>
-                  <!-- error input -->
-                  <div class="input list-error">
-                    <input type="text" placeholder="Error input">
-                  </div>
+                  <!-- list list-primary -->
+                  <ul class="list list-primary">
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
+                  <!-- list list-error -->
+                  <ul class="list list-error">
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
 
 
-      td Use <b>.input.list-{types}</b> classes to modify the apparence of a input
-    tr
-      th.first-col
-        ul.list-documentation.list-documentation-details
-          li.list__title
-            b List Sizes
-          li Type: class
-          li Dependencies: .input
-          li.list__cta
-            a(href="#list-sizes-example", class="btn btn-info btn-block btn-sm") Examples
-      td
-        ul.list-documentation.list-documentation-variations
-          li
-            b List: .list-{sizes}
-            span e.g: .input.list-sm, .input.list-lg
-            pre
-              code(class="language-html", prism)
-                :code
-                  <!-- a small input -->
-                  <div class="input list-sm">
-                    <input type="text" placeholder="Small input">
-                  </div>
-                  <!-- a info type and large input -->
-                  <div class="input list-info list-lg">
-                    <input type="text" placeholder="Info type and large input">
-                  </div>
-
-      td You can use <b>.input.list-{sizes}</b> to change size input, available Sizes <b>{xs, sm, lg, xl}</b>
+      td Use <b>.list.list-{types}</b> classes to modify the apparence of a list
     tr
       th.first-col
         ul.list-documentation.list-documentation-details
           li.list__title
             b List Looks
           li Type: class
-          li Dependencies: .input
+          li Dependencies: .list
           li.list__cta
             a(href="#list-looks-example", class="btn btn-info btn-block btn-sm") Examples
       td
         ul.list-documentation.list-documentation-variations
           li
             b List: .list-{looks}
-            span e.g: .input.list-upper, .input.list-outline
+            span e.g: .list.list-group, .list.list-dot
             pre
               code(class="language-html", prism)
                 :code
-                  <!-- Outline and primary Input -->
-                  <div class="input list-outline list-primary">
-                    <input type="text" placeholder="Normal">
-                  </div>
-                  <!-- Filled and info Input -->
-                  <div class="input list-filled list-info">
-                    <input type="text" placeholder="Normal">
-                  </div>
+                  <!-- List group -->
+                  <ul class="list list-group">
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
+                  <!-- List dot and primary -->
+                  <ul class="list list-dot list-primary">
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
 
-      td You can use <b>.list-{looks}</b> to change the look input, available Looks <b>{outline, filled}</b>
+      td You can use <b>.list-{looks}</b> to change the look of list, available Looks <b>{dot, circle, square, cube, arrow, check, group, divider, border-left}</b>
 
 
   section.block-section-hash#list-example
@@ -123,9 +113,6 @@ h1.title-section Lists
   section.block-section-hash#list-types-example
     h4 List Types
     mixin listTypes
-  section.block-section-hash#list-sizes-example
-    h4 List Sizes
-    mixin listSizes
   section.block-section-hash#list-looks-example
     h4 List Looks
     mixin listLooks
