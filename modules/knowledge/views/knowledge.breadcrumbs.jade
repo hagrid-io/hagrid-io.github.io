@@ -1,2 +1,130 @@
- h1.title-section Breadcrumbs
+include ../../../code-example/breadcrumbs/breadcrumbs.jade
+h1.title-section Breadcrumbs
 .gs-wrap
+  p The Breadcrumbs
+
+  table.table-documentation
+    thead
+      tr
+        th.first-col Property Details
+        th Variations
+        th Description
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Breadcrumbs Main Class
+          li Type: class
+          li Supports:&nbsp;
+            b [sizes, types]
+
+          li.list__cta
+            a(href="#breadcrumbs-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Breadcrumb: .breadcrumb
+            span e.g: .breadcrumb
+            pre
+              code(class="language-html", prism)
+                :code
+                  <nav class="breadcrumb">
+                    <a href="">Home</a>
+                    <a href="">Item a</a>
+                    <a href="">Item b</a>
+                    <a href="" class="current">Item c</a>
+                    <a href="" >Item d</a>
+                  </nav>
+
+      td Use <b>.breadcrumb</b> class to reference a input element, the input class is a wappert to html inputs
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Breadcrumb types
+          li Type: class
+          li Dependencies: .breadcrumb
+          li.list__cta
+            a(href="#breadcrumb-types-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Breadcrumb: .breadcrumb-{types}
+            span e.g: .breadcrumb.breadcrumb-primary, .breadcrumb.breadcrumb-error 
+            pre
+              code(class="language-html", prism)
+                :code
+                  <p>nav.breadcrumb.breadcrumb-primary > a</p>
+                  <nav class="breadcrumb breadcrumb-primary">
+                    <a href="">Home</a>
+                    <a href="">Item a</a>
+                    <a href="">Item b</a>
+                    <a href="" class="current">Item c</a>
+                    <a href="" >Item d</a>
+                  </nav>
+                  <p>nav.breadcrumb.breadcrumb-info > a</p>
+                  <nav class="breadcrumb breadcrumb-info">
+                    <a href="">Home</a>
+                    <a href="">Item a</a>
+                    <a href="">Item b</a>
+                    <a href="" class="current">Item c</a>
+                    <a href="" >Item d</a>
+                  </nav>
+
+
+      td Use <b>.breadcrumb.breadcrumb-{types}</b> classes to modify the apparence of a input
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Breadcrumb Sizes
+          li Type: class
+          li Dependencies: .breadcrumb
+          li.list__cta
+            a(href="#breadcrumb-sizes-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Breadcrumb: .breadcrumb-{sizes}
+            span e.g: .breadcrumb.breadcrumb-sm, .breadcrumb.breadcrumb-lg
+            pre
+              code(class="language-html", prism)
+                :code
+                  <p>nav.breadcrumb.breadcrumb-primary.breadcrumb-xs > a</p>
+                  <nav class="breadcrumb breadcrumb-primary breadcrumb-xs">
+                    <a href="">Home</a>
+                    <a href="">Item a</a>
+                    <a href="">Item b</a>
+                    <a href="" class="current">Item c</a>
+                    <a href="" >Item d</a>
+                  </nav>
+                  <p>nav.breadcrumb.breadcrumb-secondary.breadcrumb-sm > a</p>
+                  <nav class="breadcrumb breadcrumb-secondary breadcrumb-xl">
+                    <a href="">Home</a>
+                    <a href="">Item a</a>
+                    <a href="">Item b</a>
+                    <a href="" class="current">Item c</a>
+                    <a href="" >Item d</a>
+                  </nav>
+
+      td You can use <b>.breadcrumb.breadcrumb-{sizes}</b> to change size input, available Sizes <b>{xs, sm, lg, xl}</b>
+
+
+  section.block-section-hash#breadcrumbs-example
+    h4 Main Class of Breadcrumbs
+    mixin mainBreadcrumbs
+  section.block-section-hash#breadcrumb-types-example
+    h4 Breadcrumb Types
+    mixin breadcrumbTypes
+  section.block-section-hash#breadcrumb-sizes-example
+    h4 Breadcrumb Sizes
+    mixin breadcrumbSizes
+  //-section.block-section-hash#breadcrumb-looks-example
+    h4 Breadcrumb Looks
+    mixin breadcrumbLooks
+  //-section.block-section-hash#breadcrumb-display-example
+    h4 Breadcrumb Display
+    mixin breadcrumbDisplay
+
+  
+

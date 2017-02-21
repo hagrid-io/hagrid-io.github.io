@@ -1,0 +1,279 @@
+mixin mainBreadcrumbs
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <nav class="breadcrumb">
+            <a href="">Home</a>
+            <a href="">Item a</a>
+            <a href="">Item b</a>
+            <a href="" class="current">Item c</a>
+            <a href="" >Item d</a>
+          </nav>
+          
+
+  div.code-result
+    h6 Result:
+
+
+mixin breadcrumbTypes
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <p>nav.breadcrumb.breadcrumb-primary > a</p>
+          <nav class="breadcrumb breadcrumb-primary">
+            <a href="">Home</a>
+            <a href="">Item a</a>
+            <a href="">Item b</a>
+            <a href="" class="current">Item c</a>
+            <a href="" >Item d</a>
+          </nav>
+          <p>nav.breadcrumb.breadcrumb-secondary > a</p>
+          <nav class="breadcrumb breadcrumb-secondary">
+            <a href="">Home</a>
+            <a href="">Item a</a>
+            <a href="">Item b</a>
+            <a href="" class="current">Item c</a>
+            <a href="" >Item d</a>
+          </nav>
+          <p>nav.breadcrumb.breadcrumb-inverse > a</p>
+          <nav class="breadcrumb breadcrumb-inverse">
+            <a href="">Home</a>
+            <a href="">Item a</a>
+            <a href="">Item b</a>
+            <a href="" class="current">Item c</a>
+            <a href="" >Item d</a>
+          </nav>
+          <p>nav.breadcrumb.breadcrumb-default > a</p>
+          <nav class="breadcrumb breadcrumb-default">
+            <a href="">Home</a>
+            <a href="">Item a</a>
+            <a href="">Item b</a>
+            <a href="" class="current">Item c</a>
+            <a href="" >Item d</a>
+          </nav>
+          <p>nav.breadcrumb.breadcrumb-info > a</p>
+          <nav class="breadcrumb breadcrumb-info">
+            <a href="">Home</a>
+            <a href="">Item a</a>
+            <a href="">Item b</a>
+            <a href="" class="current">Item c</a>
+            <a href="" >Item d</a>
+          </nav>
+          <p>nav.breadcrumb.breadcrumb-warning > a</p>
+          <nav class="breadcrumb breadcrumb-warning">
+            <a href="">Home</a>
+            <a href="">Item a</a>
+            <a href="">Item b</a>
+            <a href="" class="current">Item c</a>
+            <a href="" >Item d</a>
+          </nav>
+          <p>nav.breadcrumb.breadcrumb-error > a</p>
+          <nav class="breadcrumb breadcrumb-error">
+            <a href="">Home</a>
+            <a href="">Item a</a>
+            <a href="">Item b</a>
+            <a href="" class="current">Item c</a>
+            <a href="" >Item d</a>
+          </nav>
+          
+
+  div.code-result
+    h6 Result:
+    p nav.breadcrumb.breadcrumb-primary > a
+    nav.breadcrumb.breadcrumb-primary
+      a(href='') Home
+      a(href='') Item a
+      a(href='') Item b
+      a.current(href='') Item c
+      a(href='') Item d
+    p nav.breadcrumb.breadcrumb-secondary > a
+    nav.breadcrumb.breadcrumb-secondary
+      a(href='') Home
+      a(href='') Item a
+      a(href='') Item b
+      a.current(href='') Item c
+      a(href='') Item d
+    p nav.breadcrumb.breadcrumb-inverse > a
+    nav.breadcrumb.breadcrumb-inverse
+      a(href='') Home
+      a(href='') Item a
+      a(href='') Item b
+      a.current(href='') Item c
+      a(href='') Item d
+    p nav.breadcrumb.breadcrumb-default > a
+    nav.breadcrumb.breadcrumb-default
+      a(href='') Home
+      a(href='') Item a
+      a(href='') Item b
+      a.current(href='') Item c
+      a(href='') Item d
+    p nav.breadcrumb.breadcrumb-info > a
+    nav.breadcrumb.breadcrumb-info
+      a(href='') Home
+      a(href='') Item a
+      a(href='') Item b
+      a.current(href='') Item c
+      a(href='') Item d
+    p nav.breadcrumb.breadcrumb-warning > a
+    nav.breadcrumb.breadcrumb-warning
+      a(href='') Home
+      a(href='') Item a
+      a(href='') Item b
+      a.current(href='') Item c
+      a(href='') Item d
+    p nav.breadcrumb.breadcrumb-error > a
+    nav.breadcrumb.breadcrumb-error
+      a(href='') Home
+      a(href='') Item a
+      a(href='') Item b
+      a.current(href='') Item c
+      a(href='') Item d
+
+
+
+mixin breadcrumbSizes
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <p>nav.breadcrumb.breadcrumb-primary.breadcrumb-xs > a</p>
+          <nav class="breadcrumb breadcrumb-primary breadcrumb-xs">
+            <a href="">Home</a>
+            <a href="">Item a</a>
+            <a href="">Item b</a>
+            <a href="" class="current">Item c</a>
+            <a href="" >Item d</a>
+          </nav>
+          <p>nav.breadcrumb.breadcrumb-secondary.breadcrumb-sm > a</p>
+          <nav class="breadcrumb breadcrumb-secondary breadcrumb-sm">
+            <a href="">Home</a>
+            <a href="">Item a</a>
+            <a href="">Item b</a>
+            <a href="" class="current">Item c</a>
+            <a href="" >Item d</a>
+          </nav>
+          <p>nav.breadcrumb.breadcrumb-inverse > a</p>
+          <nav class="breadcrumb breadcrumb-inverse">
+            <a href="">Home</a>
+            <a href="">Item a</a>
+            <a href="">Item b</a>
+            <a href="" class="current">Item c</a>
+            <a href="" >Item d</a>
+          </nav>
+          <p>nav.breadcrumb.breadcrumb-default.breadcrumb-md > a</p>
+          <nav class="breadcrumb breadcrumb-default breadcrumb-md">
+            <a href="">Home</a>
+            <a href="">Item a</a>
+            <a href="">Item b</a>
+            <a href="" class="current">Item c</a>
+            <a href="" >Item d</a>
+          </nav>
+          <p>nav.breadcrumb.breadcrumb-info.breadcrumb-lg > a</p>
+          <nav class="breadcrumb breadcrumb-info breadcrumb-lg">
+            <a href="">Home</a>
+            <a href="">Item a</a>
+            <a href="">Item b</a>
+            <a href="" class="current">Item c</a>
+            <a href="" >Item d</a>
+          </nav>
+          <p>nav.breadcrumb.breadcrumb-warning.breadcrumb-xl > a</p>
+          <nav class="breadcrumb breadcrumb-warning breadcrumb-xl">
+            <a href="">Home</a>
+            <a href="">Item a</a>
+            <a href="">Item b</a>
+            <a href="" class="current">Item c</a>
+            <a href="" >Item d</a>
+          </nav>
+          <p>nav.breadcrumb.breadcrumb-error > a</p>
+          <nav class="breadcrumb breadcrumb-error">
+            <a href="">Home</a>
+            <a href="">Item a</a>
+            <a href="">Item b</a>
+            <a href="" class="current">Item c</a>
+            <a href="" >Item d</a>
+          </nav>
+          
+
+  div.code-result
+    h6 Result:
+    p nav.breadcrumb.breadcrumb-primary.breadcrumb-xs > a
+    nav.breadcrumb.breadcrumb-primary.breadcrumb-xs
+      a(href='') Home
+      a(href='') Item a
+      a(href='') Item b
+      a.current(href='') Item c
+      a(href='') Item d
+    p nav.breadcrumb.breadcrumb-secondary.breadcrumb-sm > a
+    nav.breadcrumb.breadcrumb-secondary.breadcrumb-sm
+      a(href='') Home
+      a(href='') Item a
+      a(href='') Item b
+      a.current(href='') Item c
+      a(href='') Item d
+    p nav.breadcrumb.breadcrumb-inverse > a
+    nav.breadcrumb.breadcrumb-inverse
+      a(href='') Home
+      a(href='') Item a
+      a(href='') Item b
+      a.current(href='') Item c
+      a(href='') Item d
+    p nav.breadcrumb.breadcrumb-default.breadcrumb-md > a
+    nav.breadcrumb.breadcrumb-default.breadcrumb-md
+      a(href='') Home
+      a(href='') Item a
+      a(href='') Item b
+      a.current(href='') Item c
+      a(href='') Item d
+    p nav.breadcrumb.breadcrumb-info.breadcrumb-lg > a
+    nav.breadcrumb.breadcrumb-info.breadcrumb-lg
+      a(href='') Home
+      a(href='') Item a
+      a(href='') Item b
+      a.current(href='') Item c
+      a(href='') Item d
+    p nav.breadcrumb.breadcrumb-warning.breadcrumb-xl > a
+    nav.breadcrumb.breadcrumb-warning.breadcrumb-xl
+      a(href='') Home
+      a(href='') Item a
+      a(href='') Item b
+      a.current(href='') Item c
+      a(href='') Item d
+    p nav.breadcrumb.breadcrumb-error > a
+    nav.breadcrumb.breadcrumb-error
+      a(href='') Home
+      a(href='') Item a
+      a(href='') Item b
+      a.current(href='') Item c
+      a(href='') Item d
+
+
+
+mixin breadcrumbLooks
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          
+          
+  div.code-result
+    h6 Result:
+
+
+mixin breadcrumbDisplay
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          
+
+  div.code-result
+    h6 Result:
+    
+
