@@ -3502,7 +3502,8 @@ footer span {
 }
 
 #sidebar {
-  background: #F8F8F8;
+  background: #2b2b2b;
+  color: #999;
   padding: 0.5em 0;
 }
 #sidebar .title-sidebar {
@@ -3896,7 +3897,7 @@ table th {
   text-decoration: none;
 }
 ._list li a:hover, ._list li a.current {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 ._list li ul {
   padding-left: 0.5em;

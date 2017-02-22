@@ -22,5 +22,8 @@
     "highlightjs": "^9.5.0",
     "angular-sanitize": "^1.5.8",
     "prism": "Prism#^1.5.1"
+  },
+  "resolutions": {
+    "angular": "1.6.2"
   }
 }
