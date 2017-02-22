@@ -100,6 +100,10 @@ angular.module('hagrid.knowledge')
         url: "/scrolls",
         templateUrl: "partials/knowledge.scrolls.html",
       })
+      .state('main.views.knowledge.tabs', {
+        url: "/tabs",
+        templateUrl: "partials/knowledge.tabs.html",
+      })
       .state('main.views.knowledge.modals', {
         url: "/modals",
         templateUrl: "partials/knowledge.modals.html",
