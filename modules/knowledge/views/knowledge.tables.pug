@@ -1,4 +1,4 @@
-include ../../../code-example/tables/tables.jade
+include ../../../code-example/tables/tables.pug
 h1.title-section Tables
 .gs-wrap
   p Use tables when you need show data table
@@ -122,17 +122,17 @@ h1.title-section Tables
 
   section.block-section-hash#basic-table-example
     h4 Basic Table
-    mixin mainTable
+    +mainTable
 
   section.block-section-hash#table-types-example
     h4 Table types
-    mixin tableTypes
+    +tableTypes
   section.block-section-hash#table-sizes-example
     h4 Table sizes
-    mixin tableSizes
+    +tableSizes
   section.block-section-hash#table-looks-example
     h4 Table inherited looks
-    mixin tableLooks
+    +tableLooks
 
 
 

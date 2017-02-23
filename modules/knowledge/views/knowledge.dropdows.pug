@@ -1,4 +1,4 @@
-include ../../../code-example/dropdowns/dropdowns.jade
+include ../../../code-example/dropdowns/dropdowns.pug
 h1.title-section Dropdowns
 .gs-wrap
   p Dropdowns works how html selector, you can use dropdowns when you needs user nested list inside a button.
@@ -158,7 +158,7 @@ h1.title-section Dropdowns
 
   section.block-section-hash#buttons-example
     h4 Main structure HTML Dropdowns
-    mixin mainDropdrowns
+    +mainDropdrowns
   //-div
     .dropdown.dropdown-primary.dropdown-outline(style='width: 245px')
       a.btn.btn-primary.btn-outline.btn-dropdown(href='#', hagrid-trigger='')

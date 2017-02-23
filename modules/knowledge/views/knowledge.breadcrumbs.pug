@@ -1,4 +1,4 @@
-include ../../../code-example/breadcrumbs/breadcrumbs.jade
+include ../../../code-example/breadcrumbs/breadcrumbs.pug
 h1.title-section Breadcrumbs
 .gs-wrap
   p The Breadcrumbs
@@ -112,13 +112,13 @@ h1.title-section Breadcrumbs
 
   section.block-section-hash#breadcrumbs-example
     h4 Main Class of Breadcrumbs
-    mixin mainBreadcrumbs
+    +mainBreadcrumbs
   section.block-section-hash#breadcrumb-types-example
     h4 Breadcrumb Types
-    mixin breadcrumbTypes
+    +breadcrumbTypes
   section.block-section-hash#breadcrumb-sizes-example
     h4 Breadcrumb Sizes
-    mixin breadcrumbSizes
+    +breadcrumbSizes
   //-section.block-section-hash#breadcrumb-looks-example
     h4 Breadcrumb Looks
     mixin breadcrumbLooks

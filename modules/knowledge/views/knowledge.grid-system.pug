@@ -1,4 +1,4 @@
-include ../../../code-example/grid-system/gs.jade
+include ../../../code-example/grid-system/gs.pug
 h1.align-center Grid System
 .gs-wrap
   p Hagrid Grid System works mainly with percentages(layouts), Also the grid system supports flex box feature.
@@ -299,43 +299,43 @@ h1.align-center Grid System
 
   section.block-section-hash#gs-example
     h4 Grid system container
-    mixin gsContainer
+    +gsContainer
 
   section.block-section-hash#layouts-example
     h4 Grid system layouts
-    mixin gsLayouts
+    +gsLayouts
 
   section.block-section-hash#sizes-example
     h4 Sizes and Transform layouts
-    mixin gsSizes
+    +gsSizes
 
   section.block-section-hash#order-example
     h4 Order columns
-    mixin gsOrder
+    +gsOrder
 
   section.block-section-hash#gutters-example
     h4 Gutters class
-    mixin gsGutters
+    +gsGutters
 
   section.block-section-hash#horizontal-aligns-example
     h4 Horizontal alignment of items
-    mixin gsHorizontalAligns
+    +gsHorizontalAligns
 
   section.block-section-hash#vertical-aligns-example
     h4 Vertical alignment of items
-    mixin gsVerticalAligns
+    +gsVerticalAligns
 
   section.block-section-hash#vertical-aligns-example
     h4 Vertical alignment of content
-    mixin gsVerticalAlignsContent
+    +gsVerticalAlignsContent
 
   section.block-section-hash#nested-layouts-example
     h4 Nested Layouts
-    mixin gsNestedLayouts
+    +gsNestedLayouts
 
   section.block-section-hash#gs-debug-example
     h4 Grid System Debug
-    mixin gsDebug
+    +gsDebug
 
 
 

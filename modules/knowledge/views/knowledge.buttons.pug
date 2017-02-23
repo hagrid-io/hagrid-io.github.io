@@ -1,4 +1,4 @@
-include ../../../code-example/buttons/buttons.jade
+include ../../../code-example/buttons/buttons.pug
 h1.title-section Buttons
 .gs-wrap
   p The Buttons is one of part most important of some
@@ -160,27 +160,27 @@ h1.title-section Buttons
 
   section.block-section-hash#buttons-example
     h4 Main Class button
-    mixin mainButtons
+    +mainButtons
 
   section.block-section-hash#type-buttons-example
     h4 Buttons type
-    mixin typeButtons
+    +typeButtons
 
   section.block-section-hash#size-buttons-example
     h4 Buttons size
-    mixin sizeButtons
+    +sizeButtons
 
   section.block-section-hash#look-buttons-example
     h4 Buttons look
-    mixin lookButtons
+    +lookButtons
 
   section.block-section-hash#display-buttons-example
     h4 Display Buttons
-    mixin displayButtons
+    +displayButtons
 
   section.block-section-hash#icon-buttons-example
     h4 Icon Buttons
-    mixin iconButtons
+    +iconButtons
 
   h5 Started buttons
   //-.old
