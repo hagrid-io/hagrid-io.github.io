@@ -1,0 +1,461 @@
+mixin mainPaginations
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <nav class="pagination">
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+          </nav>
+          <nav class="pagination">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <nav class="pagination">
+            <span class="pagination-prev"></span>
+            <a href="">3</a>
+            <a href="" class="current">4</a>
+            <span class="ellipsis"></span>
+            <a href="">8</a>
+            <a href="">9</a>
+            <span class="pagination-next"></span>
+          </nav>
+          
+
+  div.code-result
+    h6 Result:
+    nav.pagination
+      a(href='') 1
+      a(href='') 2
+      a(href='') 3
+      a(href='') 4
+    nav.pagination
+      span.pagination-prev.disable
+      a(href='') 1
+      a(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    nav.pagination
+      span.pagination-prev
+      a(href='') 3
+      a.current(href='') 4
+      span.ellipsis
+      a(href='') 8
+      a(href='') 9
+      span.pagination-next
+
+
+mixin paginationTypes
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <p>.pagination.pagination-primary</p>
+          <nav class="pagination pagination-primary">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-secondary</p>
+          <nav class="pagination pagination-secondary">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-light</p>
+          <nav class="pagination pagination-light">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-inverse</p>
+          <nav class="pagination pagination-inverse">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-info</p>
+          <nav class="pagination pagination-info">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-warning</p>
+          <nav class="pagination pagination-warning">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-error</p>
+          <nav class="pagination pagination-error">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          
+
+  div.code-result
+    h6 Result:
+    p .pagination.pagination-primary
+    nav.pagination.pagination-primary
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-secondary
+    nav.pagination.pagination-secondary
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-light
+    nav.pagination.pagination-light
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-inverse
+    nav.pagination.pagination-inverse
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-info
+    nav.pagination.pagination-info
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-warning
+    nav.pagination.pagination-warning
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-error
+    nav.pagination.pagination-error
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+
+
+
+mixin paginationLooks
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <p>.pagination.pagination-primary pagination-filled</p>
+          <nav class="pagination pagination-primary pagination-filled">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-secondary.pagination-filled</p>
+          <nav class="pagination pagination-secondary pagination-filled">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-light.pagination-filled</p>
+          <nav class="pagination pagination-light pagination-filled">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-inverse.pagination-filled</p>
+          <nav class="pagination pagination-inverse pagination-filled">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-info.pagination-filled</p>
+          <nav class="pagination pagination-info pagination-filled">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-warning.pagination-filled</p>
+          <nav class="pagination pagination-warning pagination-filled">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-error.pagination-filled</p>
+          <nav class="pagination pagination-error pagination-filled">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          
+
+  div.code-result
+    h6 Result:
+    p .pagination.pagination-primary pagination-filled
+    nav.pagination.pagination-primary.pagination-filled
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-secondary.pagination-filled
+    nav.pagination.pagination-secondary.pagination-filled
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-light.pagination-filled
+    nav.pagination.pagination-light.pagination-filled
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-inverse.pagination-filled
+    nav.pagination.pagination-inverse.pagination-filled
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-info.pagination-filled
+    nav.pagination.pagination-info.pagination-filled
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-warning.pagination-filled
+    nav.pagination.pagination-warning.pagination-filled
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-error.pagination-filled
+    nav.pagination.pagination-error.pagination-filled
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+
+
+mixin paginationSizes
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <p>.pagination.pagination-primary.pagination-xs</p>
+          <nav class="pagination pagination-primary pagination-xs">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-secondary.pagination-sm</p>
+          <nav class="pagination pagination-secondary pagination-filled pagination-sm">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-light</p>
+          <nav class="pagination pagination-light">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-inverse.pagination-md</p>
+          <nav class="pagination pagination-inverse pagination-outline pagination-md">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-info.pagination-lg</p>
+          <nav class="pagination pagination-info pagination-group pagination-lg">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-warning.pagination-xl</p>
+          <nav class="pagination pagination-warning pagination-filled pagination-xl">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <p>.pagination.pagination-error</p>
+          <nav class="pagination pagination-error">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          
+
+  div.code-result
+    h6 Result:
+    p .pagination.pagination-primary.pagination-xs
+    nav.pagination.pagination-primary.pagination-xs
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-secondary.pagination-sm
+    nav.pagination.pagination-secondary.pagination-filled.pagination-sm
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-light
+    nav.pagination.pagination-light
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-inverse.pagination-md
+    nav.pagination.pagination-inverse.pagination-outline.pagination-md
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-info.pagination-lg
+    nav.pagination.pagination-info.pagination-group.pagination-lg
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-warning.pagination-xl
+    nav.pagination.pagination-warning.pagination-filled.pagination-xl
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+    p .pagination.pagination-error
+    nav.pagination.pagination-error
+      span.pagination-prev.disable
+      a(href='') 1
+      a.current(href='') 2
+      a(href='') 3
+      a(href='') 4
+      span.pagination-next
+
+
+mixin paginationDisplay
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          
+          
+
+  div.code-result
+    h6 Result:
+  

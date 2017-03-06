@@ -1,2 +1,126 @@
- h1.title-section Paginations
+include ../../../code-example/paginations/paginations.pug
+h1.title-section Paginations
 .gs-wrap
+  p The Paginations
+
+  table.table-documentation
+    thead
+      tr
+        th.first-col Property Details
+        th Variations
+        th Description
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Pagination Main Class
+          li Type: class
+          li Supports:&nbsp;
+            b [types, looks, sizes]
+
+          li.list__cta
+            a(href="#pagination-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Pagination: .pagination
+            span e.g: .pagination
+            pre
+              code(class="language-html", prism)
+                :code
+                  <nav class="pagination">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                  </nav>
+
+      td Use <b>.list</b> class to reference a list element.
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Pagination types
+          li Type: class
+          li Dependencies: .pagination
+          li.list__cta
+            a(href="#pagination-types-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Pagination: .pagination-{types}
+            span e.g: .pagination.pagination-primary, .pagination.pagination-error 
+            pre
+              code(class="language-html", prism)
+                :code
+                  <!-- pagination pagination-primary -->
+                  <nav class="pagination pagination-primary">
+                    <span class="pagination-prev disable"></span>
+                    <a href="">1</a>
+                    <a href="" class="current">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <span class="pagination-next"></span>
+                  </nav>
+                  <!-- pagination pagination-warning -->
+                  <nav class="pagination pagination-warning">
+                    <span class="pagination-prev disable"></span>
+                    <a href="">1</a>
+                    <a href="" class="current">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <span class="pagination-next"></span>
+                  </nav>
+
+
+      td Use <b>.list.list-{types}</b> classes to modify the apparence of a list
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b List Looks
+          li Type: class
+          li Dependencies: .list
+          li.list__cta
+            a(href="#list-looks-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Pagination: .list-{looks}
+            span e.g: .list.list-group, .list.list-dot
+            pre
+              code(class="language-html", prism)
+                :code
+                  <!-- List group -->
+                  <ul class="list list-group">
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
+                  <!-- List dot and primary -->
+                  <ul class="list list-dot list-primary">
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
+
+      td You can use <b>.list-{looks}</b> to change the look of list, available Looks <b>{dot, circle, square, cube, arrow, check, group, divider, border-left}</b>
+
+
+  section.block-section-hash#list-example
+    h4 Main Class of Paginations
+    +mainPaginations
+  section.block-section-hash#list-types-example
+    h4 Pagination Types
+    +paginationTypes
+  section.block-section-hash#list-looks-example
+    h4 Pagination Looks
+    +paginationLooks
+  section.block-section-hash#list-display-example
+    h4 Pagination Sizes
+    +paginationSizes
+
+  
+
