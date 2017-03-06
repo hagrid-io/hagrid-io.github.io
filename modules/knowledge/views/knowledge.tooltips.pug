@@ -1,2 +1,135 @@
- h1.title-section Tooltips
+include ../../../code-example/tooltips/tooltips.pug
+h1.title-section Tooltip
 .gs-wrap
+  p The Tooltip
+
+  table.table-documentation
+    thead
+      tr
+        th.first-col Property Details
+        th Variations
+        th Description
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Tooltip Main Class
+          li Type: class
+          li Supports:&nbsp;
+            b [types, looks, sizes]
+
+          li.list__cta
+            a(href="#tooltip-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Tooltip: .tooltip
+            span e.g: .tooltip
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="progressbar">
+                    <div class="progressbar-counting" data-counting="70%" style="width: 70%"></div>
+                  </div>
+
+      td Use <b>.tooltip</b>
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Tooltip types
+          li Type: class
+          li Dependencies: .tooltip
+          li.list__cta
+            a(href="#tooltip-types-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Tooltip: .tooltip-{types}
+            span e.g: .tooltip.tooltip-primary, .tooltip.tooltip-error 
+            pre
+              code(class="language-html", prism)
+                :code
+                  <h2>span.tooltip</h2>
+                  <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-primary tooltip-top-left tooltip-show"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                  <h2>span.tooltip</h2>
+                  <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-secondary tooltip-top-left"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                  <h2>span.tooltip</h2>
+                  <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-light tooltip-top-center tooltip-show"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+
+
+      td Use <b>.tooltip.tooltip-{types}</b>
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Tooltip Sizes
+          li Type: class
+          li Dependencies: .tooltip
+          li.list__cta
+            a(href="#tooltip-looks-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Tooltip: .tooltip-{looks}
+            span e.g: .tooltip.tooltip-group, .tooltip.tooltip-dot
+            pre
+              code(class="language-html", prism)
+                :code
+                  <!-- Progressbar xs size and progressbar primary type-->
+                  <div class="progressbar progressbar-primary progressbar-xs">
+                    <div class="progressbar-counting" data-counting="20%" style="width: 20%"></div>
+                  </div>
+                  <!-- Progressbar lg size and progressbar secondary type -->
+                  <div class="progressbar progressbar-secondary progressbar-lg">
+                    <div class="progressbar-counting" data-counting="30%" style="width: 50%"></div>
+                  </div>
+                  
+      td You can use <b>.tooltip-{sizes}</b>
+    
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Tooltip Display
+          li Type: class
+          li Dependencies: .tooltip
+          li.list__cta
+            a(href="#tooltip-looks-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Tooltip: .tooltip-{looks}
+            span e.g: .tooltip.tooltip-group, .tooltip.tooltip-dot
+            pre
+              code(class="language-html", prism)
+                :code
+                  <h2>span.tooltip</h2>
+                  <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-top-left tooltip-show"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                  <h2>span.tooltip</h2>
+                  <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-top-left"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                  <h2>span.tooltip</h2>
+                  <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-top-center tooltip-show"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                  
+                  
+      td You can use <b>.tooltip-{sizes}</b>
+
+
+  section.block-section-hash#tooltip-example
+    h4 Main Class of Progressbar
+    +mainTooltips
+  section.block-section-hash#tooltip-types-example
+    h4 Tooltip Types
+    +tooltipTypes
+  //-section.block-section-hash#tooltip-looks-example
+    h4 Tooltip Looks
+    +tooltipLooks
+  //-section.block-section-hash#tooltip-display-example
+    h4 Tooltip Sizes
+    +tooltipSizes
+  section.block-section-hash#tooltip-display-example
+    h4 Tooltip Display
+    +tooltipDisplay
+
+  
+

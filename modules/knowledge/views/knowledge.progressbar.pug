@@ -1,2 +1,107 @@
- h1.title-section Progressbar
+include ../../../code-example/progressbars/progressbars.pug
+h1.title-section Progressbar
 .gs-wrap
+  p The Progressbar
+
+  table.table-documentation
+    thead
+      tr
+        th.first-col Property Details
+        th Variations
+        th Description
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Progressbar Main Class
+          li Type: class
+          li Supports:&nbsp;
+            b [types, looks, sizes]
+
+          li.list__cta
+            a(href="#progressbar-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Progressbar: .progressbar
+            span e.g: .progressbar
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="progressbar">
+                    <div class="progressbar-counting" data-counting="70%" style="width: 70%"></div>
+                  </div>
+
+      td Use <b>.progressbar</b>
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Progressbar types
+          li Type: class
+          li Dependencies: .progressbar
+          li.list__cta
+            a(href="#progressbar-types-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Progressbar: .progressbar-{types}
+            span e.g: .progressbar.progressbar-primary, .progressbar.progressbar-error 
+            pre
+              code(class="language-html", prism)
+                :code
+                  <!-- progressbar progressbar-primary -->
+                  <div class="progressbar progressbar-primary">
+                    <div class="progressbar-counting" data-counting="20%" style="width: 20%"></div>
+                  </div>
+                  <!-- progressbar progressbar-info -->
+                  <div class="progressbar progressbar-info">
+                    <div class="progressbar-counting" data-counting="60%" style="width: 60%"></div>
+                  </div>
+
+
+      td Use <b>.progressbar.progressbar-{types}</b>
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Progressbar Sizes
+          li Type: class
+          li Dependencies: .progressbar
+          li.list__cta
+            a(href="#progressbar-looks-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Progressbar: .progressbar-{looks}
+            span e.g: .progressbar.progressbar-group, .progressbar.progressbar-dot
+            pre
+              code(class="language-html", prism)
+                :code
+                  <!-- Progressbar xs size and progressbar primary type-->
+                  <div class="progressbar progressbar-primary progressbar-xs">
+                    <div class="progressbar-counting" data-counting="20%" style="width: 20%"></div>
+                  </div>
+                  <!-- Progressbar lg size and progressbar secondary type -->
+                  <div class="progressbar progressbar-secondary progressbar-lg">
+                    <div class="progressbar-counting" data-counting="30%" style="width: 50%"></div>
+                  </div>
+                  
+      td You can use <b>.progressbar-{sizes}</b>
+
+
+  section.block-section-hash#progressbar-example
+    h4 Main Class of Progressbar
+    +mainProgressbars
+  section.block-section-hash#progressbar-types-example
+    h4 Progressbar Types
+    +progressbarTypes
+  //-section.block-section-hash#progressbar-looks-example
+    h4 Progressbar Looks
+    +progressbarLooks
+  section.block-section-hash#progressbar-display-example
+    h4 Progressbar Sizes
+    +progressbarSizes
+
+  
+

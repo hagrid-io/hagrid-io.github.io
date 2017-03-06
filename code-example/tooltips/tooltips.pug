@@ -1,0 +1,148 @@
+mixin mainTooltips
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-top-left"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+
+  div.code-result
+    h6 Result:
+    p
+      | Lorem ipsum dolor sit amet, sed do eiusmod 
+      span.tooltip.tooltip-top-left
+        span.tooltip-body  tempor incididunt ut labore et dolore
+        | consectetur adipiscing
+      |  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+
+
+mixin tooltipTypes
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <!-- Tooltip primary -->
+          <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-primary"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <!-- Tooltip info -->
+          <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-info"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+
+  div.code-result
+    h6 Result:
+    // Tooltip primary
+    p
+      | Lorem ipsum dolor sit amet, sed do eiusmod 
+      span.tooltip.tooltip-primary
+        span.tooltip-body  tempor incididunt ut labore et dolore
+        | consectetur adipiscing
+      |  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    // Tooltip info
+    p
+      | Lorem ipsum dolor sit amet, sed do eiusmod 
+      span.tooltip.tooltip-info
+        span.tooltip-body  tempor incididunt ut labore et dolore
+        | consectetur adipiscing
+      |  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+
+
+mixin tooltipLooks
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          
+  div.code-result
+    h6 Result:
+    
+
+mixin tooltipSizes
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+                    
+  div.code-result
+    h6 Result:
+    
+
+
+mixin tooltipDisplay
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <h2>span.tooltip</h2>
+          <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-top-left"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <h2>span.tooltip</h2>
+          <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-top-left"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <h2>span.tooltip</h2>
+          <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-top-center"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <h2>span.tooltip</h2>
+          <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-top-right"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <h2>span.tooltip</h2> 
+          <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-bottom-left"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <h2>span.tooltip</h2> 
+          <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-bottom-center"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <h2>span.tooltip</h2> 
+          <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-bottom-right"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          
+          
+
+  div.code-result
+    h6 Result:
+    h2 span.tooltip
+    p
+      | Lorem ipsum dolor sit amet, sed do eiusmod 
+      span.tooltip.tooltip-top-left
+        span.tooltip-body  tempor incididunt ut labore et dolore
+        | consectetur adipiscing
+      |  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    h2 span.tooltip
+    p
+      | Lorem ipsum dolor sit amet, sed do eiusmod 
+      span.tooltip.tooltip-top-left
+        span.tooltip-body  tempor incididunt ut labore et dolore
+        | consectetur adipiscing
+      |  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    h2 span.tooltip
+    p
+      | Lorem ipsum dolor sit amet, sed do eiusmod 
+      span.tooltip.tooltip-top-center
+        span.tooltip-body  tempor incididunt ut labore et dolore
+        | consectetur adipiscing
+      |  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    h2 span.tooltip
+    p
+      | Lorem ipsum dolor sit amet, sed do eiusmod 
+      span.tooltip.tooltip-top-right
+        span.tooltip-body  tempor incididunt ut labore et dolore
+        | consectetur adipiscing
+      |  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    h2 span.tooltip
+    p
+      | Lorem ipsum dolor sit amet, sed do eiusmod 
+      span.tooltip.tooltip-bottom-left
+        span.tooltip-body  tempor incididunt ut labore et dolore
+        | consectetur adipiscing
+      |  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    h2 span.tooltip
+    p
+      | Lorem ipsum dolor sit amet, sed do eiusmod 
+      span.tooltip.tooltip-bottom-center
+        span.tooltip-body  tempor incididunt ut labore et dolore
+        | consectetur adipiscing
+      |  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    h2 span.tooltip
+    p
+      | Lorem ipsum dolor sit amet, sed do eiusmod 
+      span.tooltip.tooltip-bottom-right
+        span.tooltip-body  tempor incididunt ut labore et dolore
+        | consectetur adipiscing
+      |  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+  
