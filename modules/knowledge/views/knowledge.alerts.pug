@@ -1,2 +1,116 @@
- h1.title-section Alerts
+include ../../../code-example/alerts/alerts.pug
+h1.title-section Alerts
 .gs-wrap
+  p The Alerts
+
+  table.table-documentation
+    thead
+      tr
+        th.first-col Property Details
+        th Variations
+        th Description
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Alert Main Class
+          li Type: class
+          li Supports:&nbsp;
+            b [types]
+
+          li.list__cta
+            a(href="#alert-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Alert: .alert
+            span e.g: .alert
+            pre
+              code(class="language-html", prism)
+                :code
+                  <div class="alert" id="alert1" hagrid-component="alert">
+                    <div class="alert-wrap" hagrid-role="close">
+                      <section class="alert-body">
+                        <header class="alert-header">
+                          <b class="alert-title">Hagrid Alert</b>
+                        </header>
+                        <article class="alert-content">
+                          <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                        </article>
+                        <footer class="alert-footer">
+                          <a href="#" hagrid-role="close">OK</a>
+                        </footer>
+                      </section>
+                    </div>
+                  </div>
+
+      td Use <b>.alert</b>
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Alert types
+          li Type: class
+          li Dependencies: .alert
+          li.list__cta
+            a(href="#alert-types-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Alert: .alert-{types}
+            span e.g: .alert.alert-primary, .alert.alert-error 
+            pre
+              code(class="language-html", prism)
+                :code
+                  <!-- alert alert-secondary -->
+                  <div class="alert alert-secondary" id="alert1" hagrid-component="alert">
+                    <div class="alert-wrap" hagrid-role="close">
+                      <section class="alert-body">
+                        <header class="alert-header">
+                          <b class="alert-title">Hagrid Alert</b>
+                        </header>
+                        <article class="alert-content">
+                          <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                        </article>
+                        <footer class="alert-footer">
+                          <a href="#" hagrid-role="close">OK</a>
+                        </footer>
+                      </section>
+                    </div>
+                  </div>
+                  <!-- alert alert-info -->
+                  <div class="alert alert-info" id="alert1" hagrid-component="alert">
+                    <div class="alert-wrap" hagrid-role="close">
+                      <section class="alert-body">
+                        <header class="alert-header">
+                          <b class="alert-title">Hagrid Alert</b>
+                        </header>
+                        <article class="alert-content">
+                          <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                        </article>
+                        <footer class="alert-footer">
+                          <a href="#" hagrid-role="close">OK</a>
+                        </footer>
+                      </section>
+                    </div>
+                  </div>
+
+
+      td Use <b>.alert.alert-{types}</b>
+
+
+  section.block-section-hash#alert-example
+    h4 Main Class of Alerts
+    +mainAlerts
+  section.block-section-hash#alert-types-example
+    h4 Alert Types
+    +alertTypes
+  //-section.block-section-hash#alert-looks-example
+    h4 Progressbar Looks
+    +alertLooks
+  //-section.block-section-hash#alert-display-example
+    h4 Progressbar Sizes
+    +alertSizes
+
+  
+

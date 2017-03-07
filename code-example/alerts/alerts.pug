@@ -4,10 +4,38 @@ mixin mainAlerts
     pre
       code(class="language-html", prism)
         :code
+          <a href="" class="btn btn-primary" hagrid-target="#alert1" hagrid-role="open">Launch alert</a>
+          <div class="alert" id="alert1" hagrid-component="alert">
+            <div class="alert-wrap" hagrid-role="close">
+              <section class="alert-body">
+                <header class="alert-header">
+                  <b class="alert-title">Hagrid Alert</b>
+                </header>
+                <article class="alert-content">
+                  <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                </article>
+                <footer class="alert-footer">
+                  <a href="#" hagrid-role="close">OK</a>
+                </footer>
+              </section>
+            </div>
+          </div>
           
 
   div.code-result
     h6 Result:
+    a.btn.btn-primary(href='', hagrid-target='#alert1', hagrid-role='open') Launch alert
+    #alert1.alert(hagrid-component='alert')
+      .alert-wrap(hagrid-role='close')
+        section.alert-body
+          header.alert-header
+            b.alert-title Hagrid Alert
+          article.alert-content
+            p Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+          footer.alert-footer
+            a(href='#', hagrid-role='close') OK
+
+
 
 
 mixin alertTypes
@@ -16,10 +44,209 @@ mixin alertTypes
     pre
       code(class="language-html", prism)
         :code
+          <!-- Buttons launch alerts -->
+          <a href="" class="btn btn-primary" hagrid-target="#alert1" hagrid-role="open">Launch alert</a>
+          <a href="" class="btn btn-secondary" hagrid-target="#alert2" hagrid-role="open">Launch alert</a>
+          <a href="" class="btn btn-inverse" hagrid-target="#alert3" hagrid-role="open">Launch alert</a>
+          <a href="" class="btn btn-light" hagrid-target="#alert4" hagrid-role="open">Launch alert</a>
+          <a href="" class="btn btn-info" hagrid-target="#alert5" hagrid-role="open">Launch alert</a>
+          <a href="" class="btn btn-warning" hagrid-target="#alert6" hagrid-role="open">Launch alert</a>
+          <a href="" class="btn btn-error" hagrid-target="#alert7" hagrid-role="open">Launch alert</a>
+          <!-- basic alert -->
+          <div class="alert" id="alert1" hagrid-component="alert">
+            <div class="alert-wrap" hagrid-role="close">
+              <section class="alert-body">
+                <header class="alert-header">
+                  <b class="alert-title">Hagrid Alert</b>
+                </header>
+                <article class="alert-content">
+                  <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                </article>
+                <footer class="alert-footer">
+                  <a href="#" hagrid-role="close">OK</a>
+                </footer>
+              </section>
+            </div>
+          </div>
+          <!-- secondary alert -->
+          <div class="alert alert-secondary" id="alert2" hagrid-component="alert">
+            <div class="alert-wrap" hagrid-role="close">
+              <section class="alert-body">
+                <header class="alert-header">
+                  <b class="alert-title">Hagrid Alert</b>
+                </header>
+                <article class="alert-content">
+                  <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                </article>
+                <footer class="alert-footer">
+                  <a href="#" hagrid-role="close">OK</a>
+                </footer>
+              </section>
+            </div>
+          </div>
+          <!-- inverse alert -->
+          <div class="alert alert-inverse" id="alert3" hagrid-component="alert">
+            <div class="alert-wrap" hagrid-role="close">
+              <section class="alert-body">
+                <header class="alert-header">
+                  <b class="alert-title">Hagrid Alert</b>
+                </header>
+                <article class="alert-content">
+                  <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                </article>
+                <footer class="alert-footer">
+                  <a href="#" hagrid-role="close">OK</a>
+                </footer>
+              </section>
+            </div>
+          </div>
+          <!-- light alert -->
+          <div class="alert alert-light" id="alert4" hagrid-component="alert">
+            <div class="alert-wrap" hagrid-role="close">
+              <section class="alert-body">
+                <header class="alert-header">
+                  <b class="alert-title">Hagrid Alert</b>
+                </header>
+                <article class="alert-content">
+                  <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                </article>
+                <footer class="alert-footer">
+                  <a href="#" hagrid-role="close">OK</a>
+                </footer>
+              </section>
+            </div>
+          </div>
+          <!-- info alert -->
+          <div class="alert alert-info" id="alert5" hagrid-component="alert">
+            <div class="alert-wrap" hagrid-role="close">
+              <section class="alert-body">
+                <header class="alert-header">
+                  <b class="alert-title">Hagrid Alert</b>
+                </header>
+                <article class="alert-content">
+                  <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                </article>
+                <footer class="alert-footer">
+                  <a href="#" hagrid-role="close">OK</a>
+                </footer>
+              </section>
+            </div>
+          </div>
+          <!-- warning alert -->
+          <div class="alert alert-warning" id="alert6" hagrid-component="alert">
+            <div class="alert-wrap" hagrid-role="close">
+              <section class="alert-body">
+                <header class="alert-header">
+                  <b class="alert-title">Hagrid Alert</b>
+                </header>
+                <article class="alert-content">
+                  <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                </article>
+                <footer class="alert-footer">
+                  <a href="#" hagrid-role="close">OK</a>
+                </footer>
+              </section>
+            </div>
+          </div>
+          <!-- error alert -->
+          <div class="alert alert-error" id="alert7" hagrid-component="alert">
+            <div class="alert-wrap" hagrid-role="close">
+              <section class="alert-body">
+                <header class="alert-header">
+                  <b class="alert-title">Hagrid Alert</b>
+                </header>
+                <article class="alert-content">
+                  <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                </article>
+                <footer class="alert-footer">
+                  <a href="#" hagrid-role="close">OK</a>
+                </footer>
+              </section>
+            </div>
+          </div>
           
 
   div.code-result
     h6 Result:
+    // Buttons launch alerts
+    a.btn.btn-primary(href='', hagrid-target='#alert1', hagrid-role='open') Launch alert
+    a.btn.btn-secondary(href='', hagrid-target='#alert2', hagrid-role='open') Launch alert
+    a.btn.btn-inverse(href='', hagrid-target='#alert3', hagrid-role='open') Launch alert
+    a.btn.btn-light(href='', hagrid-target='#alert4', hagrid-role='open') Launch alert
+    a.btn.btn-info(href='', hagrid-target='#alert5', hagrid-role='open') Launch alert
+    a.btn.btn-warning(href='', hagrid-target='#alert6', hagrid-role='open') Launch alert
+    a.btn.btn-error(href='', hagrid-target='#alert7', hagrid-role='open') Launch alert
+    // basic alert
+    #alert1.alert(hagrid-component='alert')
+      .alert-wrap(hagrid-role='close')
+        section.alert-body
+          header.alert-header
+            b.alert-title Hagrid Alert
+          article.alert-content
+            p Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+          footer.alert-footer
+            a(href='#', hagrid-role='close') OK
+    // secondary alert
+    #alert2.alert.alert-secondary(hagrid-component='alert')
+      .alert-wrap(hagrid-role='close')
+        section.alert-body
+          header.alert-header
+            b.alert-title Hagrid Alert
+          article.alert-content
+            p Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+          footer.alert-footer
+            a(href='#', hagrid-role='close') OK
+    // inverse alert
+    #alert3.alert.alert-inverse(hagrid-component='alert')
+      .alert-wrap(hagrid-role='close')
+        section.alert-body
+          header.alert-header
+            b.alert-title Hagrid Alert
+          article.alert-content
+            p Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+          footer.alert-footer
+            a(href='#', hagrid-role='close') OK
+    // light alert
+    #alert4.alert.alert-light(hagrid-component='alert')
+      .alert-wrap(hagrid-role='close')
+        section.alert-body
+          header.alert-header
+            b.alert-title Hagrid Alert
+          article.alert-content
+            p Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+          footer.alert-footer
+            a(href='#', hagrid-role='close') OK
+    // info alert
+    #alert5.alert.alert-info(hagrid-component='alert')
+      .alert-wrap(hagrid-role='close')
+        section.alert-body
+          header.alert-header
+            b.alert-title Hagrid Alert
+          article.alert-content
+            p Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+          footer.alert-footer
+            a(href='#', hagrid-role='close') OK
+    // warning alert
+    #alert6.alert.alert-warning(hagrid-component='alert')
+      .alert-wrap(hagrid-role='close')
+        section.alert-body
+          header.alert-header
+            b.alert-title Hagrid Alert
+          article.alert-content
+            p Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+          footer.alert-footer
+            a(href='#', hagrid-role='close') OK
+    // error alert
+    #alert7.alert.alert-error(hagrid-component='alert')
+      .alert-wrap(hagrid-role='close')
+        section.alert-body
+          header.alert-header
+            b.alert-title Hagrid Alert
+          article.alert-content
+            p Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+          footer.alert-footer
+            a(href='#', hagrid-role='close') OK
+
 
 
 mixin alertLooks
