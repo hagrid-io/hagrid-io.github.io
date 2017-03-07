@@ -1,2 +1,71 @@
- h1.title-section Tabs
+include ../../../code-example/tabs/tabs.pug
+h1.title-section Tabs
 .gs-wrap
+  p The Tabs
+
+  table.table-documentation
+    thead
+      tr
+        th.first-col Property Details
+        th Variations
+        th Description
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Tab Main Class
+          li Type: class
+          li Supports:&nbsp;
+            b [types]
+
+          li.list__cta
+            a(href="#tab-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Tab: .tab
+            span e.g: .tab
+            pre
+              code(class="language-html", prism)
+                :code
+      
+
+      td Use <b>.tab</b>
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Tab types
+          li Type: class
+          li Dependencies: .tab
+          li.list__cta
+            a(href="#tab-types-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Tab: .tab-{types}
+            span e.g: .tab.tab-primary, .tab.tab-error 
+            pre
+              code(class="language-html", prism)
+                :code
+                  <!-- info tab -->
+
+
+      td Use <b>.tab.tab-{types}</b>
+
+
+  section.block-section-hash#tab-example
+    h4 Main Class of Tabs
+    +mainTabs
+  section.block-section-hash#tab-types-example
+    h4 Tab Types
+    +tabTypes
+  //-section.block-section-hash#tab-looks-example
+    h4 Tab Looks
+    +tabLooks
+  //-section.block-section-hash#tab-display-example
+    h4 Tab Sizes
+    +tabSizes
+
+  
+

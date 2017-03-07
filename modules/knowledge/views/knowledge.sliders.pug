@@ -1,2 +1,90 @@
- h1.title-section Sliders
+include ../../../code-example/sliders/sliders.pug
+h1.title-section Sliders
 .gs-wrap
+  p The Sliders
+
+  table.table-documentation
+    thead
+      tr
+        th.first-col Property Details
+        th Variations
+        th Description
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Slider Main Class
+          li Type: class
+          li Supports:&nbsp;
+            b [types]
+
+          li.list__cta
+            a(href="#slider-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Slider: .slider
+            span e.g: .slider
+            pre
+              code(class="language-html", prism)
+                :code
+                  
+
+      td Use <b>.slider</b>
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Slider types
+          li Type: class
+          li Dependencies: .slider
+          li.list__cta
+            a(href="#slider-types-example", class="btn btn-info btn-block btn-sm") Examples
+      td
+        ul.list-documentation.list-documentation-variations
+          li
+            b Slider: .slider-{types}
+            span e.g: .slider.slider-primary, .slider.slider-error 
+            pre
+              code(class="language-html", prism)
+                :code
+                  <!-- info modal -->
+                  <div class="modal slider-info" id="modal5" hagrid-component="modal">
+                    <div class="slider-wrap" hagrid-role="close">
+                      <section class="slider-body">
+                        <header class="slider-header">
+                          <b class="slider-title">Title modal</b>
+                          <a href="" class="slider-close" hagrid-role="close"></a>
+                        </header>
+                        <article class="slider-content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </article>
+                        <footer class="slider-footer">
+                          <div class="slider-actions gs">
+                            <a class="lay" hagrid-role="close">Decline.</a>
+                            <a class="lay" hagrid-role="close">Accept.</a>
+                          </div>
+                        </footer>
+                      </section>
+                    </div>
+                  </div>
+
+
+      td Use <b>.slider.slider-{types}</b>
+
+
+  section.block-section-hash#slider-example
+    h4 Main Class of Sliders
+    +mainSliders
+  section.block-section-hash#slider-types-example
+    h4 Slider Types
+    +sliderTypes
+  //-section.block-section-hash#slider-looks-example
+    h4 Slider Looks
+    +sliderLooks
+  //-section.block-section-hash#slider-display-example
+    h4 Slider Sizes
+    +sliderSizes
+
+  
+
