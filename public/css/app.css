@@ -3580,6 +3580,14 @@ footer#main-footer span {
 .table-documentation pre {
   padding: 0.1em !important;
   font-size: 12px;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+.table-documentation pre code {
+  width: 100%;
+  display: block;
+  overflow: auto;
 }
 
 .code-result {

@@ -4,9 +4,35 @@ mixin mainTabs
     pre
       code(class="language-html", prism)
         :code
+          <section class="tab" hagrid-component="tab">
+            <nav class="tab-nav">
+              <a href="#panel1" class="tab-show" hagrid-role="open">Tab 1</a>
+              <a href="#panel2" hagrid-role="open">Tab 2</a>
+              <a href="#panel3" hagrid-role="open">Tab 3</a>
+              <a href="#panel4" hagrid-role="open">Tab 4</a>
+            </nav>
+            <div class="tab-content">
+              <div class="tab-panel tab-show" id="panel1">Lorem ipsum dolor sit amet 1</div>
+              <div class="tab-panel" id="panel2">Lorem ipsum dolor sit amet 2</div>
+              <div class="tab-panel" id="panel3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+              <div class="tab-panel" id="panel4">Lorem ipsum dolor sit amet 4</div>
+            </div>
+          </section>
 
   div.code-result
     h6 Result:
+    section.tab(hagrid-component='tab')
+      nav.tab-nav
+        a.tab-show(href='#panel1', hagrid-role='open') Tab 1
+        a(href='#panel2', hagrid-role='open') Tab 2
+        a(href='#panel3', hagrid-role='open') Tab 3
+        a(href='#panel4', hagrid-role='open') Tab 4
+      .tab-content
+        #panel1.tab-panel.tab-show Lorem ipsum dolor sit amet 1
+        #panel2.tab-panel Lorem ipsum dolor sit amet 2
+        #panel3.tab-panel
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        #panel4.tab-panel Lorem ipsum dolor sit amet 4
 
 
 mixin tabTypes
@@ -15,10 +41,206 @@ mixin tabTypes
     pre
       code(class="language-html", prism)
         :code
-          
+          <p>.tab.tab-primary</p>
+          <section class="tab tab-primary" hagrid-component="tab">
+            <nav class="tab-nav">
+              <a href="#panel1" class="tab-show" hagrid-role="open">Tab 1</a>
+              <a href="#panel2" hagrid-role="open">Tab 2</a>
+              <a href="#panel3" hagrid-role="open">Tab 3</a>
+              <a href="#panel4" hagrid-role="open">Tab 4</a>
+            </nav>
+            <div class="tab-content">
+              <div class="tab-panel tab-show" id="panel1">Lorem ipsum dolor sit amet 1</div>
+              <div class="tab-panel" id="panel2">Lorem ipsum dolor sit amet 2</div>
+              <div class="tab-panel" id="panel3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+              <div class="tab-panel" id="panel4">Lorem ipsum dolor sit amet 4</div>
+            </div>
+          </section>
+          <p>.tab.tab-secondary</p>
+          <section class="tab tab-secondary" hagrid-component="tab">
+            <nav class="tab-nav">
+              <a href="#panel1" class="tab-show" hagrid-role="open">Tab 1</a>
+              <a href="#panel2" hagrid-role="open">Tab 2</a>
+              <a href="#panel3" hagrid-role="open">Tab 3</a>
+              <a href="#panel4" hagrid-role="open">Tab 4</a>
+            </nav>
+            <div class="tab-content">
+              <div class="tab-panel tab-show" id="panel1">Lorem ipsum dolor sit amet 1</div>
+              <div class="tab-panel" id="panel2">Lorem ipsum dolor sit amet 2</div>
+              <div class="tab-panel" id="panel3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+              <div class="tab-panel" id="panel4">Lorem ipsum dolor sit amet 4</div>
+            </div>
+          </section>
+          <p>.tab.tab-inverse</p>
+          <section class="tab tab-inverse" hagrid-component="tab">
+            <nav class="tab-nav">
+              <a href="#panel1" class="tab-show" hagrid-role="open">Tab 1</a>
+              <a href="#panel2" hagrid-role="open">Tab 2</a>
+              <a href="#panel3" hagrid-role="open">Tab 3</a>
+              <a href="#panel4" hagrid-role="open">Tab 4</a>
+            </nav>
+            <div class="tab-content">
+              <div class="tab-panel tab-show" id="panel1">Lorem ipsum dolor sit amet 1</div>
+              <div class="tab-panel" id="panel2">Lorem ipsum dolor sit amet 2</div>
+              <div class="tab-panel" id="panel3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+              <div class="tab-panel" id="panel4">Lorem ipsum dolor sit amet 4</div>
+            </div>
+          </section>
+          <p>.tab.tab-light</p>
+          <section class="tab tab-light" hagrid-component="tab">
+            <nav class="tab-nav">
+              <a href="#panel1" class="tab-show" hagrid-role="open">Tab 1</a>
+              <a href="#panel2" hagrid-role="open">Tab 2</a>
+              <a href="#panel3" hagrid-role="open">Tab 3</a>
+              <a href="#panel4" hagrid-role="open">Tab 4</a>
+            </nav>
+            <div class="tab-content">
+              <div class="tab-panel tab-show" id="panel1">Lorem ipsum dolor sit amet 1</div>
+              <div class="tab-panel" id="panel2">Lorem ipsum dolor sit amet 2</div>
+              <div class="tab-panel" id="panel3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+              <div class="tab-panel" id="panel4">Lorem ipsum dolor sit amet 4</div>
+            </div>
+          </section>
+          <p>.tab.tab-info</p>
+          <section class="tab tab-info" hagrid-component="tab">
+            <nav class="tab-nav">
+              <a href="#panel1" class="tab-show" hagrid-role="open">Tab 1</a>
+              <a href="#panel2" hagrid-role="open">Tab 2</a>
+              <a href="#panel3" hagrid-role="open">Tab 3</a>
+              <a href="#panel4" hagrid-role="open">Tab 4</a>
+            </nav>
+            <div class="tab-content">
+              <div class="tab-panel tab-show" id="panel1">Lorem ipsum dolor sit amet 1</div>
+              <div class="tab-panel" id="panel2">Lorem ipsum dolor sit amet 2</div>
+              <div class="tab-panel" id="panel3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+              <div class="tab-panel" id="panel4">Lorem ipsum dolor sit amet 4</div>
+            </div>
+          </section>
+          <p>.tab.tab-warning</p>
+          <section class="tab tab-warning" hagrid-component="tab">
+            <nav class="tab-nav">
+              <a href="#panel1" class="tab-show" hagrid-role="open">Tab 1</a>
+              <a href="#panel2" hagrid-role="open">Tab 2</a>
+              <a href="#panel3" hagrid-role="open">Tab 3</a>
+              <a href="#panel4" hagrid-role="open">Tab 4</a>
+            </nav>
+            <div class="tab-content">
+              <div class="tab-panel tab-show" id="panel1">Lorem ipsum dolor sit amet 1</div>
+              <div class="tab-panel" id="panel2">Lorem ipsum dolor sit amet 2</div>
+              <div class="tab-panel" id="panel3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+              <div class="tab-panel" id="panel4">Lorem ipsum dolor sit amet 4</div>
+            </div>
+          </section>
+          <p>.tab.tab-error</p>
+          <section class="tab tab-error" hagrid-component="tab">
+            <nav class="tab-nav">
+              <a href="#panel1" class="tab-show" hagrid-role="open">Tab 1</a>
+              <a href="#panel2" hagrid-role="open">Tab 2</a>
+              <a href="#panel3" hagrid-role="open">Tab 3</a>
+              <a href="#panel4" hagrid-role="open">Tab 4</a>
+            </nav>
+            <div class="tab-content">
+              <div class="tab-panel tab-show" id="panel1">Lorem ipsum dolor sit amet 1</div>
+              <div class="tab-panel" id="panel2">Lorem ipsum dolor sit amet 2</div>
+              <div class="tab-panel" id="panel3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+              <div class="tab-panel" id="panel4">Lorem ipsum dolor sit amet 4</div>
+            </div>
+          </section>
 
   div.code-result
     h6 Result:
+    p .tab.tab-primary
+    section.tab.tab-primary(hagrid-component='tab')
+      nav.tab-nav
+        a.tab-show(href='#panel1', hagrid-role='open') Tab 1
+        a(href='#panel2', hagrid-role='open') Tab 2
+        a(href='#panel3', hagrid-role='open') Tab 3
+        a(href='#panel4', hagrid-role='open') Tab 4
+      .tab-content
+        #panel1.tab-panel.tab-show Lorem ipsum dolor sit amet 1
+        #panel2.tab-panel Lorem ipsum dolor sit amet 2
+        #panel3.tab-panel
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        #panel4.tab-panel Lorem ipsum dolor sit amet 4
+    p .tab.tab-secondary
+    section.tab.tab-secondary(hagrid-component='tab')
+      nav.tab-nav
+        a.tab-show(href='#panel1', hagrid-role='open') Tab 1
+        a(href='#panel2', hagrid-role='open') Tab 2
+        a(href='#panel3', hagrid-role='open') Tab 3
+        a(href='#panel4', hagrid-role='open') Tab 4
+      .tab-content
+        #panel1.tab-panel.tab-show Lorem ipsum dolor sit amet 1
+        #panel2.tab-panel Lorem ipsum dolor sit amet 2
+        #panel3.tab-panel
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        #panel4.tab-panel Lorem ipsum dolor sit amet 4
+    p .tab.tab-inverse
+    section.tab.tab-inverse(hagrid-component='tab')
+      nav.tab-nav
+        a.tab-show(href='#panel1', hagrid-role='open') Tab 1
+        a(href='#panel2', hagrid-role='open') Tab 2
+        a(href='#panel3', hagrid-role='open') Tab 3
+        a(href='#panel4', hagrid-role='open') Tab 4
+      .tab-content
+        #panel1.tab-panel.tab-show Lorem ipsum dolor sit amet 1
+        #panel2.tab-panel Lorem ipsum dolor sit amet 2
+        #panel3.tab-panel
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        #panel4.tab-panel Lorem ipsum dolor sit amet 4
+    p .tab.tab-light
+    section.tab.tab-light(hagrid-component='tab')
+      nav.tab-nav
+        a.tab-show(href='#panel1', hagrid-role='open') Tab 1
+        a(href='#panel2', hagrid-role='open') Tab 2
+        a(href='#panel3', hagrid-role='open') Tab 3
+        a(href='#panel4', hagrid-role='open') Tab 4
+      .tab-content
+        #panel1.tab-panel.tab-show Lorem ipsum dolor sit amet 1
+        #panel2.tab-panel Lorem ipsum dolor sit amet 2
+        #panel3.tab-panel
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        #panel4.tab-panel Lorem ipsum dolor sit amet 4
+    p .tab.tab-info
+    section.tab.tab-info(hagrid-component='tab')
+      nav.tab-nav
+        a.tab-show(href='#panel1', hagrid-role='open') Tab 1
+        a(href='#panel2', hagrid-role='open') Tab 2
+        a(href='#panel3', hagrid-role='open') Tab 3
+        a(href='#panel4', hagrid-role='open') Tab 4
+      .tab-content
+        #panel1.tab-panel.tab-show Lorem ipsum dolor sit amet 1
+        #panel2.tab-panel Lorem ipsum dolor sit amet 2
+        #panel3.tab-panel
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        #panel4.tab-panel Lorem ipsum dolor sit amet 4
+    p .tab.tab-warning
+    section.tab.tab-warning(hagrid-component='tab')
+      nav.tab-nav
+        a.tab-show(href='#panel1', hagrid-role='open') Tab 1
+        a(href='#panel2', hagrid-role='open') Tab 2
+        a(href='#panel3', hagrid-role='open') Tab 3
+        a(href='#panel4', hagrid-role='open') Tab 4
+      .tab-content
+        #panel1.tab-panel.tab-show Lorem ipsum dolor sit amet 1
+        #panel2.tab-panel Lorem ipsum dolor sit amet 2
+        #panel3.tab-panel
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        #panel4.tab-panel Lorem ipsum dolor sit amet 4
+    p .tab.tab-error
+    section.tab.tab-error(hagrid-component='tab')
+      nav.tab-nav
+        a.tab-show(href='#panel1', hagrid-role='open') Tab 1
+        a(href='#panel2', hagrid-role='open') Tab 2
+        a(href='#panel3', hagrid-role='open') Tab 3
+        a(href='#panel4', hagrid-role='open') Tab 4
+      .tab-content
+        #panel1.tab-panel.tab-show Lorem ipsum dolor sit amet 1
+        #panel2.tab-panel Lorem ipsum dolor sit amet 2
+        #panel3.tab-panel
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        #panel4.tab-panel Lorem ipsum dolor sit amet 4
+
     
 
 mixin tabLooks
