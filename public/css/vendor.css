@@ -356,8 +356,8 @@ div {
   color: #333;
 }
 
-.default-color, .btn, .tab-component .nav-tabs .nav-tab,
-.tab-component .nav-tabs li, .label {
+.default-color, .btn, .tab .tab-nav .tab-nav-item,
+.tab .tab-nav a, .label {
   color: #f8f8f8;
 }
 
@@ -6271,7 +6271,7 @@ h6,
   *display: inline;
   padding: 0.7em 1em;
   line-height: 1em;
-  color: #f8f8f8;
+  color: #3C3C3C;
   background-color: #f8f8f8;
   text-decoration: none;
   font-size: 1em;
@@ -6315,10 +6315,6 @@ h6,
 }
 .btn.btn-default {
   background-color: #f8f8f8;
-  color: #f8f8f8;
-}
-.btn.btn-default .badge {
-  background: #f8f8f8;
 }
 .btn.btn-default .badge {
   color: #f8f8f8;
@@ -6335,6 +6331,10 @@ h6,
 }
 .btn.btn-light {
   background-color: #f8f8f8;
+  color: #3C3C3C;
+}
+.btn.btn-light .badge {
+  background: #3C3C3C;
 }
 .btn.btn-light .badge {
   color: #f8f8f8;
@@ -6491,18 +6491,18 @@ h6,
 }
 .btn.btn-outline.btn-default {
   border-color: #f8f8f8;
-  color: #333;
+  color: #f8f8f8;
 }
 .btn.btn-outline.btn-default:hover, .btn.btn-outline.btn-default.btn-hover {
-  color: #333;
+  color: #fff;
   background-color: #f8f8f8;
 }
 .btn.btn-outline.btn-light {
   border-color: #f8f8f8;
-  color: #f8f8f8;
+  color: #333;
 }
 .btn.btn-outline.btn-light:hover, .btn.btn-outline.btn-light.btn-hover {
-  color: #fff;
+  color: #333;
   background-color: #f8f8f8;
 }
 .btn.btn-outline.btn-inverse {
@@ -6599,17 +6599,19 @@ h6,
   color: #fff;
 }
 
-.tab-component {
+.tab {
   margin: 1em 0;
+  display: block;
+  background-color: #f8f8f8;
 }
-.tab-component .nav-tabs {
+.tab .tab-nav {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.tab-component .nav-tabs .nav-tab,
-.tab-component .nav-tabs li {
+.tab .tab-nav .tab-nav-item,
+.tab .tab-nav a {
   cursor: pointer;
   width: 100%;
   text-align: center;
@@ -6617,8 +6619,8 @@ h6,
   *display: inline;
   padding: 0.7em 1em;
   line-height: 1em;
-  color: #f8f8f8;
-  background-color: #f8f8f8;
+  color: #333;
+  background-color: transparent;
   text-decoration: none;
   font-weight: 100;
   font-size: 1em;
@@ -6652,23 +6654,71 @@ h6,
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-.tab-component .nav-tabs .nav-tab:last-child,
-.tab-component .nav-tabs li:last-child {
+.tab .tab-nav .tab-nav-item:last-child,
+.tab .tab-nav a:last-child {
   border-right: 1px solid transparent;
 }
-.tab-component .nav-tabs .nav-tab.active,
-.tab-component .nav-tabs li.active {
+.tab .tab-nav .tab-nav-item.tab-show,
+.tab .tab-nav a.tab-show {
   color: #2D6CC9;
   border-bottom-color: #2D6CC9;
 }
-.tab-component .content-tabs .content-tab {
+.tab .tab-content {
+  padding: 2em 1em;
+}
+.tab .tab-content .tab-panel {
   display: none;
 }
-.tab-component .content-tabs .content-tab.active {
+.tab .tab-content .tab-panel.tab-show {
   display: block;
 }
-.tab-component.tab-component-primary {
-  border: 1px solid rgba(0, 0, 0, 0.05);
+.tab.tab-default .tab-nav .tab-nav-item.tab-show,
+.tab.tab-default .tab-nav a.tab-show {
+  color: #f8f8f8;
+  border-bottom-color: #f8f8f8;
+}
+.tab.tab-light {
+  background-color: #333;
+  color: #fff;
+}
+.tab.tab-light .tab-nav .tab-nav-item.tab-show,
+.tab.tab-light .tab-nav a.tab-show {
+  color: #f8f8f8;
+  border-bottom-color: #f8f8f8;
+}
+.tab.tab-light .tab-nav .tab-nav-item,
+.tab.tab-light .tab-nav a {
+  color: #f3f3f3;
+}
+.tab.tab-inverse .tab-nav .tab-nav-item.tab-show,
+.tab.tab-inverse .tab-nav a.tab-show {
+  color: #3C3C3C;
+  border-bottom-color: #3C3C3C;
+}
+.tab.tab-primary .tab-nav .tab-nav-item.tab-show,
+.tab.tab-primary .tab-nav a.tab-show {
+  color: #2D6CC9;
+  border-bottom-color: #2D6CC9;
+}
+.tab.tab-secondary .tab-nav .tab-nav-item.tab-show,
+.tab.tab-secondary .tab-nav a.tab-show {
+  color: #31C290;
+  border-bottom-color: #31C290;
+}
+.tab.tab-info .tab-nav .tab-nav-item.tab-show,
+.tab.tab-info .tab-nav a.tab-show {
+  color: #00BCD4;
+  border-bottom-color: #00BCD4;
+}
+.tab.tab-warning .tab-nav .tab-nav-item.tab-show,
+.tab.tab-warning .tab-nav a.tab-show {
+  color: #E68523;
+  border-bottom-color: #E68523;
+}
+.tab.tab-error .tab-nav .tab-nav-item.tab-show,
+.tab.tab-error .tab-nav a.tab-show {
+  color: #C53030;
+  border-bottom-color: #C53030;
 }
 
 .breadcrumb {
@@ -10820,6 +10870,7 @@ table.table.table-lg th {
   font-weight: bold;
 }
 .modal .modal-close {
+  display: none;
   position: fixed;
   border-radius: 0 0 0 3px;
   right: 0;
