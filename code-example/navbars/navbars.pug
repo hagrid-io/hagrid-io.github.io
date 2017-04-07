@@ -4,8 +4,337 @@ mixin mainNavbars
     pre
       code(class="language-html", prism)
         :code
-          
+          <nav class="navbar">
+            <a href="">Item A</a>
+            <a href="">Item B</a>
+            <a href="">Item C</a>
+          </nav>
 
   div.code-result
     h6 Result:
+    nav.navbar
+      a(href='') Item A
+      a(href='') Item B
+      a(href='') Item C
+
+
+mixin typeNavbars
+  div.code-example
+    h6 Code:
+    pre
+      code(class="language-html", prism)
+        :code
+          <nav class="navbar navbar-primary navbar-mobile-in-sm navbar-mobile-in-xs" hagrid-component="navbar">
+            <div class="navbar-menu gs">
+              <div class="lay">
+                <a class="navbar-brand" href="">Brand</a>
+                <a href="">Item A</a>
+                <a href="">Item B</a>
+                <a href="">Item C</a>
+              </div>
+              <div class="lay gs justify-content-flex-end">
+                <input type="text" placeholder="Search" class="align-seft">
+              </div>
+            </div>
+            <div class="navbar-menu-mobile open">
+              <div class="top-menu">
+                <span class="navbar-brand">Menu</span>
+                <a href="" class="icon-menu" hagrid-role="toggle">
+                  <span class="icon-menu-toggle"></span>
+                </a>
+              </div>
+              <nav>
+                <a href="">Item A</a>
+                <a href="">Item B</a>
+                <a href="">Item C</a>
+              </nav>
+            </div>
+          </nav>
+          <nav class="navbar navbar-secondary navbar-mobile-in-sm navbar-mobile-in-xs" hagrid-component="navbar">
+            <div class="navbar-menu gs">
+              <div class="lay">
+                <a class="navbar-brand" href="">Brand</a>
+                <a href="">Item A</a>
+                <a href="">Item B</a>
+                <a href="">Item C</a>
+              </div>
+              <div class="lay gs justify-content-flex-end">
+                <input type="text" placeholder="Search" class="align-seft">
+              </div>
+            </div>
+            <div class="navbar-menu-mobile open">
+              <div class="top-menu">
+                <span class="navbar-brand">Menu</span>
+                <a href="" class="icon-menu" hagrid-role="toggle">
+                  <span class="icon-menu-toggle"></span>
+                </a>
+              </div>
+              <nav>
+                <a href="">Item A</a>
+                <a href="">Item B</a>
+                <a href="">Item C</a>
+              </nav>
+            </div>
+          </nav>
+          <nav class="navbar navbar-light navbar-mobile-in-sm navbar-mobile-in-xs" hagrid-component="navbar">
+            <div class="navbar-menu gs">
+              <div class="lay">
+                <a class="navbar-brand" href="">Brand</a>
+                <a href="">Item A</a>
+                <a href="">Item B</a>
+                <a href="">Item C</a>
+              </div>
+              <div class="lay gs justify-content-flex-end">
+                <input type="text" placeholder="Search" class="align-seft">
+              </div>
+            </div>
+            <div class="navbar-menu-mobile open">
+              <div class="top-menu">
+                <span class="navbar-brand">Menu</span>
+                <a href="" class="icon-menu" hagrid-role="toggle">
+                  <span class="icon-menu-toggle"></span>
+                </a>
+              </div>
+              <nav>
+                <a href="">Item A</a>
+                <a href="">Item B</a>
+                <a href="">Item C</a>
+              </nav>
+            </div>
+          </nav>
+          <nav class="navbar navbar-inverse navbar-mobile-in-sm navbar-mobile-in-xs" hagrid-component="navbar">
+            <div class="navbar-menu gs">
+              <div class="lay">
+                <a class="navbar-brand" href="">Brand</a>
+                <a href="">Item A</a>
+                <a href="">Item B</a>
+                <a href="">Item C</a>
+              </div>
+              <div class="lay gs justify-content-flex-end">
+                <input type="text" placeholder="Search" class="align-seft">
+              </div>
+            </div>
+            <div class="navbar-menu-mobile open">
+              <div class="top-menu">
+                <span class="navbar-brand">Menu</span>
+                <a href="" class="icon-menu" hagrid-role="toggle">
+                  <span class="icon-menu-toggle"></span>
+                </a>
+              </div>
+              <nav>
+                <a href="">Item A</a>
+                <a href="">Item B</a>
+                <a href="">Item C</a>
+              </nav>
+            </div>
+          </nav>
+          <nav class="navbar navbar-info navbar-mobile-in-sm navbar-mobile-in-xs" hagrid-component="navbar">
+            <div class="navbar-menu gs">
+              <div class="lay">
+                <a class="navbar-brand" href="">Brand</a>
+                <a href="">Item A</a>
+                <a href="">Item B</a>
+                <a href="">Item C</a>
+              </div>
+              <div class="lay gs justify-content-flex-end">
+                <input type="text" placeholder="Search" class="align-seft">
+              </div>
+            </div>
+            <div class="navbar-menu-mobile open">
+              <div class="top-menu">
+                <span class="navbar-brand">Menu</span>
+                <a href="" class="icon-menu" hagrid-role="toggle">
+                  <span class="icon-menu-toggle"></span>
+                </a>
+              </div>
+              <nav>
+                <a href="">Item A</a>
+                <a href="">Item B</a>
+                <a href="">Item C</a>
+              </nav>
+            </div>
+          </nav>
+          <nav class="navbar navbar-warning navbar-mobile-in-sm navbar-mobile-in-xs" hagrid-component="navbar">
+            <div class="navbar-menu gs">
+              <div class="lay">
+                <a class="navbar-brand" href="">Brand</a>
+                <a href="">Item A</a>
+                <a href="">Item B</a>
+                <a href="">Item C</a>
+              </div>
+              <div class="lay gs justify-content-flex-end">
+                <input type="text" placeholder="Search" class="align-seft">
+              </div>
+            </div>
+            <div class="navbar-menu-mobile open">
+              <div class="top-menu">
+                <span class="navbar-brand">Menu</span>
+                <a href="" class="icon-menu" hagrid-role="toggle">
+                  <span class="icon-menu-toggle"></span>
+                </a>
+              </div>
+              <nav>
+                <a href="">Item A</a>
+                <a href="">Item B</a>
+                <a href="">Item C</a>
+              </nav>
+            </div>
+          </nav>
+          <nav class="navbar navbar-error navbar-mobile-in-sm navbar-mobile-in-xs" hagrid-component="navbar">
+            <div class="navbar-menu gs">
+              <div class="lay">
+                <a class="navbar-brand" href="">Brand</a>
+                <a href="">Item A</a>
+                <a href="">Item B</a>
+                <a href="">Item C</a>
+              </div>
+              <div class="lay gs justify-content-flex-end">
+                <input type="text" placeholder="Search" class="align-seft">
+              </div>
+            </div>
+            <div class="navbar-menu-mobile open">
+              <div class="top-menu">
+                <span class="navbar-brand">Menu</span>
+                <a href="" class="icon-menu" hagrid-role="toggle">
+                  <span class="icon-menu-toggle"></span>
+                </a>
+              </div>
+              <nav>
+                <a href="">Item A</a>
+                <a href="">Item B</a>
+                <a href="">Item C</a>
+              </nav>
+            </div>
+          </nav>
+
+  div.code-result
+    h6 Result:
+    nav.navbar.navbar-primary.navbar-mobile-in-sm.navbar-mobile-in-xs(hagrid-component='navbar')
+      .navbar-menu.gs
+        .lay
+          a.navbar-brand(href='') Brand
+          a(href='') Item A
+          a(href='') Item B
+          a(href='') Item C
+        .lay.gs.justify-content-flex-end
+          input.align-seft(type='text', placeholder='Search')
+      .navbar-menu-mobile.open
+        .top-menu
+          span.navbar-brand Menu
+          a.icon-menu(href='', hagrid-role='toggle')
+            span.icon-menu-toggle
+        nav
+          a(href='') Item A
+          a(href='') Item B
+          a(href='') Item C
+    nav.navbar.navbar-secondary.navbar-mobile-in-sm.navbar-mobile-in-xs(hagrid-component='navbar')
+      .navbar-menu.gs
+        .lay
+          a.navbar-brand(href='') Brand
+          a(href='') Item A
+          a(href='') Item B
+          a(href='') Item C
+        .lay.gs.justify-content-flex-end
+          input.align-seft(type='text', placeholder='Search')
+      .navbar-menu-mobile.open
+        .top-menu
+          span.navbar-brand Menu
+          a.icon-menu(href='', hagrid-role='toggle')
+            span.icon-menu-toggle
+        nav
+          a(href='') Item A
+          a(href='') Item B
+          a(href='') Item C
+    nav.navbar.navbar-light.navbar-mobile-in-sm.navbar-mobile-in-xs(hagrid-component='navbar')
+      .navbar-menu.gs
+        .lay
+          a.navbar-brand(href='') Brand
+          a(href='') Item A
+          a(href='') Item B
+          a(href='') Item C
+        .lay.gs.justify-content-flex-end
+          input.align-seft(type='text', placeholder='Search')
+      .navbar-menu-mobile.open
+        .top-menu
+          span.navbar-brand Menu
+          a.icon-menu(href='', hagrid-role='toggle')
+            span.icon-menu-toggle
+        nav
+          a(href='') Item A
+          a(href='') Item B
+          a(href='') Item C
+    nav.navbar.navbar-inverse.navbar-mobile-in-sm.navbar-mobile-in-xs(hagrid-component='navbar')
+      .navbar-menu.gs
+        .lay
+          a.navbar-brand(href='') Brand
+          a(href='') Item A
+          a(href='') Item B
+          a(href='') Item C
+        .lay.gs.justify-content-flex-end
+          input.align-seft(type='text', placeholder='Search')
+      .navbar-menu-mobile.open
+        .top-menu
+          span.navbar-brand Menu
+          a.icon-menu(href='', hagrid-role='toggle')
+            span.icon-menu-toggle
+        nav
+          a(href='') Item A
+          a(href='') Item B
+          a(href='') Item C
+    nav.navbar.navbar-info.navbar-mobile-in-sm.navbar-mobile-in-xs(hagrid-component='navbar')
+      .navbar-menu.gs
+        .lay
+          a.navbar-brand(href='') Brand
+          a(href='') Item A
+          a(href='') Item B
+          a(href='') Item C
+        .lay.gs.justify-content-flex-end
+          input.align-seft(type='text', placeholder='Search')
+      .navbar-menu-mobile.open
+        .top-menu
+          span.navbar-brand Menu
+          a.icon-menu(href='', hagrid-role='toggle')
+            span.icon-menu-toggle
+        nav
+          a(href='') Item A
+          a(href='') Item B
+          a(href='') Item C
+    nav.navbar.navbar-warning.navbar-mobile-in-sm.navbar-mobile-in-xs(hagrid-component='navbar')
+      .navbar-menu.gs
+        .lay
+          a.navbar-brand(href='') Brand
+          a(href='') Item A
+          a(href='') Item B
+          a(href='') Item C
+        .lay.gs.justify-content-flex-end
+          input.align-seft(type='text', placeholder='Search')
+      .navbar-menu-mobile.open
+        .top-menu
+          span.navbar-brand Menu
+          a.icon-menu(href='', hagrid-role='toggle')
+            span.icon-menu-toggle
+        nav
+          a(href='') Item A
+          a(href='') Item B
+          a(href='') Item C
+    nav.navbar.navbar-error.navbar-mobile-in-sm.navbar-mobile-in-xs(hagrid-component='navbar')
+      .navbar-menu.gs
+        .lay
+          a.navbar-brand(href='') Brand
+          a(href='') Item A
+          a(href='') Item B
+          a(href='') Item C
+        .lay.gs.justify-content-flex-end
+          input.align-seft(type='text', placeholder='Search')
+      .navbar-menu-mobile.open
+        .top-menu
+          span.navbar-brand Menu
+          a.icon-menu(href='', hagrid-role='toggle')
+            span.icon-menu-toggle
+        nav
+          a(href='') Item A
+          a(href='') Item B
+          a(href='') Item C
+
+
 

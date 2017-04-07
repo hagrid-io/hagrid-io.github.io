@@ -17,7 +17,7 @@ h1.title-section Dropdowns
             b Dropdown
           li Type: class
           li Supports:&nbsp;
-            b [types, sizes, looks, events]
+            b [types, looks, events]
 
           li.list__cta
             a(href="#dropdowns-example", class="btn btn-info btn-sm btn-block") Examples
@@ -25,66 +25,23 @@ h1.title-section Dropdowns
       td
         ul.list-documentation.list-documentation-variations
           li
-            b Sizes: m-[10-100]
-            span e.g: m-10, m-20, m-30...
+            b Button: .btn
+            span e.g: .btn
             pre
               code(class="language-html", prism)
                 :code
-                  <div class="m-10">...</div>
-          li
-            b Axis: m-{x, y}
-            span e.g: m-10-x, m-20-y
-            pre
-              code(class="language-html", prism)
-                :code
-                  <div class="m-10-x">...</div>
-          li
-            b Sides: m-{top, right, bottom, left}
-            span e.g: m-10-top, m-20-right, m-30-bottom
-            pre
-              code(class="language-html", prism)
-                :code
-                  <div class="m-10-top">...</div>
-          li
-            b Measurements: m-{px, percent, em, rem}
-            span e.g: m-percent, m-em, m-rem
-            pre
-              code(class="language-html", prism)
-                :code
-                  <div class="m-10 m-em">...</div>
-          li
-            b Combined: sizes, axes, measurements
-            span e.g: class="m-10-x m-10-top m-percent"
-            pre
-              code(class="language-html", prism)
-                :code
-                  <div class="m-10-x m-10-top m-percent">...</div>
+                  <div class="dropdown" hagrid-component="dropdown">
+                    <a href="#" class="btn btn-primary" hagrid-role="dropdown">Dropdown A<span class="icon-dropdown icon-keyboard_arrow_down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Dropdown Menu 1</a></li>
+                      <li><a href="#">Dropdown Menu 2</a></li>
+                      <li><a href="#">Dropdown Menu 3</a></li>
+                      <li><a href="#">Dropdown Menu 4</a></li>
+                      <li><a href="#">Dropdown Menu 5</a></li>
+                    </ul>
+                  </div>
 
-
-      td Hagrid supports margin classes to separate elements, <b>.m-[sizes]</b> to specify a size, <b>.m-{measurements}</b> to specify the measurement, by default measurements is px, <b>.m-{axis}</b> to specify a axes and <b>.m-[side]</b> to specify a side.
-
-    tr
-      th.first-col
-        ul.list-documentation.list-documentation-details
-          li.list__title
-            b Types
-          li Type: class
-          li Dependencies: .dropdown
-
-          li.list__cta
-            a(href="#type-dropdowns-example", class="btn btn-info btn-sm btn-block") Examples
-
-      td
-        ul.list-documentation.list-documentation-variations
-          li
-            b Types: dropdown-{types}
-            span e.g: dropdown.dropdown-primary, dropdown.dropdown-secondary...
-            pre
-              code(class="language-html", prism)
-                :code
-                  <div class="dropdown dropdown-primary">...</div>
-
-      td Hagrid Dropdowns supports types
+      td Hagrid Main Structure
 
     tr
       th.first-col
@@ -109,99 +66,14 @@ h1.title-section Dropdowns
 
       td Hagrid Dropdowns supports types
 
-    tr
-      th.first-col
-        ul.list-documentation.list-documentation-details
-          li.list__title
-            b Sizes
-          li Type: class
-          li Dependencies: .dropdown
-
-          li.list__cta
-            a(href="#look-dropdowns-example", class="btn btn-info btn-sm btn-block") Examples
-
-      td
-        ul.list-documentation.list-documentation-variations
-          li
-            b Looks: dropdown-{looks}
-            span e.g: dropdown.dropdown-outline, dropdown.dropdown-plain...
-            pre
-              code(class="language-html", prism)
-                :code
-                  <div class="dropdown dropdown-outline">...</div>
-
-      td Hagrid Dropdowns supports types
-
-    tr
-      th.first-col
-        ul.list-documentation.list-documentation-details
-          li.list__title
-            b Events
-          li Type: behavior
-          li Dependencies: .dropdown, js library
-
-          li.list__cta
-            a(href="#behavior-dropdowns-example", class="btn btn-info btn-sm btn-block") Examples
-
-      td
-        ul.list-documentation.list-documentation-variations
-          li
-            b Events: .support-hover
-            span e.g: dropdown.support-hover
-            pre
-              code(class="language-html", prism)
-                :code
-                  <div class="dropdown support-hover">...</div>
-
-      td You can show dropdown list content with hover or click event, click event require js library
 
 
-  section.block-section-hash#buttons-example
+  section.block-section-hash#dropdown-example
     h4 Main structure HTML Dropdowns
-    +mainDropdrowns
-  //-div
-    .dropdown.dropdown-primary.dropdown-outline(style='width: 245px')
-      a.btn.btn-primary.btn-outline.btn-dropdown(href='#', hagrid-trigger='')
-        | Dropdown A
-        span.icon-dropdown.icon-3d_rotation
-      ul.dropdown-menu
-        li
-          a(href='#') Dropdown Menu 1
-        li
-          a(href='#') Dropdown Menu 2
-        li
-          a(href='#') Dropdown Menu 3
-        li
-          a(href='#') Dropdown Menu 4
-        li
-          a(href='#') Dropdown Menu 5
-    .dropdown.dropdown-primary.dropdown-outline.dropdown-inverse(style='width: 245px')
-      a.btn.btn-primary.btn-outline.btn-dropdown(href='#', hagrid-trigger='')
-        | Dropdown A
-        span.icon-dropdown.icon-3d_rotation
-      ul.dropdown-menu
-        li
-          a(href='#') Dropdown Menu 1
-        li
-          a(href='#') Dropdown Menu 2
-        li
-          a(href='#') Dropdown Menu 3
-        li
-          a(href='#') Dropdown Menu 4
-        li
-          a(href='#') Dropdown Menu 5
-    .dropdown.dropdown-primary.dropdown-outline.dropdown-simple(style='width: 245px')
-      a.btn.btn-primary.btn-outline.btn-dropdown(href='#', hagrid-trigger='')
-        | Dropdown A
-        span.icon-dropdown.icon-3d_rotation
-      ul.dropdown-menu
-        li
-          a(href='#') Dropdown Menu 1
-        li
-          a(href='#') Dropdown Menu 2
-        li
-          a(href='#') Dropdown Menu 3
-        li
-          a(href='#') Dropdown Menu 4
-        li
-          a(href='#') Dropdown Menu 5
+    +mainDropdowns
+
+  section.block-section-hash#dropdown-type-example
+    h4 Dropdowns type
+    +typeDropdowns
+
+  

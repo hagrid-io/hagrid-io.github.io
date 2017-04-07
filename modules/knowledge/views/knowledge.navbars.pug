@@ -1,7 +1,7 @@
 include ../../../code-example/navbars/navbars.pug
 h1.title-section Navbars
 .gs-wrap
-  p Hagrid Navbars
+  p Navbars
 
   h5 Table properties Navbars
   table.table-documentation
@@ -14,10 +14,10 @@ h1.title-section Navbars
       th.first-col
         ul.list-documentation.list-documentation-details
           li.list__title
-            b Dropdown
+            b Navbar
           li Type: class
           li Supports:&nbsp;
-            b [types, sizes, looks, events]
+            b [types, looks, events]
 
           li.list__cta
             a(href="#dropdowns-example", class="btn btn-info btn-sm btn-block") Examples
@@ -25,131 +25,75 @@ h1.title-section Navbars
       td
         ul.list-documentation.list-documentation-variations
           li
-            b Sizes: m-[10-100]
-            span e.g: m-10, m-20, m-30...
+            b Navbar: .navbar
+            span e.g: .navbar
             pre
               code(class="language-html", prism)
                 :code
-                  <div class="m-10">...</div>
+                  <nav class="navbar">
+                    <a href="">Item A</a>
+                    <a href="">Item B</a>
+                    <a href="">Item C</a>
+                  </nav>
+
+      td Hagrid Main Structure
+
+    tr
+      th.first-col
+        ul.list-documentation.list-documentation-details
+          li.list__title
+            b Looks
+          li Type: class
+          li Dependencies: .dropdown
+
+          li.list__cta
+            a(href="#look-dropdowns-example", class="btn btn-info btn-sm btn-block") Examples
+
+      td
+        ul.list-documentation.list-documentation-variations
           li
-            b Axis: m-{x, y}
-            span e.g: m-10-x, m-20-y
+            b Looks: dropdown > btn-{looks}
+            span e.g: dropdown > .btn-outline, dropdown > .btn-error,
             pre
               code(class="language-html", prism)
                 :code
-                  <div class="m-10-x">...</div>
-          li
-            b Sides: m-{top, right, bottom, left}
-            span e.g: m-10-top, m-20-right, m-30-bottom
-            pre
-              code(class="language-html", prism)
-                :code
-                  <div class="m-10-top">...</div>
-          li
-            b Measurements: m-{px, percent, em, rem}
-            span e.g: m-percent, m-em, m-rem
-            pre
-              code(class="language-html", prism)
-                :code
-                  <div class="m-10 m-em">...</div>
-          li
-            b Combined: sizes, axes, measurements
-            span e.g: class="m-10-x m-10-top m-percent"
-            pre
-              code(class="language-html", prism)
-                :code
-                  <div class="m-10-x m-10-top m-percent">...</div>
+                  <nav class="navbar navbar-error navbar-mobile-in-sm navbar-mobile-in-xs" hagrid-component="navbar">
+                    <div class="navbar-menu gs">
+                      <div class="lay">
+                        <a class="navbar-brand" href="">Brand</a>
+                        <a href="">Item A</a>
+                        <a href="">Item B</a>
+                        <a href="">Item C</a>
+                      </div>
+                      <div class="lay gs justify-content-flex-end">
+                        <input type="text" placeholder="Search" class="align-seft">
+                      </div>
+                    </div>
+                    <div class="navbar-menu-mobile">
+                      <div class="top-menu">
+                        <span class="navbar-brand">Menu</span>
+                        <a href="" class="icon-menu" hagrid-role="toggle">
+                          <span class="icon-menu-toggle"></span>
+                        </a>
+                      </div>
+                      <nav>
+                        <a href="">Item A</a>
+                        <a href="">Item B</a>
+                        <a href="">Item C</a>
+                      </nav>
+                    </div>
+                  </nav>
+
+      td Hagrid Dropdowns supports types
 
 
-      td Hagrid supports margin classes to separate elements, <b>.m-[sizes]</b> to specify a size, <b>.m-{measurements}</b> to specify the measurement, by default measurements is px, <b>.m-{axis}</b> to specify a axes and <b>.m-[side]</b> to specify a side.
-.grid-wrap.grid-wrap-90
-  h1.title-section Navbars
 
-  div.custom-row-separator
-    nav.navbar.default-look
-      a(href='') Item A
-      a(href='') Item B
-      a(href='') Item C
-  div.custom-row-separator
-    nav.navbar.inverse-look
-      a(href='') Item A
-      a(href='') Item B
-      a(href='') Item C
-  div.custom-row-separator
-    nav.navbar.primary-look
-      a(href='') Item A
-      a(href='') Item B
-      a(href='') Item C
-  div.custom-row-separator
-    nav.navbar.secondary-look
-      a(href='') Item A
-      a(href='') Item B
-      a(href='') Item C
-  div.custom-row-separator
-    nav.navbar.info-look
-      a(href='') Item A
-      a(href='') Item B
-      a(href='') Item C
-  div.custom-row-separator
-    nav.navbar.warning-look
-      a(href='') Item A
-      a(href='') Item B
-      a(href='') Item C
-  div.custom-row-separator
-    nav.navbar.error-look
-      a(href='') Item A
-      a(href='') Item B
-      a(href='') Item C
-  div.custom-row-separator
-    nav.navbar.grid-flex.default-look
-      .flex-50
-        a(href='') Item A
-        a(href='') Item B
-        a(href='') Item C
-      .flex-50.align-right
-        a(href='') Item A
-        a(href='') Item B
-        a(href='') Item C
-    div.custom-row-separator
-    nav.navbar.grid-flex.inverse-look
-      .flex-30
-        a(href='') Item A
-        a(href='') Item B
-        a(href='') Item C
-      .flex-40
-        a(href='') Item A
-        a(href='') Item B
-        a(href='') Item C
-      .flex-30.align-right
-        input(type='text', placeholder='Default Value')
-      div.custom-row-separator
-    nav.navbar.primary-look
-      a.navbar-brand(href='')
-        | Hagrid
-        small Web Framework
-      a(href='') Item A
-      a(href='') Item B
-      a(href='') Item C
+  section.block-section-hash#dropdown-example
+    h4 Main structure HTML Dropdowns
+    +mainNavbars
 
-  div.custom-row-separator
-    nav.navbar.secondary-look
-      a(href='') Item A
-      a(href='') Item B
-      a(href='') Item C
-  div.custom-row-separator
-    nav.navbar.info-look
-      a(href='') Item A
-      a(href='') Item B
-      a(href='') Item C
-  div.custom-row-separator
-    nav.navbar.warning-look
-      a(href='') Item A
-      a(href='') Item B
-      a(href='') Item C
-  div.custom-row-separator
-    nav.navbar.error-look
-      a(href='') Item A
-      a(href='') Item B
-      a(href='') Item C
-      input(type='text', placeholder='Default Value')
+  section.block-section-hash#dropdown-type-example
+    h4 Navbars type
+    +typeNavbars
 
+  

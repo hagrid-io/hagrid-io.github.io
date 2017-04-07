@@ -1,20 +1,26 @@
-mixin mainDropdrowns
+mixin mainDropdowns
   div.code-example
     h6 Code:
     pre
       code(class="language-html", prism)
         :code
-          <section class="gs">
-            <div class="layout-lg-80"></div>
-            <div class="layout-lg-20"></div>
-          </section>
+          <div class="dropdown dropdown-primary" hagrid-component="dropdown">
+            <a href="#" class="btn btn-primary" hagrid-role="dropdown">Dropdown A<span class="icon-dropdown icon-keyboard_arrow_down"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Dropdown Menu 1</a></li>
+              <li><a href="#">Dropdown Menu 2</a></li>
+              <li><a href="#">Dropdown Menu 3</a></li>
+              <li><a href="#">Dropdown Menu 4</a></li>
+              <li><a href="#">Dropdown Menu 5</a></li>
+            </ul>
+          </div>
 
   div.code-result
     h6 Result:
-    .dropdown.dropdown-primary.dropdown-outline(style='width: 245px')
-      a.btn.btn-primary.btn-outline.btn-dropdown(href='#', hagrid-trigger='')
+    .dropdown.dropdown-primary(hagrid-component='dropdown')
+      a.btn.btn-primary(href='#', hagrid-role='dropdown')
         | Dropdown A
-        span.icon-dropdown.icon-3d_rotation
+        span.icon-dropdown.icon-keyboard_arrow_down
       ul.dropdown-menu
         li
           a(href='#') Dropdown Menu 1
@@ -26,3 +32,197 @@ mixin mainDropdrowns
           a(href='#') Dropdown Menu 4
         li
           a(href='#') Dropdown Menu 5
+
+mixin typeDropdowns
+  div.code-example
+    h6 Code: 
+    pre
+      code(class="language-html", prism)
+        :code
+          <div class="dropdown" hagrid-component="dropdown">
+            <a href="#" class="btn btn-primary" hagrid-role="dropdown">Dropdown A<span class="icon-dropdown icon-keyboard_arrow_down"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Dropdown Menu 1</a></li>
+              <li><a href="#">Dropdown Menu 2</a></li>
+              <li><a href="#">Dropdown Menu 3</a></li>
+              <li><a href="#">Dropdown Menu 4</a></li>
+              <li><a href="#">Dropdown Menu 5</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown" hagrid-component="dropdown" style="width: 245px">
+            <a href="#" class="btn btn-secondary" hagrid-role="dropdown">Dropdown A<span class="icon-dropdown icon-keyboard_arrow_down"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Dropdown Menu 1</a></li>
+              <li><a href="#">Dropdown Menu 2</a></li>
+              <li><a href="#">Dropdown Menu 3</a></li>
+              <li><a href="#">Dropdown Menu 4</a></li>
+              <li><a href="#">Dropdown Menu 5</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown" hagrid-component="dropdown" style="width: 245px">
+            <a href="#" class="btn btn-light" hagrid-role="dropdown">Dropdown A<span class="icon-dropdown icon-keyboard_arrow_down"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Dropdown Menu 1</a></li>
+              <li><a href="#">Dropdown Menu 2</a></li>
+              <li><a href="#">Dropdown Menu 3</a></li>
+              <li><a href="#">Dropdown Menu 4</a></li>
+              <li><a href="#">Dropdown Menu 5</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown" hagrid-component="dropdown" style="width: 245px">
+            <a href="#" class="btn btn-inverse" hagrid-role="dropdown">Dropdown A<span class="icon-dropdown icon-keyboard_arrow_down"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Dropdown Menu 1</a></li>
+              <li><a href="#">Dropdown Menu 2</a></li>
+              <li><a href="#">Dropdown Menu 3</a></li>
+              <li><a href="#">Dropdown Menu 4</a></li>
+              <li><a href="#">Dropdown Menu 5</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown" hagrid-component="dropdown" style="width: 245px">
+            <a href="#" class="btn btn-info" hagrid-role="dropdown">Dropdown A<span class="icon-dropdown icon-keyboard_arrow_down"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Dropdown Menu 1</a></li>
+              <li><a href="#">Dropdown Menu 2</a></li>
+              <li><a href="#">Dropdown Menu 3</a></li>
+              <li><a href="#">Dropdown Menu 4</a></li>
+              <li><a href="#">Dropdown Menu 5</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown" hagrid-component="dropdown" style="width: 245px">
+            <a href="#" class="btn btn-warning" hagrid-role="dropdown">Dropdown A<span class="icon-dropdown icon-keyboard_arrow_down"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Dropdown Menu 1</a></li>
+              <li><a href="#">Dropdown Menu 2</a></li>
+              <li><a href="#">Dropdown Menu 3</a></li>
+              <li><a href="#">Dropdown Menu 4</a></li>
+              <li><a href="#">Dropdown Menu 5</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown" hagrid-component="dropdown" style="width: 245px">
+            <a href="#" class="btn btn-error" hagrid-role="dropdown">Dropdown A<span class="icon-dropdown icon-keyboard_arrow_down"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Dropdown Menu 1</a></li>
+              <li><a href="#">Dropdown Menu 2</a></li>
+              <li><a href="#">Dropdown Menu 3</a></li>
+              <li><a href="#">Dropdown Menu 4</a></li>
+              <li><a href="#">Dropdown Menu 5</a></li>
+            </ul>
+          </div>
+
+          
+  div.code-result
+    h6 Result:
+    .dropdown(hagrid-component='dropdown')
+      a.btn.btn-primary(href='#', hagrid-role='dropdown')
+        | Dropdown A
+        span.icon-dropdown.icon-keyboard_arrow_down
+      ul.dropdown-menu
+        li
+          a(href='#') Dropdown Menu 1
+        li
+          a(href='#') Dropdown Menu 2
+        li
+          a(href='#') Dropdown Menu 3
+        li
+          a(href='#') Dropdown Menu 4
+        li
+          a(href='#') Dropdown Menu 5
+    .dropdown(hagrid-component='dropdown', style='width: 245px')
+      a.btn.btn-secondary(href='#', hagrid-role='dropdown')
+        | Dropdown A
+        span.icon-dropdown.icon-keyboard_arrow_down
+      ul.dropdown-menu
+        li
+          a(href='#') Dropdown Menu 1
+        li
+          a(href='#') Dropdown Menu 2
+        li
+          a(href='#') Dropdown Menu 3
+        li
+          a(href='#') Dropdown Menu 4
+        li
+          a(href='#') Dropdown Menu 5
+    .dropdown(hagrid-component='dropdown', style='width: 245px')
+      a.btn.btn-light(href='#', hagrid-role='dropdown')
+        | Dropdown A
+        span.icon-dropdown.icon-keyboard_arrow_down
+      ul.dropdown-menu
+        li
+          a(href='#') Dropdown Menu 1
+        li
+          a(href='#') Dropdown Menu 2
+        li
+          a(href='#') Dropdown Menu 3
+        li
+          a(href='#') Dropdown Menu 4
+        li
+          a(href='#') Dropdown Menu 5
+    .dropdown(hagrid-component='dropdown', style='width: 245px')
+      a.btn.btn-inverse(href='#', hagrid-role='dropdown')
+        | Dropdown A
+        span.icon-dropdown.icon-keyboard_arrow_down
+      ul.dropdown-menu
+        li
+          a(href='#') Dropdown Menu 1
+        li
+          a(href='#') Dropdown Menu 2
+        li
+          a(href='#') Dropdown Menu 3
+        li
+          a(href='#') Dropdown Menu 4
+        li
+          a(href='#') Dropdown Menu 5
+    .dropdown(hagrid-component='dropdown', style='width: 245px')
+      a.btn.btn-info(href='#', hagrid-role='dropdown')
+        | Dropdown A
+        span.icon-dropdown.icon-keyboard_arrow_down
+      ul.dropdown-menu
+        li
+          a(href='#') Dropdown Menu 1
+        li
+          a(href='#') Dropdown Menu 2
+        li
+          a(href='#') Dropdown Menu 3
+        li
+          a(href='#') Dropdown Menu 4
+        li
+          a(href='#') Dropdown Menu 5
+    .dropdown(hagrid-component='dropdown', style='width: 245px')
+      a.btn.btn-warning(href='#', hagrid-role='dropdown')
+        | Dropdown A
+        span.icon-dropdown.icon-keyboard_arrow_down
+      ul.dropdown-menu
+        li
+          a(href='#') Dropdown Menu 1
+        li
+          a(href='#') Dropdown Menu 2
+        li
+          a(href='#') Dropdown Menu 3
+        li
+          a(href='#') Dropdown Menu 4
+        li
+          a(href='#') Dropdown Menu 5
+    .dropdown(hagrid-component='dropdown', style='width: 245px')
+      a.btn.btn-error(href='#', hagrid-role='dropdown')
+        | Dropdown A
+        span.icon-dropdown.icon-keyboard_arrow_down
+      ul.dropdown-menu
+        li
+          a(href='#') Dropdown Menu 1
+        li
+          a(href='#') Dropdown Menu 2
+        li
+          a(href='#') Dropdown Menu 3
+        li
+          a(href='#') Dropdown Menu 4
+        li
+          a(href='#') Dropdown Menu 5
+
+

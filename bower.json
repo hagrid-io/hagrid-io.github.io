@@ -17,14 +17,13 @@
   ],
   "dependencies": {
     "angular": "^1.5.5",
-    "hagrid": "git@github.com:rokk3rlabs/hagrid.git#f6d9f6c98ba16868a770d01a37821ac44089b3a5",
     "angular-ui-router": "^0.2.18",
     "highlightjs": "^9.5.0",
     "angular-sanitize": "^1.5.8",
-    "prism": "Prism#^1.5.1"
+    "prism": "Prism#^1.5.1",
+    "hagrid.io": "^0.0.5"
   },
   "resolutions": {
-    "angular": "1.6.2",
-    "hagrid": "584f11c84cbb653b7fde111ff2bf93c881d01667"
+    "angular": "1.6.2"
   }
 }
