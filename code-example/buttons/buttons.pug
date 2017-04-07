@@ -16,7 +16,8 @@ mixin typeButtons
     pre
       code(class="language-html", prism)
         :code
-          <a href="#" class="btn btn-default">Button default</a>
+          <a href="#" class="btn">Button default</a>
+          <a href="#" class="btn btn-light">Button light</a>
           <a href="#" class="btn btn-inverse">Button inverse</a>
           <a href="#" class="btn btn-primary">Button primary</a>
           <a href="#" class="btn btn-secondary">Button secondary</a>
@@ -27,7 +28,7 @@ mixin typeButtons
           
   div.code-result
     h6 Result:
-    a.btn.btn-default(href='#') Button default
+    a.btn.btn-light(href='#') Button default
     a.btn.btn-inverse(href='#') Button inverse
     a.btn.btn-primary(href='#') Button primary
     a.btn.btn-secondary(href='#') Button secondary
@@ -71,7 +72,7 @@ mixin lookButtons
         :code
           <a href="#" class="btn btn-primary">Button normal</a>
           <a href="#" class="btn btn-secondary btn-flat">Button flat</a>
-          <a href="#" class="btn btn-default btn-shadow">Button shadow</a>
+          <a href="#" class="btn btn-light btn-shadow">Button shadow</a>
           <a href="#" class="btn btn-warning btn-upper">Button upper</a>
           <a href="#" class="btn btn-error btn-outline">Button outline</a>
 
@@ -80,7 +81,7 @@ mixin lookButtons
     h6 Result:
     a.btn.btn-primary(href='#') Button normal
     a.btn.btn-secondary.btn-flat(href='#') Button flat
-    a.btn.btn-default.btn-shadow(href='#') Button shadow
+    a.btn.btn-light.btn-shadow(href='#') Button shadow
     a.btn.btn-warning.btn-upper(href='#') Button upper
     a.btn.btn-error.btn-outline(href='#') Button outline
 
@@ -90,7 +91,7 @@ mixin displayButtons
     pre
       code(class="language-html", prism)
         :code
-          <a href="#" class="btn btn-default btn-lg btn-block">Button default</a>
+          <a href="#" class="btn btn-light btn-lg btn-block">Button default</a>
           <a href="#" class="btn btn-inverse btn-flat btn-lg btn-block">Button inverse</a>
           <a href="#" class="btn btn-primary btn-upper btn-lg btn-block">Button primary</a>
           <a href="#" class="btn btn-secondary btn-shadow btn-lg btn-block">Button secondary</a>
@@ -101,7 +102,7 @@ mixin displayButtons
           
   div.code-result
     h6 Result:
-    a.btn.btn-default.btn-lg.btn-block(href='#') Button default
+    a.btn.btn-light.btn-lg.btn-block(href='#') Button default
     a.btn.btn-inverse.btn-flat.btn-lg.btn-block(href='#') Button inverse
     a.btn.btn-primary.btn-upper.btn-lg.btn-block(href='#') Button primary
     a.btn.btn-secondary.btn-shadow.btn-lg.btn-block(href='#') Button secondary
@@ -118,14 +119,14 @@ mixin iconButtons
         :code
           <a href="#" class="btn btn-primary">Button normal</a>
           <a href="#" class="btn btn-secondary btn-flat">Button flat</a>
-          <a href="#" class="btn btn-default btn-shadow">Button shadow</a>
+          <a href="#" class="btn btn-light btn-shadow">Button shadow</a>
           <a href="#" class="btn btn-warning btn-upper">Button upper</a>
           <a href="#" class="btn btn-error btn-outline">Button outline</a>
           
           
   div.code-result
     h6 Result:
-    a.btn.btn-default(href='#') Button default&nbsp;
+    a.btn.btn-light(href='#') Button default&nbsp;
       i.icon-get_app
     a.btn.btn-inverse(href='#') Button inverse&nbsp;
       i.icon-file_upload
@@ -148,14 +149,14 @@ mixin iconButtons
         :code
           <a href="#" class="btn btn-primary">Button normal</a>
           <a href="#" class="btn btn-secondary btn-flat">Button flat</a>
-          <a href="#" class="btn btn-default btn-shadow">Button shadow</a>
+          <a href="#" class="btn btn-light btn-shadow">Button shadow</a>
           <a href="#" class="btn btn-warning btn-upper">Button upper</a>
           <a href="#" class="btn btn-error btn-outline">Button outline</a>
           
           
   div.code-result
     h6 Result:
-    a.btn.btn-default(href='#')
+    a.btn.btn-light(href='#')
       i.icon-get_app
     a.btn.btn-inverse(href='#')
       i.icon-file_upload
